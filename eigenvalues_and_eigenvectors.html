@@ -7509,7 +7509,7 @@ a.anchor-link {
 </style>
 <!-- End of mermaid configuration --></head>
 <body class="jp-Notebook" data-jp-theme-light="true" data-jp-theme-name="JupyterLab Light">
-<main><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=42725f0a">
+<main><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=0f35b9ac">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -7528,16 +7528,165 @@ a.anchor-link {
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=9f4064e1">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=2a6fa105">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [2]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span> 
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">not_V</span> <span class="o">=</span> <span class="sa">r</span><span class="s2">"\(V\)"</span>
+<span class="n">not_T</span> <span class="o">=</span> <span class="sa">r</span><span class="s2">"\(T\)"</span>
+<span class="n">not_transformation</span> <span class="o">=</span> <span class="sa">r</span><span class="s2">"\(T: V \rightarrow V\)"</span>
+<span class="n">not_v_exists_in_v</span> <span class="o">=</span> <span class="sa">r</span><span class="s2">"\(\mathbf</span><span class="si">{v}</span><span class="s2"> \in V\)"</span>
+<span class="n">not_Tv</span> <span class="o">=</span> <span class="sa">r</span><span class="s2">"\(T\mathbf</span><span class="si">{v}</span><span class="s2">\)"</span>
+<span class="n">not_v</span> <span class="o">=</span> <span class="sa">r</span><span class="s2">"\(\mathbf</span><span class="si">{v}</span><span class="s2">\)"</span>
+<span class="n">not_lamda</span> <span class="o">=</span> <span class="sa">r</span><span class="s2">"\(\lambda\)"</span>
+
+
+<span class="n">eqn_tv_lamdav</span> <span class="o">=</span> <span class="sa">r</span><span class="s2">"\(T\mathbf</span><span class="si">{v}</span><span class="s2">=\lambda \mathbf</span><span class="si">{v}</span><span class="s2">\)"</span>
 </pre></div>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=bb72ba1e">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [3]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">wrd_vector_spaces_intro</span> <span class="o">=</span> <span class="s2">"&lt;h2&gt;Vector Spaces&lt;/h2&gt;"</span>
+<span class="n">wrd_V_vector_space</span> <span class="o">=</span> <span class="n">not_V</span> <span class="o">+</span> <span class="s2">" is a vector space."</span>
+<span class="n">wrd_linear_transformation_intro</span> <span class="o">=</span> <span class="s2">"&lt;h2&gt;Linear Transformations&lt;/h2&gt;"</span>
+<span class="n">wrd_T_linear_transformation</span> <span class="o">=</span> <span class="s2">" is a linear transformation"</span>
+<span class="n">wrd_defn_linear_transformation</span> <span class="o">=</span> <span class="s2">"A linear transformation is not a vector, but rather a function or mapping between two vector spaces that preserves the operations of vector addition and scalar multiplication."</span>
+<span class="n">wrd_v_TV_parralell</span> <span class="o">=</span> <span class="n">not_Tv</span> <span class="o">+</span> <span class="s2">" &amp; "</span> <span class="o">+</span> <span class="n">not_v</span> <span class="o">+</span> <span class="s2">" are parallel if: "</span> <span class="o">+</span> <span class="n">eqn_tv_lamdav</span>
+<span class="n">wrd_lamda_eigenvalue</span> <span class="o">=</span> <span class="n">not_lamda</span> <span class="o">+</span> <span class="s2">" is an eigenvalue of "</span> <span class="o">+</span> <span class="n">not_T</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=c6740035">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [4]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">display</span><span class="p">(</span><span class="n">HTML</span><span class="p">(</span><span class="n">wrd_vector_spaces_intro</span><span class="p">))</span>
+<span class="n">display</span><span class="p">(</span><span class="n">HTML</span><span class="p">(</span><span class="n">wrd_V_vector_space</span><span class="p">))</span>
+
+<span class="n">display</span><span class="p">(</span><span class="n">HTML</span><span class="p">(</span><span class="n">wrd_linear_transformation_intro</span><span class="p">))</span>
+
+
+<span class="n">display</span><span class="p">(</span><span class="n">HTML</span><span class="p">(</span><span class="n">not_transformation</span> <span class="o">+</span> <span class="n">wrd_T_linear_transformation</span><span class="p">))</span>
+<span class="n">display</span><span class="p">(</span><span class="n">HTML</span><span class="p">(</span><span class="n">wrd_defn_linear_transformation</span><span class="p">))</span>
+<span class="n">display</span><span class="p">(</span><span class="n">HTML</span><span class="p">(</span><span class="n">not_v_exists_in_v</span><span class="p">))</span>
+<span class="n">display</span><span class="p">(</span><span class="n">HTML</span><span class="p">(</span><span class="n">wrd_v_TV_parralell</span><span class="p">))</span>
+<span class="n">display</span><span class="p">(</span><span class="n">HTML</span><span class="p">(</span><span class="n">wrd_lamda_eigenvalue</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output" data-mime-type="text/html" tabindex="0">
+<h2>Vector Spaces</h2>
+</div>
+</div>
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output" data-mime-type="text/html" tabindex="0">
+\(V\) is a vector space.
+</div>
+</div>
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output" data-mime-type="text/html" tabindex="0">
+<h2>Linear Transformations</h2>
+</div>
+</div>
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output" data-mime-type="text/html" tabindex="0">
+\(T: V \rightarrow V\) is a linear transformation
+</div>
+</div>
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output" data-mime-type="text/html" tabindex="0">
+A linear transformation is not a vector, but rather a function or mapping between two vector spaces that preserves the operations of vector addition and scalar multiplication.
+</div>
+</div>
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output" data-mime-type="text/html" tabindex="0">
+\(\mathbf{v} \in V\)
+</div>
+</div>
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output" data-mime-type="text/html" tabindex="0">
+\(T\mathbf{v}\) &amp; \(\mathbf{v}\) are parallel if: \(T\mathbf{v}=\lambda \mathbf{v}\)
+</div>
+</div>
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output" data-mime-type="text/html" tabindex="0">
+\(\lambda\) is an eigenvalue of \(T\)
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=56df04e4">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [5]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">A</span> <span class="n">linear</span> <span class="n">transformation</span> <span class="ow">is</span> <span class="ow">not</span> <span class="n">a</span> <span class="n">vector</span><span class="p">,</span> <span class="n">but</span> <span class="n">rather</span> <span class="n">a</span> <span class="n">function</span> <span class="ow">or</span> <span class="n">mapping</span>       
+<span class="n">between</span> <span class="n">two</span> <span class="n">vector</span> <span class="n">spaces</span> <span class="n">that</span> <span class="n">preserves</span> <span class="n">the</span> <span class="n">operations</span> <span class="n">of</span> <span class="n">vector</span> <span class="n">addition</span> <span class="ow">and</span>  
+<span class="n">scalar</span> <span class="n">multiplication</span><span class="o">.</span> <span class="n">In</span> <span class="n">mathematical</span> <span class="n">terms</span><span class="p">,</span> <span class="k">if</span> <span class="p">(</span> <span class="n">T</span><span class="p">:</span> <span class="n">V</span> \<span class="n">rightarrow</span> <span class="n">W</span> <span class="p">)</span> <span class="ow">is</span> <span class="n">a</span>    
+<span class="n">linear</span> <span class="n">transformation</span> <span class="n">between</span> <span class="n">vector</span> <span class="n">spaces</span> <span class="p">(</span> <span class="n">V</span> <span class="p">)</span> <span class="ow">and</span> <span class="p">(</span> <span class="n">W</span> <span class="p">),</span> <span class="n">then</span> <span class="k">for</span> <span class="nb">any</span>       
+<span class="n">vectors</span> <span class="p">(</span> \<span class="n">mathbf</span><span class="p">{</span><span class="n">u</span><span class="p">},</span> \<span class="n">mathbf</span><span class="p">{</span><span class="n">v</span><span class="p">}</span> \<span class="ow">in</span> <span class="n">V</span> <span class="p">)</span> <span class="ow">and</span> <span class="nb">any</span> <span class="n">scalar</span> <span class="p">(</span> <span class="n">c</span> <span class="p">),</span> <span class="n">the</span> <span class="n">following</span>    
+<span class="n">properties</span> <span class="n">hold</span><span class="p">:</span>                                                                
+
+ <span class="mi">1</span> <span class="p">(</span> <span class="n">T</span><span class="p">(</span>\<span class="n">mathbf</span><span class="p">{</span><span class="n">u</span><span class="p">}</span> <span class="o">+</span> \<span class="n">mathbf</span><span class="p">{</span><span class="n">v</span><span class="p">})</span> <span class="o">=</span> <span class="n">T</span><span class="p">(</span>\<span class="n">mathbf</span><span class="p">{</span><span class="n">u</span><span class="p">})</span> <span class="o">+</span> <span class="n">T</span><span class="p">(</span>\<span class="n">mathbf</span><span class="p">{</span><span class="n">v</span><span class="p">})</span> <span class="p">)</span>               
+ <span class="mi">2</span> <span class="p">(</span> <span class="n">T</span><span class="p">(</span><span class="n">c</span>\<span class="n">mathbf</span><span class="p">{</span><span class="n">u</span><span class="p">})</span> <span class="o">=</span> <span class="n">cT</span><span class="p">(</span>\<span class="n">mathbf</span><span class="p">{</span><span class="n">u</span><span class="p">})</span> <span class="p">)</span>                                          
+
+<span class="n">While</span> <span class="n">linear</span> <span class="n">transformations</span> <span class="n">themselves</span> <span class="n">are</span> <span class="ow">not</span> <span class="n">vectors</span><span class="p">,</span> <span class="n">they</span> <span class="n">can</span> <span class="n">be</span> <span class="n">represented</span>
+<span class="n">by</span> <span class="n">matrices</span> <span class="n">when</span> <span class="n">considering</span> <span class="n">finite</span><span class="o">-</span><span class="n">dimensional</span> <span class="n">vector</span> <span class="n">spaces</span><span class="o">.</span>                  
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr" tabindex="0">
+<pre>
+<span class="ansi-cyan-fg">  Cell </span><span class="ansi-green-fg">In[5], line 1</span>
+<span class="ansi-red-fg">    A linear transformation is not a vector, but rather a function or mapping</span>
+      ^
+<span class="ansi-red-fg">SyntaxError</span><span class="ansi-red-fg">:</span> invalid syntax
+</pre>
 </div>
 </div>
 </div>
