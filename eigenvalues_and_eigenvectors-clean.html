@@ -7511,6 +7511,22 @@ a.anchor-link {
 <body class="jp-Notebook" data-jp-theme-light="true" data-jp-theme-name="JupyterLab Light">
 <main><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs jp-mod-noInput" id="cell-id=0f35b9ac">
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs jp-mod-noInput" id="cell-id=2a6fa105">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noInput" id="cell-id=6792d280">
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr" tabindex="0">
+<pre>&lt;&gt;:9: SyntaxWarning: invalid escape sequence '\('
+&lt;&gt;:9: SyntaxWarning: invalid escape sequence '\('
+/tmp/nix-shell-4602-0/ipykernel_47283/2316754505.py:9: SyntaxWarning: invalid escape sequence '\('
+  + "These operations satisfy the following axioms:" + """
+</pre>
+</div>
+</div>
+</div>
+</div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs jp-mod-noInput" id="cell-id=bb72ba1e">
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noInput" id="cell-id=c6740035">
 <div class="jp-Cell-outputWrapper">
@@ -7519,12 +7535,65 @@ a.anchor-link {
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child">
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output" data-mime-type="text/html" tabindex="0">
-<h2>Vector Spaces</h2>
+<h2>Vector Spaces</h2><p>A vector space is is a set of vectors with two operations:</p> <ul> <li>addition</li> <li>scalar multiplication</li> </ul>        These operations satisfy the following axioms:
+
+<table border="1">
+<tr>
+<th 50%;"="" style="width: 30%;&gt;Name of Vector Space Axiom&lt;/th&gt;
+    &lt;th style=" width:="">Explanation</th>
+<th>Mathematical Notation</th>
+</tr>
+<tr>
+<td>Closure under Addition</td>
+<td style="width: 50%;">The sum of any two vectors is also a vector in the same space.</td>
+<td>\(\mathbf{u} + \mathbf{v} \in V\)</td>
+</tr>
+<tr>
+<td>Associativity of Addition</td>
+<td style="width: 50%;">The way in which vectors are grouped in addition does not change the result.</td>
+<td>\((\mathbf{u} + \mathbf{v}) + \mathbf{w} = \mathbf{u} + (\mathbf{v} + \mathbf{w})\)</td>
+</tr>
+<tr>
+<td>Identity Element of Addition</td>
+<td style="width: 50%;">There exists a zero vector such that adding it to any vector does not change the vector.</td>
+<td>\(\mathbf{v} + \mathbf{0} = \mathbf{v}\)</td>
+</tr>
+<tr>
+<td>Inverse Elements of Addition</td>
+<td style="width: 50%;">For every vector, there exists an inverse vector such that their sum is the zero vector.</td>
+<td>\(\mathbf{v} + (-\mathbf{v}) = \mathbf{0}\)</td>
+</tr>
+<tr>
+<td>Closure under Scalar Multiplication</td>
+<td style="width: 50%;">The product of a scalar and a vector is also a vector in the same space.</td>
+<td>\(a\mathbf{v} \in V\)</td>
+</tr>
+<tr>
+<td>Distributive Property of Scalar Multiplication with respect to Vector Addition</td>
+<td style="width: 50%;">Scalar multiplication distributes over vector addition.</td>
+<td>\(a(\mathbf{u} + \mathbf{v}) = a\mathbf{u} + a\mathbf{v}\)</td>
+</tr>
+<tr>
+<td>Distributive Property of Scalar Multiplication with respect to Field Addition</td>
+<td style="width: 50%;">Scalar addition distributes over scalar multiplication.</td>
+<td>\((a + b)\mathbf{v} = a\mathbf{v} + b\mathbf{v}\)</td>
+</tr>
+<tr>
+<td>Associativity of Scalar Multiplication</td>
+<td style="width: 50%;">The way in which scalars are grouped in multiplication does not change the result.</td>
+<td>\(a(b\mathbf{v}) = (ab)\mathbf{v}\)</td>
+</tr>
+<tr>
+<td>Identity Element of Scalar Multiplication</td>
+<td style="width: 50%;">Multiplying a vector by one does not change the vector.</td>
+<td>\(1\mathbf{v} = \mathbf{v}\)</td>
+</tr>
+</table>
 </div>
 </div>
 <div class="jp-OutputArea-child">
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output" data-mime-type="text/html" tabindex="0">
-\(V\) is a vector space.
+We define \(V\) as a vector space.
 </div>
 </div>
 <div class="jp-OutputArea-child">
@@ -7534,12 +7603,17 @@ a.anchor-link {
 </div>
 <div class="jp-OutputArea-child">
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output" data-mime-type="text/html" tabindex="0">
-\(T: V \rightarrow V\) is a linear transformation
+A linear transformation is a function or mapping between two vector spaces that preserves the operations of vector addition and scalar multiplication.
 </div>
 </div>
 <div class="jp-OutputArea-child">
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output" data-mime-type="text/html" tabindex="0">
-A linear transformation is not a vector, but rather a function or mapping between two vector spaces that preserves the operations of vector addition and scalar multiplication.
+We define \(T: V \rightarrow V\) as a linear transformation that preserves the vector space.
+</div>
+</div>
+<div class="jp-OutputArea-child">
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output" data-mime-type="text/html" tabindex="0">
+<h2>Eigenvectors and Eigenvalues</h2>
 </div>
 </div>
 <div class="jp-OutputArea-child">
@@ -7555,23 +7629,6 @@ A linear transformation is not a vector, but rather a function or mapping betwee
 <div class="jp-OutputArea-child">
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output" data-mime-type="text/html" tabindex="0">
 \(\lambda\) is an eigenvalue of \(T\)
-</div>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noInput" id="cell-id=56df04e4">
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child">
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr" tabindex="0">
-<pre>
-<span class="ansi-cyan-fg">  Cell </span><span class="ansi-green-fg">In[5], line 1</span>
-<span class="ansi-red-fg">    A linear transformation is not a vector, but rather a function or mapping</span>
-      ^
-<span class="ansi-red-fg">SyntaxError</span><span class="ansi-red-fg">:</span> invalid syntax
-</pre>
 </div>
 </div>
 </div>

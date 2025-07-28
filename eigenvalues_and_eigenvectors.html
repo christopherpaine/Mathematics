@@ -7546,7 +7546,100 @@ a.anchor-link {
 
 
 <span class="n">eqn_tv_lamdav</span> <span class="o">=</span> <span class="sa">r</span><span class="s2">"\(T\mathbf</span><span class="si">{v}</span><span class="s2">=\lambda \mathbf</span><span class="si">{v}</span><span class="s2">\)"</span>
+<span class="n">eqn_associativity_of_additions</span> <span class="o">=</span> <span class="sa">r</span><span class="s2">"\((\mathbf</span><span class="si">{u}</span><span class="s2"> + \mathbf</span><span class="si">{v}</span><span class="s2">) + \mathbf</span><span class="si">{w}</span><span class="s2"> = \mathbf</span><span class="si">{u}</span><span class="s2"> + (\mathbf</span><span class="si">{v}</span><span class="s2"> + \mathbf</span><span class="si">{w}</span><span class="s2">)\)"</span>
 </pre></div>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=6792d280">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [3]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">wrd_vector_spaces_intro</span> <span class="o">=</span> <span class="s2">"&lt;h2&gt;Vector Spaces&lt;/h2&gt;"</span>\
+        <span class="o">+</span> <span class="s2">"&lt;p&gt;A vector space is is a set of vectors with two operations:&lt;/p&gt;"</span>\
+        <span class="o">+</span> <span class="s2">"</span><span class="se">\</span>
+<span class="s2">        &lt;ul&gt;</span><span class="se">\</span>
+<span class="s2">            &lt;li&gt;addition&lt;/li&gt;</span><span class="se">\</span>
+<span class="s2">            &lt;li&gt;scalar multiplication&lt;/li&gt;</span><span class="se">\</span>
+<span class="s2">        &lt;/ul&gt;</span><span class="se">\</span>
+<span class="s2">        "</span>\
+        <span class="o">+</span> <span class="s2">"These operations satisfy the following axioms:"</span> <span class="o">+</span> <span class="s2">"""</span>
+
+<span class="s2">&lt;table border="1"&gt;</span>
+<span class="s2">  &lt;tr&gt;</span>
+<span class="s2">    &lt;th style="width: 30%;&gt;Name of Vector Space Axiom&lt;/th&gt;</span>
+<span class="s2">    &lt;th style="width: 50%;"&gt;Explanation&lt;/th&gt;</span>
+<span class="s2">    &lt;th&gt;Mathematical Notation&lt;/th&gt;</span>
+<span class="s2">  &lt;/tr&gt;</span>
+<span class="s2">  &lt;tr&gt;</span>
+<span class="s2">    &lt;td&gt;Closure under Addition&lt;/td&gt;</span>
+<span class="s2">    &lt;td style="width: 50%;"&gt;The sum of any two vectors is also a vector in the same space.&lt;/td&gt;</span>
+<span class="s2">    &lt;td&gt;\(\mathbf</span><span class="si">{u}</span><span class="s2"> + \mathbf</span><span class="si">{v}</span><span class="s2"> \in V\)&lt;/td&gt;</span>
+<span class="s2">  &lt;/tr&gt;</span>
+<span class="s2">  &lt;tr&gt;</span>
+<span class="s2">    &lt;td&gt;Associativity of Addition&lt;/td&gt;</span>
+<span class="s2">    &lt;td style="width: 50%;"&gt;The way in which vectors are grouped in addition does not change the result.&lt;/td&gt;</span>
+<span class="s2">    &lt;td&gt;\((\mathbf</span><span class="si">{u}</span><span class="s2"> + \mathbf</span><span class="si">{v}</span><span class="s2">) + \mathbf</span><span class="si">{w}</span><span class="s2"> = \mathbf</span><span class="si">{u}</span><span class="s2"> + (\mathbf</span><span class="si">{v}</span><span class="s2"> + \mathbf</span><span class="si">{w}</span><span class="s2">)\)&lt;/td&gt;</span>
+<span class="s2">  &lt;/tr&gt;</span>
+<span class="s2">  &lt;tr&gt;</span>
+<span class="s2">    &lt;td&gt;Identity Element of Addition&lt;/td&gt;</span>
+<span class="s2">    &lt;td style="width: 50%;"&gt;There exists a zero vector such that adding it to any vector does not change the vector.&lt;/td&gt;</span>
+<span class="s2">    &lt;td&gt;\(\mathbf</span><span class="si">{v}</span><span class="s2"> + \mathbf</span><span class="si">{0}</span><span class="s2"> = \mathbf</span><span class="si">{v}</span><span class="s2">\)&lt;/td&gt;</span>
+<span class="s2">  &lt;/tr&gt;</span>
+<span class="s2">  &lt;tr&gt;</span>
+<span class="s2">    &lt;td&gt;Inverse Elements of Addition&lt;/td&gt;</span>
+<span class="s2">    &lt;td style="width: 50%;"&gt;For every vector, there exists an inverse vector such that their sum is the zero vector.&lt;/td&gt;</span>
+<span class="s2">    &lt;td&gt;\(\mathbf</span><span class="si">{v}</span><span class="s2"> + (-\mathbf</span><span class="si">{v}</span><span class="s2">) = \mathbf</span><span class="si">{0}</span><span class="s2">\)&lt;/td&gt;</span>
+<span class="s2">  &lt;/tr&gt;</span>
+<span class="s2">  &lt;tr&gt;</span>
+<span class="s2">    &lt;td&gt;Closure under Scalar Multiplication&lt;/td&gt;</span>
+<span class="s2">    &lt;td style="width: 50%;"&gt;The product of a scalar and a vector is also a vector in the same space.&lt;/td&gt;</span>
+<span class="s2">    &lt;td&gt;\(a\mathbf</span><span class="si">{v}</span><span class="s2"> \in V\)&lt;/td&gt;</span>
+<span class="s2">  &lt;/tr&gt;</span>
+<span class="s2">  &lt;tr&gt;</span>
+<span class="s2">    &lt;td&gt;Distributive Property of Scalar Multiplication with respect to Vector Addition&lt;/td&gt;</span>
+<span class="s2">    &lt;td style="width: 50%;"&gt;Scalar multiplication distributes over vector addition.&lt;/td&gt;</span>
+<span class="s2">    &lt;td&gt;\(a(\mathbf</span><span class="si">{u}</span><span class="s2"> + \mathbf</span><span class="si">{v}</span><span class="s2">) = a\mathbf</span><span class="si">{u}</span><span class="s2"> + a\mathbf</span><span class="si">{v}</span><span class="s2">\)&lt;/td&gt;</span>
+<span class="s2">  &lt;/tr&gt;</span>
+<span class="s2">  &lt;tr&gt;</span>
+<span class="s2">    &lt;td&gt;Distributive Property of Scalar Multiplication with respect to Field Addition&lt;/td&gt;</span>
+<span class="s2">    &lt;td style="width: 50%;"&gt;Scalar addition distributes over scalar multiplication.&lt;/td&gt;</span>
+<span class="s2">    &lt;td&gt;\((a + b)\mathbf</span><span class="si">{v}</span><span class="s2"> = a\mathbf</span><span class="si">{v}</span><span class="s2"> + b\mathbf</span><span class="si">{v}</span><span class="s2">\)&lt;/td&gt;</span>
+<span class="s2">  &lt;/tr&gt;</span>
+<span class="s2">  &lt;tr&gt;</span>
+<span class="s2">    &lt;td&gt;Associativity of Scalar Multiplication&lt;/td&gt;</span>
+<span class="s2">    &lt;td style="width: 50%;"&gt;The way in which scalars are grouped in multiplication does not change the result.&lt;/td&gt;</span>
+<span class="s2">    &lt;td&gt;\(a(b\mathbf</span><span class="si">{v}</span><span class="s2">) = (ab)\mathbf</span><span class="si">{v}</span><span class="s2">\)&lt;/td&gt;</span>
+<span class="s2">  &lt;/tr&gt;</span>
+<span class="s2">  &lt;tr&gt;</span>
+<span class="s2">    &lt;td&gt;Identity Element of Scalar Multiplication&lt;/td&gt;</span>
+<span class="s2">    &lt;td style="width: 50%;"&gt;Multiplying a vector by one does not change the vector.&lt;/td&gt;</span>
+<span class="s2">    &lt;td&gt;\(1\mathbf</span><span class="si">{v}</span><span class="s2"> = \mathbf</span><span class="si">{v}</span><span class="s2">\)&lt;/td&gt;</span>
+<span class="s2">  &lt;/tr&gt;</span>
+<span class="s2">&lt;/table&gt;</span>
+<span class="s2">"""</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr" tabindex="0">
+<pre>&lt;&gt;:9: SyntaxWarning: invalid escape sequence '\('
+&lt;&gt;:9: SyntaxWarning: invalid escape sequence '\('
+/tmp/nix-shell-4602-0/ipykernel_47283/2316754505.py:9: SyntaxWarning: invalid escape sequence '\('
+  + "These operations satisfy the following axioms:" + """
+</pre>
 </div>
 </div>
 </div>
@@ -7556,14 +7649,16 @@ a.anchor-link {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [3]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [4]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="n">wrd_vector_spaces_intro</span> <span class="o">=</span> <span class="s2">"&lt;h2&gt;Vector Spaces&lt;/h2&gt;"</span>
-<span class="n">wrd_V_vector_space</span> <span class="o">=</span> <span class="n">not_V</span> <span class="o">+</span> <span class="s2">" is a vector space."</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">wrd_V_vector_space</span> <span class="o">=</span> <span class="s2">"We define "</span> <span class="o">+</span> <span class="n">not_V</span> <span class="o">+</span> <span class="s2">" as a vector space."</span>
+<span class="c1">#----------------------------------------------------------</span>
 <span class="n">wrd_linear_transformation_intro</span> <span class="o">=</span> <span class="s2">"&lt;h2&gt;Linear Transformations&lt;/h2&gt;"</span>
-<span class="n">wrd_T_linear_transformation</span> <span class="o">=</span> <span class="s2">" is a linear transformation"</span>
-<span class="n">wrd_defn_linear_transformation</span> <span class="o">=</span> <span class="s2">"A linear transformation is not a vector, but rather a function or mapping between two vector spaces that preserves the operations of vector addition and scalar multiplication."</span>
+<span class="n">wrd_T_linear_transformation</span> <span class="o">=</span> <span class="s2">"We define "</span> <span class="o">+</span> <span class="n">not_transformation</span> <span class="o">+</span> <span class="s2">" as a linear transformation that preserves the vector space."</span>
+<span class="n">wrd_defn_linear_transformation</span> <span class="o">=</span> <span class="s2">"A linear transformation is a function or mapping between two vector spaces that preserves the operations of vector addition and scalar multiplication."</span>
+<span class="c1">#----------------------------------------------------------</span>
+<span class="n">wrd_eigen_intro</span> <span class="o">=</span> <span class="s2">"&lt;h2&gt;Eigenvectors and Eigenvalues&lt;/h2&gt;"</span>
 <span class="n">wrd_v_TV_parralell</span> <span class="o">=</span> <span class="n">not_Tv</span> <span class="o">+</span> <span class="s2">" &amp; "</span> <span class="o">+</span> <span class="n">not_v</span> <span class="o">+</span> <span class="s2">" are parallel if: "</span> <span class="o">+</span> <span class="n">eqn_tv_lamdav</span>
 <span class="n">wrd_lamda_eigenvalue</span> <span class="o">=</span> <span class="n">not_lamda</span> <span class="o">+</span> <span class="s2">" is an eigenvalue of "</span> <span class="o">+</span> <span class="n">not_T</span>
 </pre></div>
@@ -7576,20 +7671,38 @@ a.anchor-link {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [4]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [5]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">display</span><span class="p">(</span><span class="n">HTML</span><span class="p">(</span><span class="n">wrd_vector_spaces_intro</span><span class="p">))</span>
 <span class="n">display</span><span class="p">(</span><span class="n">HTML</span><span class="p">(</span><span class="n">wrd_V_vector_space</span><span class="p">))</span>
-
 <span class="n">display</span><span class="p">(</span><span class="n">HTML</span><span class="p">(</span><span class="n">wrd_linear_transformation_intro</span><span class="p">))</span>
 
 
-<span class="n">display</span><span class="p">(</span><span class="n">HTML</span><span class="p">(</span><span class="n">not_transformation</span> <span class="o">+</span> <span class="n">wrd_T_linear_transformation</span><span class="p">))</span>
 <span class="n">display</span><span class="p">(</span><span class="n">HTML</span><span class="p">(</span><span class="n">wrd_defn_linear_transformation</span><span class="p">))</span>
+<span class="n">display</span><span class="p">(</span><span class="n">HTML</span><span class="p">(</span><span class="n">wrd_T_linear_transformation</span><span class="p">))</span>
+
+
+
+<span class="n">display</span><span class="p">(</span><span class="n">HTML</span><span class="p">(</span><span class="n">wrd_eigen_intro</span><span class="p">))</span>
 <span class="n">display</span><span class="p">(</span><span class="n">HTML</span><span class="p">(</span><span class="n">not_v_exists_in_v</span><span class="p">))</span>
 <span class="n">display</span><span class="p">(</span><span class="n">HTML</span><span class="p">(</span><span class="n">wrd_v_TV_parralell</span><span class="p">))</span>
 <span class="n">display</span><span class="p">(</span><span class="n">HTML</span><span class="p">(</span><span class="n">wrd_lamda_eigenvalue</span><span class="p">))</span>
+
+
+<span class="c1">## %%</span>
+<span class="c1">#A linear transformation is not a vector, but rather a function or mapping       </span>
+<span class="c1">#between two vector spaces that preserves the operations of vector addition and  </span>
+<span class="c1">#scalar multiplication. In mathematical terms, if ( T: V \rightarrow W ) is a    </span>
+<span class="c1">#linear transformation between vector spaces ( V ) and ( W ), then for any       </span>
+<span class="c1">#vectors ( \mathbf{u}, \mathbf{v} \in V ) and any scalar ( c ), the following    </span>
+<span class="c1">#properties hold:                                                                </span>
+<span class="c1">#</span>
+<span class="c1"># 1 ( T(\mathbf{u} + \mathbf{v}) = T(\mathbf{u}) + T(\mathbf{v}) )               </span>
+<span class="c1"># 2 ( T(c\mathbf{u}) = cT(\mathbf{u}) )                                          </span>
+<span class="c1">#</span>
+<span class="c1">#While linear transformations themselves are not vectors, they can be represented</span>
+<span class="c1">#by matrices when considering finite-dimensional vector spaces.                  </span>
 </pre></div>
 </div>
 </div>
@@ -7602,13 +7715,66 @@ a.anchor-link {
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output" data-mime-type="text/html" tabindex="0">
-<h2>Vector Spaces</h2>
+<h2>Vector Spaces</h2><p>A vector space is is a set of vectors with two operations:</p> <ul> <li>addition</li> <li>scalar multiplication</li> </ul>        These operations satisfy the following axioms:
+
+<table border="1">
+<tr>
+<th 50%;"="" style="width: 30%;&gt;Name of Vector Space Axiom&lt;/th&gt;
+    &lt;th style=" width:="">Explanation</th>
+<th>Mathematical Notation</th>
+</tr>
+<tr>
+<td>Closure under Addition</td>
+<td style="width: 50%;">The sum of any two vectors is also a vector in the same space.</td>
+<td>\(\mathbf{u} + \mathbf{v} \in V\)</td>
+</tr>
+<tr>
+<td>Associativity of Addition</td>
+<td style="width: 50%;">The way in which vectors are grouped in addition does not change the result.</td>
+<td>\((\mathbf{u} + \mathbf{v}) + \mathbf{w} = \mathbf{u} + (\mathbf{v} + \mathbf{w})\)</td>
+</tr>
+<tr>
+<td>Identity Element of Addition</td>
+<td style="width: 50%;">There exists a zero vector such that adding it to any vector does not change the vector.</td>
+<td>\(\mathbf{v} + \mathbf{0} = \mathbf{v}\)</td>
+</tr>
+<tr>
+<td>Inverse Elements of Addition</td>
+<td style="width: 50%;">For every vector, there exists an inverse vector such that their sum is the zero vector.</td>
+<td>\(\mathbf{v} + (-\mathbf{v}) = \mathbf{0}\)</td>
+</tr>
+<tr>
+<td>Closure under Scalar Multiplication</td>
+<td style="width: 50%;">The product of a scalar and a vector is also a vector in the same space.</td>
+<td>\(a\mathbf{v} \in V\)</td>
+</tr>
+<tr>
+<td>Distributive Property of Scalar Multiplication with respect to Vector Addition</td>
+<td style="width: 50%;">Scalar multiplication distributes over vector addition.</td>
+<td>\(a(\mathbf{u} + \mathbf{v}) = a\mathbf{u} + a\mathbf{v}\)</td>
+</tr>
+<tr>
+<td>Distributive Property of Scalar Multiplication with respect to Field Addition</td>
+<td style="width: 50%;">Scalar addition distributes over scalar multiplication.</td>
+<td>\((a + b)\mathbf{v} = a\mathbf{v} + b\mathbf{v}\)</td>
+</tr>
+<tr>
+<td>Associativity of Scalar Multiplication</td>
+<td style="width: 50%;">The way in which scalars are grouped in multiplication does not change the result.</td>
+<td>\(a(b\mathbf{v}) = (ab)\mathbf{v}\)</td>
+</tr>
+<tr>
+<td>Identity Element of Scalar Multiplication</td>
+<td style="width: 50%;">Multiplying a vector by one does not change the vector.</td>
+<td>\(1\mathbf{v} = \mathbf{v}\)</td>
+</tr>
+</table>
 </div>
 </div>
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output" data-mime-type="text/html" tabindex="0">
-\(V\) is a vector space.
+We define \(V\) as a vector space.
 </div>
 </div>
 <div class="jp-OutputArea-child">
@@ -7620,13 +7786,19 @@ a.anchor-link {
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output" data-mime-type="text/html" tabindex="0">
-\(T: V \rightarrow V\) is a linear transformation
+A linear transformation is a function or mapping between two vector spaces that preserves the operations of vector addition and scalar multiplication.
 </div>
 </div>
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output" data-mime-type="text/html" tabindex="0">
-A linear transformation is not a vector, but rather a function or mapping between two vector spaces that preserves the operations of vector addition and scalar multiplication.
+We define \(T: V \rightarrow V\) as a linear transformation that preserves the vector space.
+</div>
+</div>
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output" data-mime-type="text/html" tabindex="0">
+<h2>Eigenvectors and Eigenvalues</h2>
 </div>
 </div>
 <div class="jp-OutputArea-child">
@@ -7645,48 +7817,6 @@ A linear transformation is not a vector, but rather a function or mapping betwee
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output" data-mime-type="text/html" tabindex="0">
 \(\lambda\) is an eigenvalue of \(T\)
-</div>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=56df04e4">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [5]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-<div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="n">A</span> <span class="n">linear</span> <span class="n">transformation</span> <span class="ow">is</span> <span class="ow">not</span> <span class="n">a</span> <span class="n">vector</span><span class="p">,</span> <span class="n">but</span> <span class="n">rather</span> <span class="n">a</span> <span class="n">function</span> <span class="ow">or</span> <span class="n">mapping</span>       
-<span class="n">between</span> <span class="n">two</span> <span class="n">vector</span> <span class="n">spaces</span> <span class="n">that</span> <span class="n">preserves</span> <span class="n">the</span> <span class="n">operations</span> <span class="n">of</span> <span class="n">vector</span> <span class="n">addition</span> <span class="ow">and</span>  
-<span class="n">scalar</span> <span class="n">multiplication</span><span class="o">.</span> <span class="n">In</span> <span class="n">mathematical</span> <span class="n">terms</span><span class="p">,</span> <span class="k">if</span> <span class="p">(</span> <span class="n">T</span><span class="p">:</span> <span class="n">V</span> \<span class="n">rightarrow</span> <span class="n">W</span> <span class="p">)</span> <span class="ow">is</span> <span class="n">a</span>    
-<span class="n">linear</span> <span class="n">transformation</span> <span class="n">between</span> <span class="n">vector</span> <span class="n">spaces</span> <span class="p">(</span> <span class="n">V</span> <span class="p">)</span> <span class="ow">and</span> <span class="p">(</span> <span class="n">W</span> <span class="p">),</span> <span class="n">then</span> <span class="k">for</span> <span class="nb">any</span>       
-<span class="n">vectors</span> <span class="p">(</span> \<span class="n">mathbf</span><span class="p">{</span><span class="n">u</span><span class="p">},</span> \<span class="n">mathbf</span><span class="p">{</span><span class="n">v</span><span class="p">}</span> \<span class="ow">in</span> <span class="n">V</span> <span class="p">)</span> <span class="ow">and</span> <span class="nb">any</span> <span class="n">scalar</span> <span class="p">(</span> <span class="n">c</span> <span class="p">),</span> <span class="n">the</span> <span class="n">following</span>    
-<span class="n">properties</span> <span class="n">hold</span><span class="p">:</span>                                                                
-
- <span class="mi">1</span> <span class="p">(</span> <span class="n">T</span><span class="p">(</span>\<span class="n">mathbf</span><span class="p">{</span><span class="n">u</span><span class="p">}</span> <span class="o">+</span> \<span class="n">mathbf</span><span class="p">{</span><span class="n">v</span><span class="p">})</span> <span class="o">=</span> <span class="n">T</span><span class="p">(</span>\<span class="n">mathbf</span><span class="p">{</span><span class="n">u</span><span class="p">})</span> <span class="o">+</span> <span class="n">T</span><span class="p">(</span>\<span class="n">mathbf</span><span class="p">{</span><span class="n">v</span><span class="p">})</span> <span class="p">)</span>               
- <span class="mi">2</span> <span class="p">(</span> <span class="n">T</span><span class="p">(</span><span class="n">c</span>\<span class="n">mathbf</span><span class="p">{</span><span class="n">u</span><span class="p">})</span> <span class="o">=</span> <span class="n">cT</span><span class="p">(</span>\<span class="n">mathbf</span><span class="p">{</span><span class="n">u</span><span class="p">})</span> <span class="p">)</span>                                          
-
-<span class="n">While</span> <span class="n">linear</span> <span class="n">transformations</span> <span class="n">themselves</span> <span class="n">are</span> <span class="ow">not</span> <span class="n">vectors</span><span class="p">,</span> <span class="n">they</span> <span class="n">can</span> <span class="n">be</span> <span class="n">represented</span>
-<span class="n">by</span> <span class="n">matrices</span> <span class="n">when</span> <span class="n">considering</span> <span class="n">finite</span><span class="o">-</span><span class="n">dimensional</span> <span class="n">vector</span> <span class="n">spaces</span><span class="o">.</span>                  
-</pre></div>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr" tabindex="0">
-<pre>
-<span class="ansi-cyan-fg">  Cell </span><span class="ansi-green-fg">In[5], line 1</span>
-<span class="ansi-red-fg">    A linear transformation is not a vector, but rather a function or mapping</span>
-      ^
-<span class="ansi-red-fg">SyntaxError</span><span class="ansi-red-fg">:</span> invalid syntax
-</pre>
 </div>
 </div>
 </div>
