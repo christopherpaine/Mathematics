@@ -32,7 +32,7 @@ not_identity_matrix = r"""\(
 \end{bmatrix}
 \)"""
 
-
+not_inverse_matrix = r"\( AB = BA = I \)"
 
 # %%
 wrd_identity_matrix = "<p>An identity matrix is a square matrix with ones on the main diagonal and zeros elsewhere, serving as the multiplicative identity in matrix algebra.</p>"       
