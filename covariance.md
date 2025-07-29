@@ -57,5 +57,11 @@ model-driven.
 display(HTML(wrd_covariance))
 
 
+
+
+
+
+
+
 ```
 

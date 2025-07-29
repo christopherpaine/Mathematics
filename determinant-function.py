@@ -47,6 +47,12 @@ reduction. A non-zero determinant indicates that the matrix is invertible, while
 a zero determinant means it is singular.                                        </p>
 """
 
+wrd_invertible_functions = """ hi  """
+
+
+
 # %%
 display(HTML(wrd_intro))
+
+
 
