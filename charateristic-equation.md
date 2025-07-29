@@ -22,8 +22,25 @@ import pandas as pd
 from io import StringIO
 
 
+```
+
+```python
+not_char_eqn = r"\( \text{det}(A - \lambda I) = 0 \)" 
+```
 
 
+```python
+wrd_intro_chrct_eqn =""" <h1>Understanding the Characteristic Equation</h1>
+
+<p>The characteristic equation is a fundamental concept in linear algebra and      differential equations. It is derived from a square matrix and is used to find  the eigenvalues of that matrix. For a given ( n \times n ) matrix ( A ), the    characteristic equation is obtained by setting the determinant of ( A - \lambda I ) to zero, where ( \lambda ) represents the eigenvalues and ( I ) is the      identity matrix of the same dimension as ( A ). Mathematically, it is expressed as:                                                                             </p>"""
+
+
+wrd_sovling_char = "Solving this equation yields the eigenvalues, which are crucial for understanding the properties of the matrix, such as stability and oscillatory behavior in systems." 
+```
+
+
+```python
+display(HTML(wrd_intro_chrct_eqn+not_char_eqn+wrd_sovling_char)
 
 
 
