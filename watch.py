@@ -24,10 +24,10 @@ def watch_directory(path='.'):
                 run_bash_command("jupyter nbconvert --to html " + remove_file_extension(modified[0])+".ipynb" + " --output "+ remove_file_extension(modified[0])+ ".html")
                 run_bash_command("jupyter nbconvert --to html --no-input --no-prompt " +remove_file_extension(modified[0])+".ipynb" + " --output "+ remove_file_extension(modified[0]) + "-clean.html")
                 print("done  -  in 15 seconds will push to github and take snapshots of timestamps")
+                time.sleep(15)
                 run_bash_command("git add .")
                 run_bash_command("git commit -m '.'")
                 run_bash_command("git push")
-                time.sleep(15)
                 after = {f: os.path.getmtime(f) for f in os.listdir(path)}
                 added = [f for f in after if f not in before]
                 removed = [f for f in before if f not in after]
