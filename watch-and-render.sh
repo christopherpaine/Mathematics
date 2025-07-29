@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-NOTEBOOK="eigenvalues_and_eigenvectors.ipynb"
+NOTEBOOK="covariance.ipynb"
 BASENAME="${NOTEBOOK%.ipynb}"
 
 echo "Watching /${BASENAME}.py for changes..."
