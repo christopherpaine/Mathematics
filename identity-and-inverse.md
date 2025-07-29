@@ -43,7 +43,10 @@ wrd_inverse_matrix = "<p>An inverse matrix is a matrix that, when multiplied by 
 
 
 wrd_det_zero ="<p>A matrix is invertible if and only if its determinant is non-zero.</p>"
+
+wrd_practical_uses_inverse_matrix = "<p>In practical terms, an invertible matrix allows for the solution of linear equations and transformations to be reversed.</p>"
 ```
+
 
 ```python
 display(HTML('<a href="https://christopherpaine.github.io/Mathematics">link home</a>'))
