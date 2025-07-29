@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-NOTEBOOK="covariance.ipynb"
+NOTEBOOK="determinant-function.ipynb"
 BASENAME="${NOTEBOOK%.ipynb}"
 
 echo "Watching /${BASENAME}.py for changes..."
