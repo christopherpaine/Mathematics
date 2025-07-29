@@ -37,7 +37,7 @@ wrd_sovling_char = "Solving this equation yields the eigenvalues, which are cruc
 
 
 # %%
-display(HTML(wrd_intro_chrct_eqn+not_char_eqn+wrd_sovling_char)
+display(HTML(wrd_intro_chrct_eqn+not_char_eqn+wrd_sovling_char))
 
 
 
