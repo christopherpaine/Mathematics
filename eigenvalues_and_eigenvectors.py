@@ -6,7 +6,7 @@
 #       extension: .py
 #       format_name: percent
 #       format_version: '1.3'
-#       jupytext_version: 1.16.4
+#       jupytext_version: 1.17.2
 #   kernelspec:
 #     display_name: Python 3 (ipykernel)
 #     language: python
@@ -117,6 +117,7 @@ wrd_v_TV_parralell = not_Tv + " & " + not_v + " are parallel if: " + eqn_tv_lamd
 wrd_lamda_eigenvalue = not_lamda + " is an eigenvalue of " + not_T
 
 # %%
+display(HTML('<a href="https://christopherpaine.github.io/Mathematics">link home</a>'))
 display(HTML(wrd_vector_spaces_intro))
 display(HTML(wrd_V_vector_space))
 display(HTML(wrd_linear_transformation_intro))
