@@ -52,6 +52,7 @@ wrd_invertible_functions = """ hi  """
 
 
 # %%
+display(HTML('<a href="https://christopherpaine.github.io/Mathematics">link home</a>'))
 display(HTML(wrd_intro))
 
 

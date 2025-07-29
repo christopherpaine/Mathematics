@@ -55,6 +55,7 @@ wrd_invertible_functions = """ hi  """
 ```
 
 ```python
+display(HTML('<a href="https://christopherpaine.github.io/Mathematics">link home</a>'))
 display(HTML(wrd_intro))
 
 
