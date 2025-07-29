@@ -39,6 +39,7 @@ wrd_sovling_char = "Solving this equation yields the eigenvalues, which are cruc
 
 
 # %%
+display(HTML('<a href="https://christopherpaine.github.io/Mathematics">link home</a>'))
 display(HTML(wrd_intro_chrct_eqn+not_char_eqn+wrd_sovling_char))
 
 
