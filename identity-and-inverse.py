@@ -41,6 +41,9 @@ wrd_identity_matrix = "<p>An identity matrix is a square matrix with ones on the
 
 wrd_inverse_matrix = "<p>An inverse matrix is a matrix that, when multiplied by the original matrix, results in the identity matrix, effectively 'undoing' the effect of the original matrix.</p>" 
 
+
+wrd_det_zero ="A matrix is invertible if and only if its determinant is non-zero."
+
 # %%
 display(HTML("<h2>Identity Matrix</h2>"))
 display(HTML(wrd_identity_matrix))
