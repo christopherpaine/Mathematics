@@ -52,6 +52,7 @@ model-driven.
 
 
 # %%
+display(HTML('<a href="https://christopherpaine.github.io/Mathematics">link home</a>'))
 display(HTML(wrd_covariance))
 
 
