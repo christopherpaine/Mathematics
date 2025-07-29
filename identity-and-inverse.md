@@ -44,5 +44,6 @@ wrd_identity_matrix = "An identity matrix is a square matrix with ones on the ma
 ```
 
 ```python
+display(HTML(wrd_identity_matrix))
 display(HTML(not_identity_matrix))
 ```
