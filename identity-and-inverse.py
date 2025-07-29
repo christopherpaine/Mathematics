@@ -37,8 +37,6 @@ not_inverse_matrix = r"\( AB = BA = I \)"
 # %%
 wrd_identity_matrix = "<p>An identity matrix is a square matrix with ones on the main diagonal and zeros elsewhere, serving as the multiplicative identity in matrix algebra.</p>"       
 
-
-
 wrd_inverse_matrix = "<p>An inverse matrix is a matrix that, when multiplied by the original matrix, results in the identity matrix, effectively 'undoing' the effect of the original matrix.</p>" 
 
 
