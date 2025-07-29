@@ -43,6 +43,7 @@ wrd_inverse_matrix = "<p>An inverse matrix is a matrix that, when multiplied by 
 wrd_det_zero ="<p>A matrix is invertible if and only if its determinant is non-zero.</p>"
 
 # %%
+display(HTML('<a href="https://christopherpaine.github.io/Mathematics">link home</a>'))
 display(HTML("<h2>Identity Matrix</h2>"))
 display(HTML(wrd_identity_matrix))
 display(HTML(not_identity_matrix))
