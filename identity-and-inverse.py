@@ -39,6 +39,7 @@ wrd_identity_matrix = "<p>An identity matrix is a square matrix with ones on the
 
 
 
+wrd_inverse_matrix = "<p>An inverse matrix is a matrix that, when multiplied by the original matrix, results in the identity matrix, effectively 'undoing' the effect of the original matrix.</p>" 
 
 # %%
 display(HTML("<h2>Identity Matrix</h2>"))
