@@ -51,6 +51,6 @@ display(HTML(wrd_identity_matrix))
 display(HTML(not_identity_matrix))
 display(HTML("<h2>Inverse Matrix</h2>"))
 display(HTML(wrd_inverse_matrix))
-display(HTML(not_identity_matrix))
+display(HTML(not_inverse_matrix))
 display(HTML(wrd_det_zero))
 ```
