@@ -33,7 +33,7 @@ def watch_directory(path='.'):
                 removed = [f for f in before if f not in after]
                 modified = [f for f in after if f in before and before[f] != after[f]]
         before = after
-
+        print("waiting...")
 
 
 def run_bash_command(command):

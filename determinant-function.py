@@ -23,7 +23,7 @@ from io import StringIO
 
 
 # %%
-not_example_matrix = r"\( \begin{bmatrix} a & b \ c & d \ \end{bmatrix}\)" 
+not_example_matrix = r"\( \begin{bmatrix} a & b \\ c & d \\ \end{bmatrix}\)" 
 
 
 
