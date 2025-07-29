@@ -35,11 +35,13 @@ not_identity_matrix = r"""\(
 
 
 # %%
-wrd_identity_matrix = "An identity matrix is a square matrix with ones on the main diagonal and zeros elsewhere, serving as the multiplicative identity in matrix algebra."       
+wrd_identity_matrix = "<p>An identity matrix is a square matrix with ones on the main diagonal and zeros elsewhere, serving as the multiplicative identity in matrix algebra.</p>"       
 
 
 
 
 # %%
+display(HTML("<h2>Identity Matrix</h2>"))
 display(HTML(wrd_identity_matrix))
 display(HTML(not_identity_matrix))
+display(HTML("<h2>Inverse Matrix</h2>"))

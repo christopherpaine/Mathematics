@@ -7558,7 +7558,7 @@ a.anchor-link {
 <div class="jp-InputPrompt jp-InputArea-prompt">In [3]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="n">wrd_identity_matrix</span> <span class="o">=</span> <span class="s2">"An identity matrix is a square matrix with ones on the main diagonal and zeros elsewhere, serving as the multiplicative identity in matrix algebra."</span>       
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">wrd_identity_matrix</span> <span class="o">=</span> <span class="s2">"&lt;p&gt;An identity matrix is a square matrix with ones on the main diagonal and zeros elsewhere, serving as the multiplicative identity in matrix algebra.&lt;/p&gt;"</span>       
 </pre></div>
 </div>
 </div>
@@ -7572,8 +7572,10 @@ a.anchor-link {
 <div class="jp-InputPrompt jp-InputArea-prompt">In [4]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="n">display</span><span class="p">(</span><span class="n">HTML</span><span class="p">(</span><span class="n">wrd_identity_matrix</span><span class="p">))</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">display</span><span class="p">(</span><span class="n">HTML</span><span class="p">(</span><span class="s2">"&lt;h2&gt;Identity Matrix&lt;/h2&gt;"</span><span class="p">))</span>
+<span class="n">display</span><span class="p">(</span><span class="n">HTML</span><span class="p">(</span><span class="n">wrd_identity_matrix</span><span class="p">))</span>
 <span class="n">display</span><span class="p">(</span><span class="n">HTML</span><span class="p">(</span><span class="n">not_identity_matrix</span><span class="p">))</span>
+<span class="n">display</span><span class="p">(</span><span class="n">HTML</span><span class="p">(</span><span class="s2">"&lt;h2&gt;Inverse Matrix&lt;/h2&gt;"</span><span class="p">))</span>
 </pre></div>
 </div>
 </div>
@@ -7586,7 +7588,13 @@ a.anchor-link {
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output" data-mime-type="text/html" tabindex="0">
-An identity matrix is a square matrix with ones on the main diagonal and zeros elsewhere, serving as the multiplicative identity in matrix algebra.
+<h2>Identity Matrix</h2>
+</div>
+</div>
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output" data-mime-type="text/html" tabindex="0">
+<p>An identity matrix is a square matrix with ones on the main diagonal and zeros elsewhere, serving as the multiplicative identity in matrix algebra.</p>
 </div>
 </div>
 <div class="jp-OutputArea-child">
@@ -7600,6 +7608,12 @@ An identity matrix is a square matrix with ones on the main diagonal and zeros e
 0 &amp; 0 &amp; 0 &amp; 1 \\
 \end{bmatrix}
 \)
+</div>
+</div>
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output" data-mime-type="text/html" tabindex="0">
+<h2>Inverse Matrix</h2>
 </div>
 </div>
 </div>
