@@ -23,8 +23,16 @@ from io import StringIO
 import notation as ntn
 
 
+
 ```
 
 ```python
-display(HTML(ntn.foward_rate))
+
+
+
+
+
+
+
 ```
+

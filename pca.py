@@ -24,5 +24,13 @@ import notation as ntn
 
 
 
+
 # %%
-display(HTML(ntn.foward_rate))
+
+
+
+
+
+
+
+

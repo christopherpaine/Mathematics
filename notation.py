@@ -49,7 +49,7 @@ eqn_associativity_of_additions = r"\((\mathbf{u} + \mathbf{v}) + \mathbf{w} = \m
 
 # %%
 # MATHEMATICAL FINANCE
-not_forward_rate
+not_forward_rate = r"\(F(t,S,T)\)" 
 
 
 
