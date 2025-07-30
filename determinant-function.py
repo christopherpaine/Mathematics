@@ -20,7 +20,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 import pandas as pd
 from io import StringIO
-
+import notation as ntn
 
 # %%
 not_example_matrix = r"\( \begin{bmatrix} a & b \\ c & d \\ \end{bmatrix}\)" 
