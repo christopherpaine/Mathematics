@@ -49,10 +49,11 @@ eqn_associativity_of_additions = r"\((\mathbf{u} + \mathbf{v}) + \mathbf{w} = \m
 
 # %%
 # MATHEMATICAL FINANCE
-not_zero_coupon_bond_price = r"B(t,T)"
+not_zero_coupon_bond_price = r"\(B(t,T)\)"
 not_forward_rate = r"\(F(t,S,T)\)" 
-not_spot_rate = r"R(t,t)"
+not_spot_rate = r"\(R(t,t)\)"
 
+eqn_spot_rate_zero_coupon_price = r"\(R(t,t)= \frac{-1}{T-t}\log{B(t,T)} \forall \, t < T"
 
 
 
