@@ -29,7 +29,7 @@ wrd_V_vector_space = "We define " + ntn.not_V + " as a <a href='./vector-spaces-
 #----------------------------------------------------------
 #----------------------------------------------------------
 wrd_eigen_intro = "<h2>Eigenvectors and Eigenvalues</h2>"
-wrd_v_TV_parralell = ntn.not_Tv + " & " + ntn.not_v + " are parallel if: " + .ntn.eqn_tv_lamdav
+wrd_v_TV_parralell = ntn.not_Tv + " & " + ntn.not_v + " are parallel if: " + ntn.eqn_tv_lamdav
 wrd_lamda_eigenvalue = ntn.not_lamda + " is an eigenvalue of " + ntn.not_T
 
 wrd_aka = "<h2>aka</h2>"+"<p>Eigenvalues are also known as proper values or characteristic values.</p>"+"<p>Eigenvectors are also known as proper vectors or characteristic vectors</p>"
