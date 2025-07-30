@@ -24,18 +24,18 @@ import notation as ntn
 ```
 
 ```python
-HTML("""    .circle {
-      width: 28px;
-      height: 28px;
-      border-radius: 50%;
-      background-color: #444;
-      color: #fff;
-      text-align: center;
-      line-height: 28px;
-      font-weight: bold;
-      margin-left: 10px;
-      flex-shrink: 0;
-    }
+HTML("""  <style>  .circle {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    background-color: #444;
+    color: #fff;
+    text-align: center;
+    line-height: 28px;
+    font-weight: bold;
+    margin-left: 10px;
+    flex-shrink: 0;
+    }</style>
      """
 )
 
