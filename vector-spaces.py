@@ -23,9 +23,6 @@ from io import StringIO
 import notation as ntn
 
 
-
-
-
 # %%
 wrd_vector_spaces_intro = "<h2>Vector Spaces</h2>"\
         + "<p>A vector space is is a set of vectors with two operations:</p>"\

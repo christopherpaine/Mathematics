@@ -21,11 +21,8 @@ import matplotlib.pyplot as plt
 import pandas as pd
 from io import StringIO
 import notation as ntn
-
-
-
-
 ```
+
 
 ```python
 wrd_vector_spaces_intro = "<h2>Vector Spaces</h2>"\
