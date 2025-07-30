@@ -48,5 +48,7 @@ display(HTML(ntn.not_forward_rate + " is the forward rate at time t for delivery
 
 
 
+
+
 ```
 
