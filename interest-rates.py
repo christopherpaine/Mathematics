@@ -22,4 +22,7 @@ import pandas as pd
 from io import StringIO
 import notation as ntn
 
+# %%
+display(HTML(ntn.foward_rate))
+
 
