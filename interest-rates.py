@@ -23,6 +23,6 @@ from io import StringIO
 import notation as ntn
 
 # %%
-display(HTML(ntn.not_foward_rate))
+display(HTML(ntn.not_foward_rate + "is the forward rate at time t for delivery between T and S"))
 
 
