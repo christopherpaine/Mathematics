@@ -24,6 +24,8 @@ import notation as ntn
 
 # %%
 display(HTML("<h1>Interest Rates</h1>"))
+display(HTML("<h2>Zero Coupon Bond</h2>"))
+display(HTML(ntn.zero_coupon_bond))
 display(HTML("<h2>Spot Rate</h2>"))
 display(HTML(ntn.not_spot_rate))
 display(HTML("<h2>forward rate</h2>"))
