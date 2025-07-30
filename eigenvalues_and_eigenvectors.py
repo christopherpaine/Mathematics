@@ -6,7 +6,7 @@
 #       extension: .py
 #       format_name: percent
 #       format_version: '1.3'
-#       jupytext_version: 1.17.2
+#       jupytext_version: 1.16.4
 #   kernelspec:
 #     display_name: Python 3 (ipykernel)
 #     language: python
@@ -68,7 +68,7 @@ display(HTML(ntn.not_v_exists_in_v))
 display(HTML(wrd_v_TV_parralell))
 display(HTML(wrd_lamda_eigenvalue))
 display(HTML(wrd_aka))
-display(HTML((wrd_eigenvalue_intuitive_interpretation))
+display(HTML(wrd_eigenvalue_intuitive_interpretation))
 
 
 

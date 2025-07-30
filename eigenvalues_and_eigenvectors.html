@@ -7312,7 +7312,6 @@ a.anchor-link {
                     processEnvironments: true
                 },
                 displayAlign: 'center',
-                messageStyle: 'none',
                 CommonHTML: {
                     linebreaks: {
                     automatic: true
@@ -7510,7 +7509,7 @@ a.anchor-link {
 </style>
 <!-- End of mermaid configuration --></head>
 <body class="jp-Notebook" data-jp-theme-light="true" data-jp-theme-name="JupyterLab Light">
-<main><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=2bde2967">
+<main><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=0f35b9ac">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -7519,18 +7518,18 @@ a.anchor-link {
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># imports</span>
-<span class="kn">from</span><span class="w"> </span><span class="nn">IPython.display</span><span class="w"> </span><span class="kn">import</span> <span class="n">display</span><span class="p">,</span> <span class="n">Markdown</span><span class="p">,</span> <span class="n">HTML</span><span class="p">,</span> <span class="n">SVG</span>
-<span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
-<span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
-<span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
-<span class="kn">from</span><span class="w"> </span><span class="nn">io</span><span class="w"> </span><span class="kn">import</span> <span class="n">StringIO</span>
-<span class="kn">import</span><span class="w"> </span><span class="nn">notation</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">ntn</span>
+<span class="kn">from</span> <span class="nn">IPython.display</span> <span class="kn">import</span> <span class="n">display</span><span class="p">,</span> <span class="n">Markdown</span><span class="p">,</span> <span class="n">HTML</span><span class="p">,</span> <span class="n">SVG</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="kn">from</span> <span class="nn">io</span> <span class="kn">import</span> <span class="n">StringIO</span>
+<span class="kn">import</span> <span class="nn">notation</span> <span class="k">as</span> <span class="nn">ntn</span>
 </pre></div>
 </div>
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=b830889a">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=2a6fa105">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -7572,7 +7571,7 @@ a.anchor-link {
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=121c20f7">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=6792d280">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -7590,7 +7589,7 @@ a.anchor-link {
 <span class="n">display</span><span class="p">(</span><span class="n">HTML</span><span class="p">(</span><span class="n">wrd_v_TV_parralell</span><span class="p">))</span>
 <span class="n">display</span><span class="p">(</span><span class="n">HTML</span><span class="p">(</span><span class="n">wrd_lamda_eigenvalue</span><span class="p">))</span>
 <span class="n">display</span><span class="p">(</span><span class="n">HTML</span><span class="p">(</span><span class="n">wrd_aka</span><span class="p">))</span>
-<span class="n">display</span><span class="p">(</span><span class="n">HTML</span><span class="p">((</span><span class="n">wrd_eigenvalue_intuitive_interpretation</span><span class="p">))</span>
+<span class="n">display</span><span class="p">(</span><span class="n">HTML</span><span class="p">(</span><span class="n">wrd_eigenvalue_intuitive_interpretation</span><span class="p">))</span>
 </pre></div>
 </div>
 </div>
@@ -7602,13 +7601,68 @@ a.anchor-link {
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr" tabindex="0">
-<pre>
-  <span class="ansi-cyan-fg">Cell</span><span class="ansi-cyan-fg"> </span><span class="ansi-green-fg">In[3]</span><span class="ansi-green-fg">, line 12</span>
-<span class="ansi-red-fg">    </span>
-    ^
-<span class="ansi-red-fg">_IncompleteInputError</span><span class="ansi-red-fg">:</span> incomplete input
-</pre>
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output" data-mime-type="text/html" tabindex="0">
+<a href="https://christopherpaine.github.io/Mathematics">link home</a>
+</div>
+</div>
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output" data-mime-type="text/html" tabindex="0">
+We define \(V\) as a <a href="./vector-spaces-clean.html">vector space</a>.
+</div>
+</div>
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output" data-mime-type="text/html" tabindex="0">
+<h2>Eigenvectors and Eigenvalues</h2>
+</div>
+</div>
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output" data-mime-type="text/html" tabindex="0">
+\(\mathbf{v} \in V\)
+</div>
+</div>
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output" data-mime-type="text/html" tabindex="0">
+\(T\mathbf{v}\) &amp; \(\mathbf{v}\) are parallel if: \(T\mathbf{v}=\lambda \mathbf{v}\)
+</div>
+</div>
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output" data-mime-type="text/html" tabindex="0">
+\(\lambda\) is an eigenvalue of \(T\)
+</div>
+</div>
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output" data-mime-type="text/html" tabindex="0">
+<h2>aka</h2><p>Eigenvalues are also known as proper values or characteristic values.</p><p>Eigenvectors are also known as proper vectors or characteristic vectors</p>
+</div>
+</div>
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output" data-mime-type="text/html" tabindex="0">
+
+Eigenvalues are like a condensed summary of a matrix’s key directional effects. Here’s how:
+
+    A matrix (especially a square one) transforms vectors — rotating, stretching, squashing, or reflecting them.
+
+    The eigenvectors are the directions that stay pointing the same way under that transformation.
+
+    The eigenvalues are how much those directions are stretched or squashed — the scaling factor.
+
+So instead of looking at the full matrix and trying to interpret every entry, the eigenvalues tell you how strong the transformation is in each fundamental direction. They capture:
+
+    Total variance (in PCA, the sum of eigenvalues = total variance)
+
+    Dominant behaviors (e.g., in differential equations or dynamic systems, the largest eigenvalue often governs stability)
+
+    Symmetry and structure (e.g., repeated eigenvalues suggest degeneracy or symmetry)
+
+Think of eigenvalues as a compressed signal: you lose the full detail of the matrix but keep its most important behavioral features.
+
 </div>
 </div>
 </div>
