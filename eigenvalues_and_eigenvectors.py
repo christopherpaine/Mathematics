@@ -116,6 +116,9 @@ wrd_eigen_intro = "<h2>Eigenvectors and Eigenvalues</h2>"
 wrd_v_TV_parralell = not_Tv + " & " + not_v + " are parallel if: " + eqn_tv_lamdav
 wrd_lamda_eigenvalue = not_lamda + " is an eigenvalue of " + not_T
 
+wrd_aka = "<h2>aka</h2>"+"<p>Eigenvalues are also known as proper values or characteristic values.</p>"+"<p>Eigenvectors are also known as proper vectors or characteristic vectors</p>"
+
+
 # %%
 display(HTML('<a href="https://christopherpaine.github.io/Mathematics">link home</a>'))
 display(HTML(wrd_vector_spaces_intro))
@@ -132,6 +135,7 @@ display(HTML(wrd_eigen_intro))
 display(HTML(not_v_exists_in_v))
 display(HTML(wrd_v_TV_parralell))
 display(HTML(wrd_lamda_eigenvalue))
+display(HTML(wrd_aka))
 
 
 ## %%
