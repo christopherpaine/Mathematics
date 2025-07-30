@@ -25,19 +25,20 @@ import notation as ntn
 
 ```python
 HTML("""  <style>  .circle {
-    width: 28px;
-    height: 28px;
+    width: 18px;
+    height: 18px;
     border-radius: 50%;
     background-color: #444;
     color: #fff;
     text-align: center;
-    line-height: 28px;
+    line-height: 18px;
     font-weight: bold;
     margin-left: 10px;
     flex-shrink: 0;
     }</style>
      """
 )
+
 
 
 
