@@ -42,6 +42,12 @@ lgc_out_of_sample = [
 ]
 
 
+lgc_adjacent_points_on_curve_do_not_move_independently = [
+"adjacent points on the yield curve do not move independently",
+"why is this-when considering the forward yield curve specifically"
+
+        ]        
+
 # %%
 
 

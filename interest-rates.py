@@ -58,7 +58,7 @@ display(HTML(fns.f_create_flex_columns(ntn.eqn_spt_rate_forward_rate , "<div cla
 display(HTML("<h2>forward rate</h2>"))
 display(HTML(ntn.not_forward_rate + " is the forward rate at time t for delivery between T and S"))
 display(HTML("<h2>Comments</h2>"))
-display(HTML("From equation <span class='circle'>3</span> we see that spot rates are in effect the average of forward rates.  This would suggest that a spot yield curve would be smoother than the implied forward yield curve.")) 
+display(HTML("From equation<span class='circle'>3</span> we see that spot rates are in effect the average of forward rates.  This would suggest that a spot yield curve would be smoother than the implied forward yield curve.")) 
 
 
 
