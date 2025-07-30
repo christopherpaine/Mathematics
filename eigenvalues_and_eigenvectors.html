@@ -7553,104 +7553,12 @@ a.anchor-link {
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=b4e6ed45">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [3]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-<div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="n">wrd_vector_spaces_intro</span> <span class="o">=</span> <span class="s2">"&lt;h2&gt;Vector Spaces&lt;/h2&gt;"</span>\
-        <span class="o">+</span> <span class="s2">"&lt;p&gt;A vector space is is a set of vectors with two operations:&lt;/p&gt;"</span>\
-        <span class="o">+</span> <span class="s2">"</span><span class="se">\</span>
-<span class="s2">        &lt;ul&gt;</span><span class="se">\</span>
-<span class="s2">            &lt;li&gt;addition&lt;/li&gt;</span><span class="se">\</span>
-<span class="s2">            &lt;li&gt;scalar multiplication&lt;/li&gt;</span><span class="se">\</span>
-<span class="s2">        &lt;/ul&gt;</span><span class="se">\</span>
-<span class="s2">        "</span>\
-        <span class="o">+</span> <span class="s2">"These operations satisfy the following axioms:"</span> <span class="o">+</span> <span class="s2">"""</span>
-
-<span class="s2">&lt;table border="1"&gt;</span>
-<span class="s2">  &lt;tr&gt;</span>
-<span class="s2">    &lt;th style="width: 30%;&gt;Name of Vector Space Axiom&lt;/th&gt;</span>
-<span class="s2">    &lt;th style="width: 50%;"&gt;Explanation&lt;/th&gt;</span>
-<span class="s2">    &lt;th&gt;Mathematical Notation&lt;/th&gt;</span>
-<span class="s2">  &lt;/tr&gt;</span>
-<span class="s2">  &lt;tr&gt;</span>
-<span class="s2">    &lt;td&gt;Closure under Addition&lt;/td&gt;</span>
-<span class="s2">    &lt;td style="width: 50%;"&gt;The sum of any two vectors is also a vector in the same space.&lt;/td&gt;</span>
-<span class="s2">    &lt;td&gt;\(\mathbf</span><span class="si">{u}</span><span class="s2"> + \mathbf</span><span class="si">{v}</span><span class="s2"> \in V\)&lt;/td&gt;</span>
-<span class="s2">  &lt;/tr&gt;</span>
-<span class="s2">  &lt;tr&gt;</span>
-<span class="s2">    &lt;td&gt;Associativity of Addition&lt;/td&gt;</span>
-<span class="s2">    &lt;td style="width: 50%;"&gt;The way in which vectors are grouped in addition does not change the result.&lt;/td&gt;</span>
-<span class="s2">    &lt;td&gt;\((\mathbf</span><span class="si">{u}</span><span class="s2"> + \mathbf</span><span class="si">{v}</span><span class="s2">) + \mathbf</span><span class="si">{w}</span><span class="s2"> = \mathbf</span><span class="si">{u}</span><span class="s2"> + (\mathbf</span><span class="si">{v}</span><span class="s2"> + \mathbf</span><span class="si">{w}</span><span class="s2">)\)&lt;/td&gt;</span>
-<span class="s2">  &lt;/tr&gt;</span>
-<span class="s2">  &lt;tr&gt;</span>
-<span class="s2">    &lt;td&gt;Identity Element of Addition&lt;/td&gt;</span>
-<span class="s2">    &lt;td style="width: 50%;"&gt;There exists a zero vector such that adding it to any vector does not change the vector.&lt;/td&gt;</span>
-<span class="s2">    &lt;td&gt;\(\mathbf</span><span class="si">{v}</span><span class="s2"> + \mathbf</span><span class="si">{0}</span><span class="s2"> = \mathbf</span><span class="si">{v}</span><span class="s2">\)&lt;/td&gt;</span>
-<span class="s2">  &lt;/tr&gt;</span>
-<span class="s2">  &lt;tr&gt;</span>
-<span class="s2">    &lt;td&gt;Inverse Elements of Addition&lt;/td&gt;</span>
-<span class="s2">    &lt;td style="width: 50%;"&gt;For every vector, there exists an inverse vector such that their sum is the zero vector.&lt;/td&gt;</span>
-<span class="s2">    &lt;td&gt;\(\mathbf</span><span class="si">{v}</span><span class="s2"> + (-\mathbf</span><span class="si">{v}</span><span class="s2">) = \mathbf</span><span class="si">{0}</span><span class="s2">\)&lt;/td&gt;</span>
-<span class="s2">  &lt;/tr&gt;</span>
-<span class="s2">  &lt;tr&gt;</span>
-<span class="s2">    &lt;td&gt;Closure under Scalar Multiplication&lt;/td&gt;</span>
-<span class="s2">    &lt;td style="width: 50%;"&gt;The product of a scalar and a vector is also a vector in the same space.&lt;/td&gt;</span>
-<span class="s2">    &lt;td&gt;\(a\mathbf</span><span class="si">{v}</span><span class="s2"> \in V\)&lt;/td&gt;</span>
-<span class="s2">  &lt;/tr&gt;</span>
-<span class="s2">  &lt;tr&gt;</span>
-<span class="s2">    &lt;td&gt;Distributive Property of Scalar Multiplication with respect to Vector Addition&lt;/td&gt;</span>
-<span class="s2">    &lt;td style="width: 50%;"&gt;Scalar multiplication distributes over vector addition.&lt;/td&gt;</span>
-<span class="s2">    &lt;td&gt;\(a(\mathbf</span><span class="si">{u}</span><span class="s2"> + \mathbf</span><span class="si">{v}</span><span class="s2">) = a\mathbf</span><span class="si">{u}</span><span class="s2"> + a\mathbf</span><span class="si">{v}</span><span class="s2">\)&lt;/td&gt;</span>
-<span class="s2">  &lt;/tr&gt;</span>
-<span class="s2">  &lt;tr&gt;</span>
-<span class="s2">    &lt;td&gt;Distributive Property of Scalar Multiplication with respect to Field Addition&lt;/td&gt;</span>
-<span class="s2">    &lt;td style="width: 50%;"&gt;Scalar addition distributes over scalar multiplication.&lt;/td&gt;</span>
-<span class="s2">    &lt;td&gt;\((a + b)\mathbf</span><span class="si">{v}</span><span class="s2"> = a\mathbf</span><span class="si">{v}</span><span class="s2"> + b\mathbf</span><span class="si">{v}</span><span class="s2">\)&lt;/td&gt;</span>
-<span class="s2">  &lt;/tr&gt;</span>
-<span class="s2">  &lt;tr&gt;</span>
-<span class="s2">    &lt;td&gt;Associativity of Scalar Multiplication&lt;/td&gt;</span>
-<span class="s2">    &lt;td style="width: 50%;"&gt;The way in which scalars are grouped in multiplication does not change the result.&lt;/td&gt;</span>
-<span class="s2">    &lt;td&gt;\(a(b\mathbf</span><span class="si">{v}</span><span class="s2">) = (ab)\mathbf</span><span class="si">{v}</span><span class="s2">\)&lt;/td&gt;</span>
-<span class="s2">  &lt;/tr&gt;</span>
-<span class="s2">  &lt;tr&gt;</span>
-<span class="s2">    &lt;td&gt;Identity Element of Scalar Multiplication&lt;/td&gt;</span>
-<span class="s2">    &lt;td style="width: 50%;"&gt;Multiplying a vector by one does not change the vector.&lt;/td&gt;</span>
-<span class="s2">    &lt;td&gt;\(1\mathbf</span><span class="si">{v}</span><span class="s2"> = \mathbf</span><span class="si">{v}</span><span class="s2">\)&lt;/td&gt;</span>
-<span class="s2">  &lt;/tr&gt;</span>
-<span class="s2">&lt;/table&gt;</span>
-<span class="s2">"""</span>
-</pre></div>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr" tabindex="0">
-<pre>&lt;&gt;:20: SyntaxWarning: invalid escape sequence '\('
-&lt;&gt;:20: SyntaxWarning: invalid escape sequence '\('
-/tmp/nix-shell-150985-0/ipykernel_361304/2316754505.py:20: SyntaxWarning: invalid escape sequence '\('
-  &lt;td&gt;\(\mathbf{u} + \mathbf{v} \in V\)&lt;/td&gt;
-</pre>
-</div>
-</div>
-</div>
-</div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=121c20f7">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [4]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [3]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">wrd_V_vector_space</span> <span class="o">=</span> <span class="s2">"We define "</span> <span class="o">+</span> <span class="n">not_V</span> <span class="o">+</span> <span class="s2">" as a vector space."</span>
@@ -7674,11 +7582,10 @@ a.anchor-link {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [5]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [4]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">display</span><span class="p">(</span><span class="n">HTML</span><span class="p">(</span><span class="s1">'&lt;a href="https://christopherpaine.github.io/Mathematics"&gt;link home&lt;/a&gt;'</span><span class="p">))</span>
-<span class="n">display</span><span class="p">(</span><span class="n">HTML</span><span class="p">(</span><span class="n">wrd_vector_spaces_intro</span><span class="p">))</span>
 <span class="n">display</span><span class="p">(</span><span class="n">HTML</span><span class="p">(</span><span class="n">wrd_V_vector_space</span><span class="p">))</span>
 <span class="n">display</span><span class="p">(</span><span class="n">HTML</span><span class="p">(</span><span class="n">wrd_linear_transformation_intro</span><span class="p">))</span>
 
@@ -7721,65 +7628,6 @@ a.anchor-link {
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output" data-mime-type="text/html" tabindex="0">
 <a href="https://christopherpaine.github.io/Mathematics">link home</a>
-</div>
-</div>
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output" data-mime-type="text/html" tabindex="0">
-<h2>Vector Spaces</h2><p>A vector space is is a set of vectors with two operations:</p> <ul> <li>addition</li> <li>scalar multiplication</li> </ul>        These operations satisfy the following axioms:
-
-<table border="1">
-<tr>
-<th 50%;"="" style="width: 30%;&gt;Name of Vector Space Axiom&lt;/th&gt;
-    &lt;th style=" width:="">Explanation</th>
-<th>Mathematical Notation</th>
-</tr>
-<tr>
-<td>Closure under Addition</td>
-<td style="width: 50%;">The sum of any two vectors is also a vector in the same space.</td>
-<td>\(\mathbf{u} + \mathbf{v} \in V\)</td>
-</tr>
-<tr>
-<td>Associativity of Addition</td>
-<td style="width: 50%;">The way in which vectors are grouped in addition does not change the result.</td>
-<td>\((\mathbf{u} + \mathbf{v}) + \mathbf{w} = \mathbf{u} + (\mathbf{v} + \mathbf{w})\)</td>
-</tr>
-<tr>
-<td>Identity Element of Addition</td>
-<td style="width: 50%;">There exists a zero vector such that adding it to any vector does not change the vector.</td>
-<td>\(\mathbf{v} + \mathbf{0} = \mathbf{v}\)</td>
-</tr>
-<tr>
-<td>Inverse Elements of Addition</td>
-<td style="width: 50%;">For every vector, there exists an inverse vector such that their sum is the zero vector.</td>
-<td>\(\mathbf{v} + (-\mathbf{v}) = \mathbf{0}\)</td>
-</tr>
-<tr>
-<td>Closure under Scalar Multiplication</td>
-<td style="width: 50%;">The product of a scalar and a vector is also a vector in the same space.</td>
-<td>\(a\mathbf{v} \in V\)</td>
-</tr>
-<tr>
-<td>Distributive Property of Scalar Multiplication with respect to Vector Addition</td>
-<td style="width: 50%;">Scalar multiplication distributes over vector addition.</td>
-<td>\(a(\mathbf{u} + \mathbf{v}) = a\mathbf{u} + a\mathbf{v}\)</td>
-</tr>
-<tr>
-<td>Distributive Property of Scalar Multiplication with respect to Field Addition</td>
-<td style="width: 50%;">Scalar addition distributes over scalar multiplication.</td>
-<td>\((a + b)\mathbf{v} = a\mathbf{v} + b\mathbf{v}\)</td>
-</tr>
-<tr>
-<td>Associativity of Scalar Multiplication</td>
-<td style="width: 50%;">The way in which scalars are grouped in multiplication does not change the result.</td>
-<td>\(a(b\mathbf{v}) = (ab)\mathbf{v}\)</td>
-</tr>
-<tr>
-<td>Identity Element of Scalar Multiplication</td>
-<td style="width: 50%;">Multiplying a vector by one does not change the vector.</td>
-<td>\(1\mathbf{v} = \mathbf{v}\)</td>
-</tr>
-</table>
 </div>
 </div>
 <div class="jp-OutputArea-child">
