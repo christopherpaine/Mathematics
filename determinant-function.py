@@ -22,8 +22,6 @@ import pandas as pd
 from io import StringIO
 import notation as ntn
 
-# %%
-not_example_matrix = r"\( \begin{bmatrix} a & b \\ c & d \\ \end{bmatrix}\)" 
 
 
 
@@ -40,7 +38,7 @@ square matrix. It provides important properties of the matrix, such as whether
 the matrix is invertible and the volume scaling factor of the linear            
 transformation described by the matrix. For a 2x2 matrix:                       
     </p>
-""" + not_example_matrix + """
+""" + ntn.not_example_matrix + """
 <p>The determinant is calculated as (ad - bc). For larger matrices, the determinant
 is computed using more complex methods, such as Laplace's expansion or row      
 reduction. A non-zero determinant indicates that the matrix is invertible, while

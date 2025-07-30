@@ -16,3 +16,7 @@ eqn_associativity_of_additions = r"\((\mathbf{u} + \mathbf{v}) + \mathbf{w} = \m
 
 
 not_example_matrix = r"\( \begin{bmatrix} a & b \\ c & d \\ \end{bmatrix}\)" 
+
+
+
+not_char_eqn = r"\( \text{det}(A - \lambda I) = 0 \)" 
