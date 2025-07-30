@@ -25,6 +25,8 @@ import notation as ntn
 
 ```python
 display(HTML(ntn.not_foward_rate + "is the forward rate at time t for delivery between T and S"))
-```
 
+
+
+```
 
