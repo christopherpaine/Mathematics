@@ -57,7 +57,7 @@ display(HTML(ntn.eqn_spot_rate_zero_coupon_price))
 display(HTML(fns.f_create_flex_columns(ntn.eqn_spt_rate_forward_rate , "<div class='circle'>3</div>")))
 display(HTML("<h2>forward rate</h2>"))
 display(HTML(ntn.not_forward_rate + " is the forward rate at time t for delivery between T and S"))
-
+display(HTML("<h2>Comments</h2>"))
 
 
 
