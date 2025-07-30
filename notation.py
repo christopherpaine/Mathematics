@@ -55,7 +55,7 @@ not_spot_rate = r"\(R(t,t)\)"
 
 eqn_spot_rate_zero_coupon_price = r"\(R(t,T)= \frac{-1}{T-t}\log{B(t,T)} \forall \, t < T\)"
 eqn_zero_coupon_price_spot_rate = r"\(B(t,T)= \exp{(T-t)B(t,T)} \forall \, t < T\)"
-eqn_spt_rate_forward_rate = r"\((1+R(t,T))=(1+R(t-1,T-1).(1+F(t,S,T)\)"
+eqn_spt_rate_forward_rate = r"(1 + R(t, T))^T = (1 + R(t, T - 1))^{T - 1} \cdot (1 + F(t, T - 1, T))"
 
 
 
