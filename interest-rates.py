@@ -23,6 +23,6 @@ from io import StringIO
 import notation as ntn
 
 # %%
-display(HTML(ntn.foward_rate))
+display(HTML(ntn.not_foward_rate))
 
 
