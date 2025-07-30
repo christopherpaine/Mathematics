@@ -23,9 +23,6 @@ from io import StringIO
 import notation as ntn
 
 
-
-
-
 # %%
 
 wrd_intro = """
