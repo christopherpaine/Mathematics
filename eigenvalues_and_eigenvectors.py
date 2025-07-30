@@ -25,7 +25,7 @@ import notation as ntn
 
 
 # %%
-wrd_V_vector_space = "We define " + ntn.not_V + " as a vector space."
+wrd_V_vector_space = "We define " + ntn.not_V + " as a <a href='./vector-spaces-clean.html'>vector space</a>."
 #----------------------------------------------------------
 wrd_linear_transformation_intro = "<h2>Linear Transformations</h2>"
 wrd_T_linear_transformation = "We define " + ntn.not_transformation + " as a linear transformation that preserves the vector space."
