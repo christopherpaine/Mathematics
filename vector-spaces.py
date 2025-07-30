@@ -20,7 +20,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 import pandas as pd
 from io import StringIO
-import notation
+import notation as ntn
 
 # %%
 not_V = r"\(V\)"
@@ -106,7 +106,7 @@ wrd_vector_spaces_intro = "<h2>Vector Spaces</h2>"\
 
 
 # %%
-wrd_V_vector_space = "We define " + not_V + " as a vector space."
+wrd_V_vector_space = "We define " + ntn.not_V + " as a vector space."
 #----------------------------------------------------------
 
 # %%
