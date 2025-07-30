@@ -27,9 +27,6 @@ import notation as ntn
 # %%
 wrd_V_vector_space = "We define " + ntn.not_V + " as a <a href='./vector-spaces-clean.html'>vector space</a>."
 #----------------------------------------------------------
-wrd_linear_transformation_intro = "<h2>Linear Transformations</h2>"
-wrd_T_linear_transformation = "We define " + ntn.not_transformation + " as a linear transformation that preserves the vector space."
-wrd_defn_linear_transformation = "A linear transformation is a function or mapping between two vector spaces that preserves the operations of vector addition and scalar multiplication."
 #----------------------------------------------------------
 wrd_eigen_intro = "<h2>Eigenvectors and Eigenvalues</h2>"
 wrd_v_TV_parralell = ntn.not_Tv + " & " + ntn.not_v + " are parallel if: " + .ntn.eqn_tv_lamdav
@@ -41,11 +38,6 @@ wrd_aka = "<h2>aka</h2>"+"<p>Eigenvalues are also known as proper values or char
 # %%
 display(HTML('<a href="https://christopherpaine.github.io/Mathematics">link home</a>'))
 display(HTML(wrd_V_vector_space))
-display(HTML(wrd_linear_transformation_intro))
-
-
-display(HTML(wrd_defn_linear_transformation))
-display(HTML(wrd_T_linear_transformation))
 
 
 
@@ -56,16 +48,4 @@ display(HTML(wrd_lamda_eigenvalue))
 display(HTML(wrd_aka))
 
 
-## %%
-#A linear transformation is not a vector, but rather a function or mapping       
-#between two vector spaces that preserves the operations of vector addition and  
-#scalar multiplication. In mathematical terms, if ( T: V \rightarrow W ) is a    
-#linear transformation between vector spaces ( V ) and ( W ), then for any       
-#vectors ( \mathbf{u}, \mathbf{v} \in V ) and any scalar ( c ), the following    
-#properties hold:                                                                
-#
-# 1 ( T(\mathbf{u} + \mathbf{v}) = T(\mathbf{u}) + T(\mathbf{v}) )               
-# 2 ( T(c\mathbf{u}) = cT(\mathbf{u}) )                                          
-#
-#While linear transformations themselves are not vectors, they can be represented
-#by matrices when considering finite-dimensional vector spaces.                  
+
