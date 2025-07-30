@@ -44,3 +44,20 @@ not_lamda = r"\(\lambda\)"
 
 eqn_tv_lamdav = r"\(T\mathbf{v}=\lambda \mathbf{v}\)"
 eqn_associativity_of_additions = r"\((\mathbf{u} + \mathbf{v}) + \mathbf{w} = \mathbf{u} + (\mathbf{v} + \mathbf{w})\)"
+
+
+
+# %%
+# MATHEMATICAL FINANCE
+not_forward_rate
+
+
+
+
+
+
+
+
+
+
+

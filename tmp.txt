@@ -1,34 +1,4 @@
-i
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="styles.css">
-    <style>
-        .container {
-            display: flex;
-            flex-wrap: wrap;
-        }
-        .column {
-            flex: 1;
-            min-width: 300px;
-            padding: 10px;
-        }
-    </style>
-</head>
-<body>
-    <header>
-        <h1>Wlcome to Chris' Math Notes</h1>
-        <i>
-          it's still early days...
-        </i>
-    </header>
-
-
-<main class="container">
-    <div class="column">
+    <main>
         <section>
             <h2>Linear Algebra</h2>
             <a href="./vector-spaces-clean.html">Vector Spaces</a>
@@ -38,8 +8,6 @@ i
             <a href="./eigenvalues_and_eigenvectors-clean.html"><p>eigenvalues & eigenvectors</p></a>
             <a href="./determinant-function-clean.html">determinant function</a>
         </section>
-    </div>
-    <div class="column">
         <section>
             <h2>Statistics</h2>
             <a href="./covariance-clean.html"><p>Co-variance</p></a>
@@ -47,24 +15,10 @@ i
         <section>
             <h2>Principal Component Analysis</h2>
             <a href="./pca.py">Principal Component Analysis</a>
-            <h2>Mathematical Finance</h2>
-            <a href="./interest-rates.py">Interest Rates</a>
         </section>
-    </div>
-    <div class="column">
         <section>
             <h2>Some reading that i'm doing at the moment....</h2>
             <a href="https://www.moodys.com/web/en/us/insights/resources/2014-29-08-pca-for-yield-curve-modelling.pdf">Moodys pdf of principal component analysis</a>&nbsp<a href="./pca-moodys-takeaways.py">some takeaways</a>
         </section>
-    </div>
-</main>
-
-
+    </main> 
     <footer>
-        <p>&copy; 2025 C. J. Paine</p>
-    </footer>
-    <script src="script.js"></script>
-</body>
-</html>
-
-
