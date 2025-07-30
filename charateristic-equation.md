@@ -20,14 +20,11 @@ import numpy as np
 import matplotlib.pyplot as plt
 import pandas as pd
 from io import StringIO
+import notation as ntn
+
 
 
 ```
-
-```python
-not_char_eqn = r"\( \text{det}(A - \lambda I) = 0 \)" 
-```
-
 
 ```python
 wrd_intro_chrct_eqn =""" <h1>Understanding the Characteristic Equation</h1>
@@ -43,7 +40,7 @@ wrd_sovling_char = "Solving this equation yields the eigenvalues, which are cruc
 
 ```python
 display(HTML('<a href="https://christopherpaine.github.io/Mathematics">link home</a>'))
-display(HTML(wrd_intro_chrct_eqn+not_char_eqn+wrd_sovling_char))
+display(HTML(wrd_intro_chrct_eqn+ntn.not_char_eqn+wrd_sovling_char))
 
 
 
