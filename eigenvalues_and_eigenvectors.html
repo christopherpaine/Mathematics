@@ -7524,12 +7524,13 @@ a.anchor-link {
 <span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
 <span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
 <span class="kn">from</span><span class="w"> </span><span class="nn">io</span><span class="w"> </span><span class="kn">import</span> <span class="n">StringIO</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">notation</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">ntn</span>
 </pre></div>
 </div>
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=b830889a">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=b830889a">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -7537,39 +7538,15 @@ a.anchor-link {
 <div class="jp-InputPrompt jp-InputArea-prompt">In [2]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="n">not_V</span> <span class="o">=</span> <span class="sa">r</span><span class="s2">"\(V\)"</span>
-<span class="n">not_T</span> <span class="o">=</span> <span class="sa">r</span><span class="s2">"\(T\)"</span>
-<span class="n">not_transformation</span> <span class="o">=</span> <span class="sa">r</span><span class="s2">"\(T: V \rightarrow V\)"</span>
-<span class="n">not_v_exists_in_v</span> <span class="o">=</span> <span class="sa">r</span><span class="s2">"\(\mathbf</span><span class="si">{v}</span><span class="s2"> \in V\)"</span>
-<span class="n">not_Tv</span> <span class="o">=</span> <span class="sa">r</span><span class="s2">"\(T\mathbf</span><span class="si">{v}</span><span class="s2">\)"</span>
-<span class="n">not_v</span> <span class="o">=</span> <span class="sa">r</span><span class="s2">"\(\mathbf</span><span class="si">{v}</span><span class="s2">\)"</span>
-<span class="n">not_lamda</span> <span class="o">=</span> <span class="sa">r</span><span class="s2">"\(\lambda\)"</span>
-
-
-<span class="n">eqn_tv_lamdav</span> <span class="o">=</span> <span class="sa">r</span><span class="s2">"\(T\mathbf</span><span class="si">{v}</span><span class="s2">=\lambda \mathbf</span><span class="si">{v}</span><span class="s2">\)"</span>
-<span class="n">eqn_associativity_of_additions</span> <span class="o">=</span> <span class="sa">r</span><span class="s2">"\((\mathbf</span><span class="si">{u}</span><span class="s2"> + \mathbf</span><span class="si">{v}</span><span class="s2">) + \mathbf</span><span class="si">{w}</span><span class="s2"> = \mathbf</span><span class="si">{u}</span><span class="s2"> + (\mathbf</span><span class="si">{v}</span><span class="s2"> + \mathbf</span><span class="si">{w}</span><span class="s2">)\)"</span>
-</pre></div>
-</div>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=121c20f7">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [3]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-<div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="n">wrd_V_vector_space</span> <span class="o">=</span> <span class="s2">"We define "</span> <span class="o">+</span> <span class="n">not_V</span> <span class="o">+</span> <span class="s2">" as a vector space."</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">wrd_V_vector_space</span> <span class="o">=</span> <span class="s2">"We define "</span> <span class="o">+</span> <span class="n">ntn</span><span class="o">.</span><span class="n">not_V</span> <span class="o">+</span> <span class="s2">" as a vector space."</span>
 <span class="c1">#----------------------------------------------------------</span>
 <span class="n">wrd_linear_transformation_intro</span> <span class="o">=</span> <span class="s2">"&lt;h2&gt;Linear Transformations&lt;/h2&gt;"</span>
-<span class="n">wrd_T_linear_transformation</span> <span class="o">=</span> <span class="s2">"We define "</span> <span class="o">+</span> <span class="n">not_transformation</span> <span class="o">+</span> <span class="s2">" as a linear transformation that preserves the vector space."</span>
+<span class="n">wrd_T_linear_transformation</span> <span class="o">=</span> <span class="s2">"We define "</span> <span class="o">+</span> <span class="n">ntn</span><span class="o">.</span><span class="n">not_transformation</span> <span class="o">+</span> <span class="s2">" as a linear transformation that preserves the vector space."</span>
 <span class="n">wrd_defn_linear_transformation</span> <span class="o">=</span> <span class="s2">"A linear transformation is a function or mapping between two vector spaces that preserves the operations of vector addition and scalar multiplication."</span>
 <span class="c1">#----------------------------------------------------------</span>
 <span class="n">wrd_eigen_intro</span> <span class="o">=</span> <span class="s2">"&lt;h2&gt;Eigenvectors and Eigenvalues&lt;/h2&gt;"</span>
-<span class="n">wrd_v_TV_parralell</span> <span class="o">=</span> <span class="n">not_Tv</span> <span class="o">+</span> <span class="s2">" &amp; "</span> <span class="o">+</span> <span class="n">not_v</span> <span class="o">+</span> <span class="s2">" are parallel if: "</span> <span class="o">+</span> <span class="n">eqn_tv_lamdav</span>
-<span class="n">wrd_lamda_eigenvalue</span> <span class="o">=</span> <span class="n">not_lamda</span> <span class="o">+</span> <span class="s2">" is an eigenvalue of "</span> <span class="o">+</span> <span class="n">not_T</span>
+<span class="n">wrd_v_TV_parralell</span> <span class="o">=</span> <span class="n">ntn</span><span class="o">.</span><span class="n">not_Tv</span> <span class="o">+</span> <span class="s2">" &amp; "</span> <span class="o">+</span> <span class="n">ntn</span><span class="o">.</span><span class="n">not_v</span> <span class="o">+</span> <span class="s2">" are parallel if: "</span> <span class="o">+</span> <span class="o">.</span><span class="n">ntn</span><span class="o">.</span><span class="n">eqn_tv_lamdav</span>
+<span class="n">wrd_lamda_eigenvalue</span> <span class="o">=</span> <span class="n">ntn</span><span class="o">.</span><span class="n">not_lamda</span> <span class="o">+</span> <span class="s2">" is an eigenvalue of "</span> <span class="o">+</span> <span class="n">ntn</span><span class="o">.</span><span class="n">not_T</span>
 
 <span class="n">wrd_aka</span> <span class="o">=</span> <span class="s2">"&lt;h2&gt;aka&lt;/h2&gt;"</span><span class="o">+</span><span class="s2">"&lt;p&gt;Eigenvalues are also known as proper values or characteristic values.&lt;/p&gt;"</span><span class="o">+</span><span class="s2">"&lt;p&gt;Eigenvectors are also known as proper vectors or characteristic vectors&lt;/p&gt;"</span>
 </pre></div>
@@ -7577,12 +7554,29 @@ a.anchor-link {
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=42c73bdb">
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr" tabindex="0">
+<pre>
+  <span class="ansi-cyan-fg">Cell</span><span class="ansi-cyan-fg"> </span><span class="ansi-green-fg">In[2]</span><span class="ansi-green-fg">, line 8</span>
+<span class="ansi-red-fg">    </span><span class="ansi-red-fg">wrd_v_TV_parralell = ntn.not_Tv + " &amp; " + ntn.not_v + " are parallel if: " + .ntn.eqn_tv_lamdav</span>
+                                                                                 ^
+<span class="ansi-red-fg">SyntaxError</span><span class="ansi-red-fg">:</span> invalid syntax
+</pre>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=121c20f7">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [4]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [3]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">display</span><span class="p">(</span><span class="n">HTML</span><span class="p">(</span><span class="s1">'&lt;a href="https://christopherpaine.github.io/Mathematics"&gt;link home&lt;/a&gt;'</span><span class="p">))</span>
@@ -7596,7 +7590,7 @@ a.anchor-link {
 
 
 <span class="n">display</span><span class="p">(</span><span class="n">HTML</span><span class="p">(</span><span class="n">wrd_eigen_intro</span><span class="p">))</span>
-<span class="n">display</span><span class="p">(</span><span class="n">HTML</span><span class="p">(</span><span class="n">not_v_exists_in_v</span><span class="p">))</span>
+<span class="n">display</span><span class="p">(</span><span class="n">HTML</span><span class="p">(</span><span class="n">ntn</span><span class="o">.</span><span class="n">not_v_exists_in_v</span><span class="p">))</span>
 <span class="n">display</span><span class="p">(</span><span class="n">HTML</span><span class="p">(</span><span class="n">wrd_v_TV_parralell</span><span class="p">))</span>
 <span class="n">display</span><span class="p">(</span><span class="n">HTML</span><span class="p">(</span><span class="n">wrd_lamda_eigenvalue</span><span class="p">))</span>
 <span class="n">display</span><span class="p">(</span><span class="n">HTML</span><span class="p">(</span><span class="n">wrd_aka</span><span class="p">))</span>
@@ -7632,56 +7626,17 @@ a.anchor-link {
 </div>
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output" data-mime-type="text/html" tabindex="0">
-We define \(V\) as a vector space.
-</div>
-</div>
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output" data-mime-type="text/html" tabindex="0">
-<h2>Linear Transformations</h2>
-</div>
-</div>
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output" data-mime-type="text/html" tabindex="0">
-A linear transformation is a function or mapping between two vector spaces that preserves the operations of vector addition and scalar multiplication.
-</div>
-</div>
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output" data-mime-type="text/html" tabindex="0">
-We define \(T: V \rightarrow V\) as a linear transformation that preserves the vector space.
-</div>
-</div>
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output" data-mime-type="text/html" tabindex="0">
-<h2>Eigenvectors and Eigenvalues</h2>
-</div>
-</div>
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output" data-mime-type="text/html" tabindex="0">
-\(\mathbf{v} \in V\)
-</div>
-</div>
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output" data-mime-type="text/html" tabindex="0">
-\(T\mathbf{v}\) &amp; \(\mathbf{v}\) are parallel if: \(T\mathbf{v}=\lambda \mathbf{v}\)
-</div>
-</div>
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output" data-mime-type="text/html" tabindex="0">
-\(\lambda\) is an eigenvalue of \(T\)
-</div>
-</div>
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output" data-mime-type="text/html" tabindex="0">
-<h2>aka</h2><p>Eigenvalues are also known as proper values or characteristic values.</p><p>Eigenvectors are also known as proper vectors or characteristic vectors</p>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr" tabindex="0">
+<pre>
+<span class="ansi-red-fg">---------------------------------------------------------------------------</span>
+<span class="ansi-red-fg">NameError</span>                                 Traceback (most recent call last)
+<span class="ansi-cyan-fg">Cell</span><span class="ansi-cyan-fg"> </span><span class="ansi-green-fg">In[3]</span><span class="ansi-green-fg">, line 2</span>
+<span class="ansi-green-fg">      1</span> display(HTML(<span class="ansi-yellow-fg">'</span><span class="ansi-yellow-fg">&lt;a href=</span><span class="ansi-yellow-fg">"</span><span class="ansi-yellow-fg">https://christopherpaine.github.io/Mathematics</span><span class="ansi-yellow-fg">"</span><span class="ansi-yellow-fg">&gt;link home&lt;/a&gt;</span><span class="ansi-yellow-fg">'</span>))
+<span class="ansi-green-fg">----&gt; </span><span class="ansi-green-fg">2</span> display(HTML(<span class="ansi-yellow-bg">wrd_V_vector_space</span>))
+<span class="ansi-green-fg">      3</span> display(HTML(wrd_linear_transformation_intro))
+<span class="ansi-green-fg">      6</span> display(HTML(wrd_defn_linear_transformation))
+
+<span class="ansi-red-fg">NameError</span>: name 'wrd_V_vector_space' is not defined</pre>
 </div>
 </div>
 </div>
