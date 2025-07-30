@@ -7546,6 +7546,27 @@ a.anchor-link {
 <span class="n">wrd_lamda_eigenvalue</span> <span class="o">=</span> <span class="n">ntn</span><span class="o">.</span><span class="n">not_lamda</span> <span class="o">+</span> <span class="s2">" is an eigenvalue of "</span> <span class="o">+</span> <span class="n">ntn</span><span class="o">.</span><span class="n">not_T</span>
 
 <span class="n">wrd_aka</span> <span class="o">=</span> <span class="s2">"&lt;h2&gt;aka&lt;/h2&gt;"</span><span class="o">+</span><span class="s2">"&lt;p&gt;Eigenvalues are also known as proper values or characteristic values.&lt;/p&gt;"</span><span class="o">+</span><span class="s2">"&lt;p&gt;Eigenvectors are also known as proper vectors or characteristic vectors&lt;/p&gt;"</span>
+
+
+<span class="n">wrd_eigenvalue_intuitive_interpretation</span> <span class="o">=</span> <span class="s2">"""</span>
+<span class="s2">Eigenvalues are like a condensed summary of a matrix’s key directional effects. Here’s how:</span>
+
+<span class="s2">    A matrix (especially a square one) transforms vectors — rotating, stretching, squashing, or reflecting them.</span>
+
+<span class="s2">    The eigenvectors are the directions that stay pointing the same way under that transformation.</span>
+
+<span class="s2">    The eigenvalues are how much those directions are stretched or squashed — the scaling factor.</span>
+
+<span class="s2">So instead of looking at the full matrix and trying to interpret every entry, the eigenvalues tell you how strong the transformation is in each fundamental direction. They capture:</span>
+
+<span class="s2">    Total variance (in PCA, the sum of eigenvalues = total variance)</span>
+
+<span class="s2">    Dominant behaviors (e.g., in differential equations or dynamic systems, the largest eigenvalue often governs stability)</span>
+
+<span class="s2">    Symmetry and structure (e.g., repeated eigenvalues suggest degeneracy or symmetry)</span>
+
+<span class="s2">Think of eigenvalues as a compressed signal: you lose the full detail of the matrix but keep its most important behavioral features.</span>
+<span class="s2">"""</span>
 </pre></div>
 </div>
 </div>
@@ -7569,6 +7590,7 @@ a.anchor-link {
 <span class="n">display</span><span class="p">(</span><span class="n">HTML</span><span class="p">(</span><span class="n">wrd_v_TV_parralell</span><span class="p">))</span>
 <span class="n">display</span><span class="p">(</span><span class="n">HTML</span><span class="p">(</span><span class="n">wrd_lamda_eigenvalue</span><span class="p">))</span>
 <span class="n">display</span><span class="p">(</span><span class="n">HTML</span><span class="p">(</span><span class="n">wrd_aka</span><span class="p">))</span>
+<span class="n">display</span><span class="p">(</span><span class="n">HTML</span><span class="p">((</span><span class="n">wrd_eigenvalue_intuitive_interpretation</span><span class="p">))</span>
 </pre></div>
 </div>
 </div>
@@ -7580,44 +7602,13 @@ a.anchor-link {
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output" data-mime-type="text/html" tabindex="0">
-<a href="https://christopherpaine.github.io/Mathematics">link home</a>
-</div>
-</div>
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output" data-mime-type="text/html" tabindex="0">
-We define \(V\) as a <a href="./vector-spaces-clean.html">vector space</a>.
-</div>
-</div>
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output" data-mime-type="text/html" tabindex="0">
-<h2>Eigenvectors and Eigenvalues</h2>
-</div>
-</div>
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output" data-mime-type="text/html" tabindex="0">
-\(\mathbf{v} \in V\)
-</div>
-</div>
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output" data-mime-type="text/html" tabindex="0">
-\(T\mathbf{v}\) &amp; \(\mathbf{v}\) are parallel if: \(T\mathbf{v}=\lambda \mathbf{v}\)
-</div>
-</div>
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output" data-mime-type="text/html" tabindex="0">
-\(\lambda\) is an eigenvalue of \(T\)
-</div>
-</div>
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output" data-mime-type="text/html" tabindex="0">
-<h2>aka</h2><p>Eigenvalues are also known as proper values or characteristic values.</p><p>Eigenvectors are also known as proper vectors or characteristic vectors</p>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr" tabindex="0">
+<pre>
+  <span class="ansi-cyan-fg">Cell</span><span class="ansi-cyan-fg"> </span><span class="ansi-green-fg">In[3]</span><span class="ansi-green-fg">, line 12</span>
+<span class="ansi-red-fg">    </span>
+    ^
+<span class="ansi-red-fg">_IncompleteInputError</span><span class="ansi-red-fg">:</span> incomplete input
+</pre>
 </div>
 </div>
 </div>
