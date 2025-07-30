@@ -20,19 +20,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 import pandas as pd
 from io import StringIO
-
-
-# %%
-not_identity_matrix = r"""\(
-\begin{bmatrix}
-1 & 0 & 0 & 0 \\
-0 & 1 & 0 & 0 \\
-0 & 0 & 1 & 0 \\
-0 & 0 & 0 & 1 \\
-\end{bmatrix}
-\)"""
-
-not_inverse_matrix = r"\( AB = BA = I \)"
+import notation as ntn
 
 # %%
 wrd_identity_matrix = "<p>An identity matrix is a square matrix with ones on the main diagonal and zeros elsewhere, serving as the multiplicative identity in matrix algebra.</p>"       
@@ -49,8 +37,8 @@ wrd_practical_uses_inverse_matrix = "<p>In practical terms, an invertible matrix
 display(HTML('<a href="https://christopherpaine.github.io/Mathematics">link home</a>'))
 display(HTML("<h2>Identity Matrix</h2>"))
 display(HTML(wrd_identity_matrix))
-display(HTML(not_identity_matrix))
+display(HTML(ntn.not_identity_matrix))
 display(HTML("<h2>Inverse Matrix</h2>"))
 display(HTML(wrd_inverse_matrix))
-display(HTML(not_inverse_matrix))
+display(HTML(ntn.not_inverse_matrix))
 display(HTML(wrd_det_zero+wrd_practical_uses_inverse_matrix))

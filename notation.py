@@ -20,3 +20,16 @@ not_example_matrix = r"\( \begin{bmatrix} a & b \\ c & d \\ \end{bmatrix}\)"
 
 
 not_char_eqn = r"\( \text{det}(A - \lambda I) = 0 \)" 
+
+not_identity_matrix = r"""\(
+\begin{bmatrix}
+1 & 0 & 0 & 0 \\
+0 & 1 & 0 & 0 \\
+0 & 0 & 1 & 0 \\
+0 & 0 & 0 & 1 \\
+\end{bmatrix}
+\)"""
+
+not_inverse_matrix = r"\( AB = BA = I \)"
+
+
