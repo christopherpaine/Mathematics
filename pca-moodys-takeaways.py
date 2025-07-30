@@ -30,7 +30,7 @@ grm_out_of_sample = "out of sample yield curves  -  those not used in the analys
 grm_centering_scaling = "centering and scaling"
 grm_role_of_transformations = "role of transformations"
 grm_inverse_problem_determining_magnitudes = " inverse problem of determining pc magnitudes given a yield curve"
-
+grm_modelling_yield_curve_dynamics = "modelling yield curve dynamics  -  is this the same as modelling yield curve changes given a base curve"
 
 
 
