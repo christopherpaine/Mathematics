@@ -20,7 +20,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 import pandas as pd
 from io import StringIO
-
+import notation
 
 # %%
 not_V = r"\(V\)"
