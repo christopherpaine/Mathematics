@@ -36,7 +36,7 @@ import notation as ntn
 display(HTML("<h1>Interest Rates</h1>"))
 display(HTML("<h2>Zero Coupon Bond</h2>"))
 display(HTML(ntn.not_zero_coupon_bond_price))
-display(HTML(eqn_zero_coupon_price_spot_rate))
+display(HTML(ntn.eqn_zero_coupon_price_spot_rate))
 display(HTML("<h2>Spot Rate</h2>"))
 display(HTML(ntn.not_spot_rate))
 display(HTML(ntn.eqn_spot_rate_zero_coupon_price))
