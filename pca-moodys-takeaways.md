@@ -56,8 +56,32 @@ lgc_central_tendency = [
         ]        
 
 
+```
 
+```python
+# RHETORICAL STATEMENTS 
 rht_pc_intuitive = "intuitively, PCs represent ways in which the forward rates making up a yield curve can deviate from their mean levels"
+```
+
+
+```python
+# CRITICISMS
+
+crt_99_pct = [
+"it might be appropriate to use two PCs in a reduced model as these should cover around 99% of the yield curve variability",
+"this 99% seems arbitrary since my first run gave high 80% using a 50year dataset",
+"perhaps a shorter dataset is this reliable",
+
+]
+
+
+
+
+
+
+
+
+
 
 
 ```
@@ -77,7 +101,10 @@ display(HTML("<h2>rhetoric</h2>"))
 rhet_list = [s for s in fnc.list_variables(globals()) if s.startswith("rht")]                    
 for html in rhet_list:                                                         
      display(HTML(eval(html)))                                                                
-
+display(HTML("<h2>criticisms</h2>"))
+crt_list = [s for s in fnc.list_variables(globals()) if s.startswith("crt")]                    
+for html in crt_list:                                                         
+     display(HTML(fnc.combine_strings_with_heading(eval(html),3)))                                                                
 
 
 
