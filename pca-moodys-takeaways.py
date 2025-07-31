@@ -142,5 +142,3 @@ display(HTML("hi"))
 
 
 
-# %% [markdown]
-#
