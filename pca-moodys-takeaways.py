@@ -132,7 +132,7 @@ f_convert_string_vars_to_htmls("rht",2,"rhetoric")
 display(HTML("<h2>criticisms</h2>"))
 f_display_html_with_heading("crt",3)
 
-
+display(HTML("hi"))
 
 
 
