@@ -7588,12 +7588,13 @@ a.anchor-link {
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># RHETORICAL STATEMENTS </span>
 <span class="n">rht_pc_intuitive</span> <span class="o">=</span> <span class="s2">"intuitively, PCs represent ways in which the forward rates making up a yield curve can deviate from their mean levels"</span>
+<span class="n">rht_reproduce_if_keep_all_pcs</span> <span class="o">=</span>  <span class="s2">"A model including all of the PCs turns can perfectly reproduce all of the yield curves on which the PCA analysis was performed."</span>
 </pre></div>
 </div>
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=bb90e1b9">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=bb90e1b9">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -7610,39 +7611,12 @@ a.anchor-link {
 
 <span class="p">]</span>
 
-<span class="n">crt_simulating_curve_not_changes</span> <span class="p">[</span>
+<span class="n">crt_simulating_curve_not_changes</span> <span class="o">=</span> <span class="p">[</span>
 <span class="s2">"it looks like they are simulating the whole curve rather than modelling changes from one period to the next"</span><span class="p">,</span>
 <span class="s2">"as evidence by statement 'The solid black line is the mean yield curve at the 𝑡 = 1 projection horizon.'"</span>
+<span class="s2">"the chart with solid black line and the dotted black as movement suggests they are treating mean curve as the current yield curve which cannot see has pratical usage"</span><span class="p">,</span>
 <span class="p">]</span>
 </pre></div>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr" tabindex="0">
-<pre>
-<span class="ansi-red-fg">---------------------------------------------------------------------------</span>
-<span class="ansi-red-fg">NameError</span>                                 Traceback (most recent call last)
-Cell <span class="ansi-green-fg">In[5], line 10</span>
-<span class="ansi-green-intense-fg ansi-bold">      1</span> <span style="color: rgb(95,135,135)"># CRITICISMS</span>
-<span class="ansi-green-intense-fg ansi-bold">      3</span> crt_99_pct <span style="color: rgb(98,98,98)">=</span> [
-<span class="ansi-green-intense-fg ansi-bold">      4</span> <span style="color: rgb(175,0,0)">"</span><span style="color: rgb(175,0,0)">it might be appropriate to use two PCs in a reduced model as these should cover around 99</span><span class="ansi-bold" style="color: rgb(175,95,135)">% o</span><span style="color: rgb(175,0,0)">f the yield curve variability</span><span style="color: rgb(175,0,0)">"</span>,
-<span class="ansi-green-intense-fg ansi-bold">      5</span> <span style="color: rgb(175,0,0)">"</span><span style="color: rgb(175,0,0)">this 99</span><span class="ansi-bold" style="color: rgb(175,95,135)">% s</span><span style="color: rgb(175,0,0)">eems arbitrary since my first run gave high 80</span><span class="ansi-bold" style="color: rgb(175,95,135)">% u</span><span style="color: rgb(175,0,0)">sing a 50year dataset</span><span style="color: rgb(175,0,0)">"</span>,
-<span class="ansi-green-intense-fg ansi-bold">      6</span> <span style="color: rgb(175,0,0)">"</span><span style="color: rgb(175,0,0)">perhaps a shorter dataset is this reliable</span><span style="color: rgb(175,0,0)">"</span>,
-<span class="ansi-green-intense-fg ansi-bold">      7</span> 
-<span class="ansi-green-intense-fg ansi-bold">      8</span> ]
-<span class="ansi-green-fg">---&gt; 10</span> <span class="ansi-yellow-bg">crt_simulating_curve_not_changes</span> [
-<span class="ansi-green-intense-fg ansi-bold">     11</span> <span style="color: rgb(175,0,0)">"</span><span style="color: rgb(175,0,0)">it looks like they are simulating the whole curve rather than modelling changes from one period to the next</span><span style="color: rgb(175,0,0)">"</span>,
-<span class="ansi-green-intense-fg ansi-bold">     12</span> <span style="color: rgb(175,0,0)">"</span><span style="color: rgb(175,0,0)">as evidence by statement </span><span style="color: rgb(175,0,0)">'</span><span style="color: rgb(175,0,0)">The solid black line is the mean yield curve at the 𝑡 = 1 projection horizon.</span><span style="color: rgb(175,0,0)">'</span><span style="color: rgb(175,0,0)">"</span>
-<span class="ansi-green-intense-fg ansi-bold">     13</span> ]
-
-<span class="ansi-red-fg">NameError</span>: name 'crt_simulating_curve_not_changes' is not defined</pre>
 </div>
 </div>
 </div>
@@ -7762,6 +7736,12 @@ intuitively, PCs represent ways in which the forward rates making up a yield cur
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output" data-mime-type="text/html" tabindex="0">
+A model including all of the PCs turns can perfectly reproduce all of the yield curves on which the PCA analysis was performed.
+</div>
+</div>
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output" data-mime-type="text/html" tabindex="0">
 <h2>criticisms</h2>
 </div>
 </div>
@@ -7769,6 +7749,12 @@ intuitively, PCs represent ways in which the forward rates making up a yield cur
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output" data-mime-type="text/html" tabindex="0">
 <h3>it might be appropriate to use two PCs in a reduced model as these should cover around 99% of the yield curve variability</h3>this 99% seems arbitrary since my first run gave high 80% using a 50year dataset<br/>perhaps a shorter dataset is this reliable
+</div>
+</div>
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output" data-mime-type="text/html" tabindex="0">
+<h3>it looks like they are simulating the whole curve rather than modelling changes from one period to the next</h3>as evidence by statement 'The solid black line is the mean yield curve at the 𝑡 = 1 projection horizon.'the chart with solid black line and the dotted black as movement suggests they are treating mean curve as the current yield curve which cannot see has pratical usage
 </div>
 </div>
 </div>

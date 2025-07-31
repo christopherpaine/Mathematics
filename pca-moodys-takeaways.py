@@ -58,7 +58,7 @@ lgc_central_tendency = [
 # %%
 # RHETORICAL STATEMENTS 
 rht_pc_intuitive = "intuitively, PCs represent ways in which the forward rates making up a yield curve can deviate from their mean levels"
-
+rht_reproduce_if_keep_all_pcs =  "A model including all of the PCs turns can perfectly reproduce all of the yield curves on which the PCA analysis was performed."
 
 # %%
 # CRITICISMS
@@ -70,9 +70,10 @@ crt_99_pct = [
 
 ]
 
-crt_simulating_curve_not_changes [
+crt_simulating_curve_not_changes = [
 "it looks like they are simulating the whole curve rather than modelling changes from one period to the next",
 "as evidence by statement 'The solid black line is the mean yield curve at the 𝑡 = 1 projection horizon.'"
+"the chart with solid black line and the dotted black as movement suggests they are treating mean curve as the current yield curve which cannot see has pratical usage",
 ]
 
 
