@@ -39,11 +39,8 @@ HTML("""  <style>  .circle {
     }</style>
      """
 )
-
-
-
-
 ```
+
 
 ```python
 display(HTML("<h1>Interest Rates</h1>"))
