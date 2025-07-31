@@ -108,6 +108,17 @@ crt_simulating_curve_not_changes = [
 
 # %%
 
+
+HTML(
+"""
+h1, h2 {
+    font-weight: bold;
+}
+""")
+
+
+
+
 display(HTML("<h1>Rough notes on moodys paper</h1>"))
 f_convert_string_vars_to_htmls("grm",2,"grammar")
 f_convert_string_vars_to_htmls("popnsmpl",3,"populations and samples")
