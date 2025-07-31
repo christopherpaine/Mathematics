@@ -29,6 +29,7 @@ def f_display_html_with_heading(prefix, heading_level):
     for html in lst:
         display(HTML(fnc.combine_strings_with_heading(eval(html), heading_level)))
 
+
 # %%
 # GRAMMAR STATEMENTS 
 grm_centering_scaling = "centering and scaling"
@@ -102,17 +103,11 @@ crt_simulating_curve_not_changes = [
 
 display(HTML("<h1>Rough notes on moodys paper</h1>"))
 display(HTML("<h2>grammar</h2>"))
-filtered_list = [s for s in fnc.list_variables(globals()) if s.startswith("grm")]                    
-for html in filtered_list:                                                         
-     display(HTML(eval(html)))                                                                
+f_display_html_with_heading("grm",3)
 display(HTML("<h3>populations and samples</h3>"))
-
-
-
+f_display_html_with_heading("popnsmpl",3)
 display(HTML("<h2>logic</h2>"))
-logi_list = [s for s in fnc.list_variables(globals()) if s.startswith("lgc")]                    
-for html in logi_list:                                                         
-     display(HTML(fnc.combine_strings_with_heading(eval(html),3)))                                                                
+f_display_html_with_heading("lgc",3)
 display(HTML("<h2>rhetoric</h2>"))
 f_display_html_with_heading("rht",3)
 display(HTML("<h2>criticisms</h2>"))
@@ -125,4 +120,5 @@ f_display_html_with_heading("crt",3)
 
 
 
-
+# %% [markdown]
+#
