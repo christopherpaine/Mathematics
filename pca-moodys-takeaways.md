@@ -27,6 +27,7 @@ import functions as fnc
 ```
 
 ```python
+# GRAMMAR STATEMENTS 
 grm_out_of_sample = "out of sample yield curves  -  those not used in the analysis to derive yield curves"
 grm_centering_scaling = "centering and scaling"
 grm_role_of_transformations = "role of transformations"
@@ -34,7 +35,10 @@ grm_inverse_problem_determining_magnitudes = " inverse problem of determining pc
 grm_modelling_yield_curve_dynamics = "modelling yield curve dynamics  -  is this the same as modelling yield curve changes given a base curve"
 
 
+```
 
+```python
+# LOGIC LISTS
 lgc_out_of_sample = [
 "out of sample yield curves  -  those not used in the analysis to derive yield curves",
 "his is shown to potentially require many more PCs than we might first think.",
