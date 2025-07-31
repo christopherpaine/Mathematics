@@ -31,7 +31,7 @@ import functions as fnc
 HTML("""<style>
      h1, h2 {
          font-weight: 1000 !important;
-         color: red;
+         color: black;
          }
 
      h1 {
