@@ -73,6 +73,5 @@ display(HTML("<h2>rhetoric</h2>"))
 
 
 
-
 ```
 
