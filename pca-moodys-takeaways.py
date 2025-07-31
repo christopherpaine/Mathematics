@@ -66,6 +66,8 @@ popnsmpl_population = "population is the total population from which the sample 
 popnsmpl_sample_set = "data set on which the PCA is performed. For the examples presented in this paper this is just a set of absolute yield curves in terms of forward rates"
 popnsmpl_synthetic = fnc.f_wrap_in_span("i don't see purpose of synthetic population generation","darkred")
 
+
+
 # %%
 # LOGIC LISTS
 lgc_out_of_sample = [
@@ -130,6 +132,7 @@ display(HTML("<h1>Rough notes on moodys paper</h1>"))
 f_convert_string_vars_to_htmls("grm",2,"grammar")
 f_convert_string_vars_to_htmls("popnsmpl",3,"populations and samples")
 f_convert_string_vars_to_htmls("invprob",3,"inverse problem")
+f_convert_string_vars_to_htmls("datatrans",3,"inverse problem")
 display(HTML("<h2>logic</h2>"))
 f_display_html_with_heading("lgc",3)
 f_convert_string_vars_to_htmls("rht",2,"rhetoric")
