@@ -56,6 +56,8 @@ filtered_list = [s for s in fnc.list_variables(globals()) if s.startswith("grm")
 for html in filtered_list:                                                         
      display(HTML(html))                                                                
 display(HTML("<h2>logic</h2>"))
-```
 
+
+
+```
 
