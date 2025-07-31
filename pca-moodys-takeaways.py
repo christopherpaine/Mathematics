@@ -27,13 +27,13 @@ import functions as fnc
 
 # %%
 # GRAMMAR STATEMENTS 
-grm_out_of_sample = "out of sample yield curves  -  those not used in the analysis to derive yield curves"
 grm_centering_scaling = "centering and scaling"
 grm_role_of_transformations = "role of transformations"
 grm_inverse_problem_determining_magnitudes = " inverse problem of determining pc magnitudes given a yield curve"
 grm_modelling_yield_curve_dynamics = "modelling yield curve dynamics  -  is this the same as modelling yield curve changes given a base curve"
-grm_population = "population is the total population from which the sample set is obtained. For the examples in this paper this could also be called the universe of possible yield curves"
-grm_sample_set = "data set on which the PCA is performed. For the examples presented in this paper this is just a set of absolute yield curves in terms of forward rates"
+popnsmpl_out_of_sample = "out of sample yield curves  -  those not used in the analysis to derive yield curves"
+popnsmpl_population = "population is the total population from which the sample set is obtained. For the examples in this paper this could also be called the universe of possible yield curves"
+popnsmpl_sample_set = "data set on which the PCA is performed. For the examples presented in this paper this is just a set of absolute yield curves in terms of forward rates"
 
 
 # %%
