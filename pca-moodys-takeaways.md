@@ -61,6 +61,6 @@ for html in filtered_list:
 display(HTML("<h2>logic</h2>"))
 logi_list = [s for s in fnc.list_variables(globals()) if s.startswith("lgc")]                    
 for html in logi_list:                                                         
-     display(HTML(fnc.combine_strings(eval(html))))                                                                
+     display(HTML(fnc.combine_strings_with_header(eval(html),3)))                                                                
 display(HTML("<h2>rhetoric</h2>"))
 ```

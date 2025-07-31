@@ -114,4 +114,10 @@ def combine_strings(string_list):
     return '<br>'.join(string_list)
 
 
+def combine_strings_with_heading(string_list, header_level):
+    if header_level < 2:
+        header_level = 2
+    header_tag = f"h{header_level}"
+    string_list[0] = f"<{header_tag}>{string_list[0]}</{header_tag}>"
+    return '<br>'.join(string_list)
 
