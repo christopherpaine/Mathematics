@@ -1,19 +1,19 @@
-# ---
-# jupyter:
-#   jupytext:
-#     formats: ipynb,py:percent,md
-#     text_representation:
-#       extension: .py
-#       format_name: percent
-#       format_version: '1.3'
-#       jupytext_version: 1.16.4
-#   kernelspec:
-#     display_name: Python 3 (ipykernel)
-#     language: python
-#     name: python3
-# ---
+---
+jupyter:
+  jupytext:
+    formats: ipynb,py:percent,md
+    text_representation:
+      extension: .md
+      format_name: markdown
+      format_version: '1.3'
+      jupytext_version: 1.16.4
+  kernelspec:
+    display_name: Python 3 (ipykernel)
+    language: python
+    name: python3
+---
 
-# %%
+```python
 # imports
 from IPython.display import display, Markdown, HTML, SVG
 import numpy as np
@@ -24,8 +24,9 @@ import notation as ntn
 import functions as fnc
 
 
+```
 
-# %%
+```python
 HTML("""<style>
      h1, h2 {
          font-weight: 2000;
@@ -39,8 +40,9 @@ HTML("""<style>
 """)
 
 
+```
 
-# %%
+```python
 def f_display_html_with_heading(prefix, heading_level):
     lst = [s for s in fnc.list_variables(globals()) if s.startswith(prefix)]
     for html in lst:
@@ -53,8 +55,9 @@ def f_convert_string_vars_to_htmls(prefix, heading_level, content):
         display(HTML(eval(html)))
 
 
+```
 
-# %%
+```python
 # GRAMMAR STATEMENTS 
 grm_centering_scaling = "centering and scaling"
 grm_role_of_transformations = "role of transformations"
@@ -63,9 +66,10 @@ grm_modelling_yield_curve_dynamics = "modelling yield curve dynamics  -  is this
 popnsmpl_out_of_sample = "out of sample yield curves  -  those not used in the analysis to derive yield curves"
 popnsmpl_population = "population is the total population from which the sample set is obtained. For the examples in this paper this could also be called the universe of possible yield curves"
 popnsmpl_sample_set = "data set on which the PCA is performed. For the examples presented in this paper this is just a set of absolute yield curves in terms of forward rates"
+```
 
 
-# %%
+```python
 # LOGIC LISTS
 lgc_out_of_sample = [
 "out of sample yield curves  -  those not used in the analysis to derive yield curves",
@@ -92,13 +96,15 @@ lgc_population_and_sample = [
 
 
 
+```
 
-# %%
+```python
 # RHETORICAL STATEMENTS 
 rht_pc_intuitive = "intuitively, PCs represent ways in which the forward rates making up a yield curve can deviate from their mean levels"
 rht_reproduce_if_keep_all_pcs =  "A model including all of the PCs turns can perfectly reproduce all of the yield curves on which the PCA analysis was performed."
+```
 
-# %%
+```python
 # CRITICISMS
 
 crt_99_pct = [
@@ -122,8 +128,9 @@ crt_simulating_curve_not_changes = [
 
 
 
+```
 
-# %%
+```python
 
 display(HTML("<h1>Rough notes on moodys paper</h1>"))
 f_convert_string_vars_to_htmls("grm",2,"grammar")
@@ -140,5 +147,5 @@ display(HTML("hi"))
 
 
 
-# %% [markdown]
-#
+```
+
