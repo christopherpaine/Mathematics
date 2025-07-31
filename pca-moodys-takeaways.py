@@ -96,6 +96,7 @@ data_translgc = [
 "data transformations",
 "not necessary to centre data when eigenvalue decomposition is used",
 "scaling involves dividing by standard deviation"
+" caling is particularly useful if the variables have quite different orders of magnitude, although this is not likely to be the case for yield curves. "
 ]
 
 
