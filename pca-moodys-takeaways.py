@@ -110,10 +110,9 @@ crt_simulating_curve_not_changes = [
 
 display(HTML("<h1>Rough notes on moodys paper</h1>"))
 display(HTML("<h2>grammar</h2>"))
+f_convert_string_vars_to_htmls("grm",2,"grammar")
 display(HTML("<h3>populations and samples</h3>"))
-f_convert_string_vars_to_htmls("grm",3,"populations and samples")
-
-
+f_convert_string_vars_to_htmls("popnsmpl",3,"populations and samples")
 display(HTML("<h2>logic</h2>"))
 f_display_html_with_heading("lgc",3)
 display(HTML("<h2>rhetoric</h2>"))
@@ -128,5 +127,4 @@ f_display_html_with_heading("crt",3)
 
 
 
-# %% [markdown]
-#
+
