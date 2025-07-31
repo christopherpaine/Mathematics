@@ -7554,16 +7554,29 @@ modelling yield curve dynamics  -  is this the same as modelling yield curve cha
 <div class="jp-OutputArea-child">
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr" tabindex="0">
 <pre>
-<span class="ansi-red-fg">---------------------------------------------------------------------------</span>
-<span class="ansi-red-fg">TypeError</span>                                 Traceback (most recent call last)
-Cell <span class="ansi-green-fg">In[3], line 8</span>
-<span class="ansi-green-intense-fg ansi-bold">      6</span> logi_list <span style="color: rgb(98,98,98)">=</span> [s <span class="ansi-bold" style="color: rgb(0,135,0)">for</span> s <span class="ansi-bold" style="color: rgb(175,0,255)">in</span> fnc<span style="color: rgb(98,98,98)">.</span>list_variables(<span style="color: rgb(0,135,0)">globals</span>()) <span class="ansi-bold" style="color: rgb(0,135,0)">if</span> s<span style="color: rgb(98,98,98)">.</span>startswith(<span style="color: rgb(175,0,0)">"</span><span style="color: rgb(175,0,0)">lgc</span><span style="color: rgb(175,0,0)">"</span>)]                    
-<span class="ansi-green-intense-fg ansi-bold">      7</span> <span class="ansi-bold" style="color: rgb(0,135,0)">for</span> html <span class="ansi-bold" style="color: rgb(175,0,255)">in</span> logi_list:                                                         
-<span class="ansi-green-fg">----&gt; 8</span>      display(HTML(<span class="ansi-yellow-bg" style="color: rgb(0,135,0)">eval</span><span class="ansi-yellow-bg">(</span><span class="ansi-yellow-bg">fnc</span><span class="ansi-yellow-bg" style="color: rgb(98,98,98)">.</span><span class="ansi-yellow-bg">combine_strings</span><span class="ansi-yellow-bg">(</span><span class="ansi-yellow-bg">html</span><span class="ansi-yellow-bg">)</span><span class="ansi-yellow-bg">)</span>))                                                                
-<span class="ansi-green-intense-fg ansi-bold">      9</span> display(HTML(<span style="color: rgb(175,0,0)">"</span><span style="color: rgb(175,0,0)">&lt;h2&gt;rhetoric&lt;/h2&gt;</span><span style="color: rgb(175,0,0)">"</span>))
+Traceback <span class="ansi-cyan-fg">(most recent call last)</span>:
 
-<span class="ansi-red-fg">TypeError</span>: eval() arg 1 must be a string, bytes or code object</pre>
+  File <span class="ansi-green-intense-fg ansi-bold">/nix/store/1l9bq00gsfsgr8v348a599fjc1i22m2p-python3-3.12.8-env/lib/python3.12/site-packages/IPython/core/interactiveshell.py:3577</span> in <span class="ansi-magenta-intense-fg ansi-bold">run_code</span>
+    exec(code_obj, self.user_global_ns, self.user_ns)
+
+<span class="ansi-cyan-fg">  Cell </span><span class="ansi-green-fg">In[3], line 8</span><span class="ansi-cyan-fg">
+</span><span class="ansi-red-fg">    display(HTML(eval(fnc.combine_strings(eval(html)))))</span><span class="ansi-cyan-fg">
+</span>
+<span class="ansi-cyan-fg">  File </span><span class="ansi-green-fg">&lt;string&gt;:1</span>
+<span class="ansi-red-fg">    out of sample yield curves  -  those not used in the analysis to derive yield curveshis is shown to potentially require many more PCs than we might first think.perhaps bayesian inference gets around this....</span>
+        ^
+<span class="ansi-red-fg">SyntaxError</span><span class="ansi-red-fg">:</span> invalid syntax
+</pre>
 </div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=a4989117">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 </div>
 </div>
 </div>
