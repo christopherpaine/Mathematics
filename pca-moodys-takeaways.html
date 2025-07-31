@@ -7622,7 +7622,7 @@ a.anchor-link {
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=7dbd090d">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=7dbd090d">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -7658,27 +7658,10 @@ a.anchor-link {
 <span class="s2">"not necessary to centre data when eigenvalue decomposition is used"</span><span class="p">,</span>
 <span class="s2">"scaling involves dividing by standard deviation"</span>
 <span class="s2">"scaling is particularly useful if the variables have quite different orders of magnitude, although this is not likely to be the case for yield curves. "</span><span class="p">,</span>
-<span class="n">fnc</span><span class="o">.</span><span class="n">f_wrap_in_span</span><span class="p">(</span><span class="s2">"how to plot different orders of magnitude at various stages of own analysis and see effect of logarithmic transformation"</span><span class="p">,</span><span class="s2">"darkred"</span><span class="p">)</span>
+<span class="n">fnc</span><span class="o">.</span><span class="n">f_wrap_in_span</span><span class="p">(</span><span class="s2">"how to plot different orders of magnitude at various stages of own analysis and see effect of logarithmic transformation"</span><span class="p">,</span><span class="s2">"darkred"</span><span class="p">),</span>
 <span class="s2">" if both centring and scaling are performed then the covariance matrix is the same as the correlation matrix. "</span>
 <span class="p">]</span>
 </pre></div>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr" tabindex="0">
-<pre>
-  <span class="ansi-cyan-fg">Cell</span><span class="ansi-cyan-fg"> </span><span class="ansi-green-fg">In[5]</span><span class="ansi-green-fg">, line 29</span>
-<span class="ansi-red-fg">    </span><span class="ansi-red-fg">fnc.f_wrap_in_span("how to plot different orders of magnitude at various stages of own analysis and see effect of logarithmic transformation","darkred")</span>
-    ^
-<span class="ansi-red-fg">SyntaxError</span><span class="ansi-red-fg">:</span> invalid syntax. Perhaps you forgot a comma?
-</pre>
 </div>
 </div>
 </div>
@@ -7845,6 +7828,36 @@ mean centering essential when singular value decomposition used
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output" data-mime-type="text/html" tabindex="0">
 <h2>logic</h2>
+</div>
+</div>
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output" data-mime-type="text/html" tabindex="0">
+<h3>out of sample yield curves  -  those not used in the analysis to derive yield curves</h3>his is shown to potentially require many more PCs than we might first think.<br/>perhaps bayesian inference gets around this....
+</div>
+</div>
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output" data-mime-type="text/html" tabindex="0">
+<h3>adjacent points on the yield curve do not move independently</h3>why is this-when considering the forward yield curve specifically
+</div>
+</div>
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output" data-mime-type="text/html" tabindex="0">
+<h3>since pca derived from covariance matrix we are talking about deviation from the mean</h3>what does the mean represent in this context
+</div>
+</div>
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output" data-mime-type="text/html" tabindex="0">
+<h3>more is made of difference between population and sample than i would</h3>i would go for largest available dataset that is relevant and to me that is the population<br/>the paper seems to see validity in not using whole population to calibrate
+</div>
+</div>
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output" data-mime-type="text/html" tabindex="0">
+<h3>data transformations</h3>not necessary to centre data when eigenvalue decomposition is used<br/>scaling involves dividing by standard deviationscaling is particularly useful if the variables have quite different orders of magnitude, although this is not likely to be the case for yield curves. <br/><span style="color: darkred;">how to plot different orders of magnitude at various stages of own analysis and see effect of logarithmic transformation</span><br/> if both centring and scaling are performed then the covariance matrix is the same as the correlation matrix. 
 </div>
 </div>
 <div class="jp-OutputArea-child">
