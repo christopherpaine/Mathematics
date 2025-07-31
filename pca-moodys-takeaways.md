@@ -30,7 +30,7 @@ import functions as fnc
 ```python
 HTML("""<style>
      h1, h2 {
-         font-weight: 2000 !important;
+         font-weight: 1000 !important;
          color: red;
          }
 
