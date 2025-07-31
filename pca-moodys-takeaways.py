@@ -28,8 +28,8 @@ import functions as fnc
 # %%
 HTML("""<style>
      h1, h2 {
-         font-weight: 2000;
-         font-color: red;
+         font-weight: 2000 !important;
+         color: red;
          }
 
      h1 {
