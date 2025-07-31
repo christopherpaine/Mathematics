@@ -43,9 +43,6 @@ HTML("""  <style>  .circle {
 
 
 
-
-
-
 # %%
 display(HTML("<h1>Interest Rates</h1>"))
 display(HTML("<h2>Zero Coupon Bond</h2>"))
