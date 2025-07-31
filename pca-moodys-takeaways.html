@@ -7531,6 +7531,12 @@ a.anchor-link {
     <span class="n">lst</span> <span class="o">=</span> <span class="p">[</span><span class="n">s</span> <span class="k">for</span> <span class="n">s</span> <span class="ow">in</span> <span class="n">fnc</span><span class="o">.</span><span class="n">list_variables</span><span class="p">(</span><span class="nb">globals</span><span class="p">())</span> <span class="k">if</span> <span class="n">s</span><span class="o">.</span><span class="n">startswith</span><span class="p">(</span><span class="n">prefix</span><span class="p">)]</span>
     <span class="k">for</span> <span class="n">html</span> <span class="ow">in</span> <span class="n">lst</span><span class="p">:</span>
         <span class="n">display</span><span class="p">(</span><span class="n">HTML</span><span class="p">(</span><span class="n">fnc</span><span class="o">.</span><span class="n">combine_strings_with_heading</span><span class="p">(</span><span class="nb">eval</span><span class="p">(</span><span class="n">html</span><span class="p">),</span> <span class="n">heading_level</span><span class="p">)))</span>
+
+<span class="k">def</span> <span class="nf">f_convert_string_vars_to_htmls</span><span class="p">(</span><span class="n">prefix</span><span class="p">,</span> <span class="n">heading_level</span><span class="p">,</span> <span class="n">content</span><span class="p">):</span>
+    <span class="n">display</span><span class="p">(</span><span class="n">HTML</span><span class="p">(</span><span class="sa">f</span><span class="s2">"&lt;h</span><span class="si">{</span><span class="n">heading_level</span><span class="si">}</span><span class="s2">&gt;</span><span class="si">{</span><span class="n">content</span><span class="si">}</span><span class="s2">&lt;/h</span><span class="si">{</span><span class="n">heading_level</span><span class="si">}</span><span class="s2">&gt;"</span><span class="p">))</span>
+    <span class="n">filtered_list</span> <span class="o">=</span> <span class="p">[</span><span class="n">s</span> <span class="k">for</span> <span class="n">s</span> <span class="ow">in</span> <span class="n">fnc</span><span class="o">.</span><span class="n">list_variables</span><span class="p">(</span><span class="nb">globals</span><span class="p">())</span> <span class="k">if</span> <span class="n">s</span><span class="o">.</span><span class="n">startswith</span><span class="p">(</span><span class="n">prefix</span><span class="p">)]</span>
+    <span class="k">for</span> <span class="n">html</span> <span class="ow">in</span> <span class="n">filtered_list</span><span class="p">:</span>
+        <span class="n">display</span><span class="p">(</span><span class="n">HTML</span><span class="p">(</span><span class="nb">eval</span><span class="p">(</span><span class="n">html</span><span class="p">)))</span>
 </pre></div>
 </div>
 </div>
@@ -7658,7 +7664,7 @@ a.anchor-link {
 <span class="n">filtered_list</span> <span class="o">=</span> <span class="p">[</span><span class="n">s</span> <span class="k">for</span> <span class="n">s</span> <span class="ow">in</span> <span class="n">fnc</span><span class="o">.</span><span class="n">list_variables</span><span class="p">(</span><span class="nb">globals</span><span class="p">())</span> <span class="k">if</span> <span class="n">s</span><span class="o">.</span><span class="n">startswith</span><span class="p">(</span><span class="s2">"rht"</span><span class="p">)]</span>                    
 <span class="k">for</span> <span class="n">html</span> <span class="ow">in</span> <span class="n">filtered_list</span><span class="p">:</span>                                                         
      <span class="n">display</span><span class="p">(</span><span class="n">HTML</span><span class="p">(</span><span class="nb">eval</span><span class="p">(</span><span class="n">html</span><span class="p">)))</span>                                                                
-
+<span class="n">f_convert_string_vars_to_htmls</span><span class="p">(</span><span class="s2">"rht"</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="s2">"rhetoric"</span><span class="p">)</span>
 
 
 <span class="n">display</span><span class="p">(</span><span class="n">HTML</span><span class="p">(</span><span class="s2">"&lt;h2&gt;criticisms&lt;/h2&gt;"</span><span class="p">))</span>
@@ -7765,6 +7771,24 @@ A model including all of the PCs turns can perfectly reproduce all of the yield 
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output" data-mime-type="text/html" tabindex="0">
+<h2>rhetoric</h2>
+</div>
+</div>
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output" data-mime-type="text/html" tabindex="0">
+intuitively, PCs represent ways in which the forward rates making up a yield curve can deviate from their mean levels
+</div>
+</div>
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output" data-mime-type="text/html" tabindex="0">
+A model including all of the PCs turns can perfectly reproduce all of the yield curves on which the PCA analysis was performed.
+</div>
+</div>
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output" data-mime-type="text/html" tabindex="0">
 <h2>criticisms</h2>
 </div>
 </div>
@@ -7783,7 +7807,7 @@ A model including all of the PCs turns can perfectly reproduce all of the yield 
 </div>
 </div>
 </div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=cdfbf02d">
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=8307760d">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>

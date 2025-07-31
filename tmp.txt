@@ -1,4 +1,5 @@
-crt_list = [s for s in fnc.list_variables(globals()) if s.startswith("crt")]                    
-for html in crt_list:                                                         
-     display(HTML(fnc.combine_strings_with_heading(eval(html),3)))                                                                
+display(HTML("<h2>rhetoric</h2>"))
+filtered_list = [s for s in fnc.list_variables(globals()) if s.startswith("rht")]                    
+for html in filtered_list:                                                         
+     display(HTML(eval(html)))                                                                
 
