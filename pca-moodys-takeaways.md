@@ -117,7 +117,12 @@ display(HTML("<h3>populations and samples</h3>"))
 display(HTML("<h2>logic</h2>"))
 f_display_html_with_heading("lgc",3)
 display(HTML("<h2>rhetoric</h2>"))
-f_display_html_with_heading("rht",3)
+filtered_list = [s for s in fnc.list_variables(globals()) if s.startswith("rht")]                    
+for html in filtered_list:                                                         
+     display(HTML(eval(html)))                                                                
+
+
+
 display(HTML("<h2>criticisms</h2>"))
 f_display_html_with_heading("crt",3)
 
