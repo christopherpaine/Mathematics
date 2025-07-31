@@ -106,5 +106,6 @@ def f_wrap_in_span(text, color):
 
 
 
-
+def list_variables():
+    return [var for var in globals() if not var.startswith("__") and not callable(globals()[var])]
 

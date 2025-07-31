@@ -49,8 +49,8 @@ lgc_adjacent_points_on_curve_do_not_move_independently = [
 
 # %%
 
-display(HTML(<h2>grammar</h2>))
-display(HTML(<h2>logic</h2>))
+display(HTML("<h2>grammar</h2>"))
+display(HTML("<h2>logic</h2>"))
 
 
 
