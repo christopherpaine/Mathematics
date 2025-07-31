@@ -7591,6 +7591,9 @@ a.anchor-link {
 <span class="k">for</span> <span class="n">html</span> <span class="ow">in</span> <span class="n">logi_list</span><span class="p">:</span>                                                         
      <span class="n">display</span><span class="p">(</span><span class="n">HTML</span><span class="p">(</span><span class="n">fnc</span><span class="o">.</span><span class="n">combine_strings_with_heading</span><span class="p">(</span><span class="nb">eval</span><span class="p">(</span><span class="n">html</span><span class="p">),</span><span class="mi">3</span><span class="p">)))</span>                                                                
 <span class="n">display</span><span class="p">(</span><span class="n">HTML</span><span class="p">(</span><span class="s2">"&lt;h2&gt;rhetoric&lt;/h2&gt;"</span><span class="p">))</span>
+<span class="n">rhet_list</span> <span class="o">=</span> <span class="p">[</span><span class="n">s</span> <span class="k">for</span> <span class="n">s</span> <span class="ow">in</span> <span class="n">fnc</span><span class="o">.</span><span class="n">list_variables</span><span class="p">(</span><span class="nb">globals</span><span class="p">())</span> <span class="k">if</span> <span class="n">s</span><span class="o">.</span><span class="n">startswith</span><span class="p">(</span><span class="s2">"lgc"</span><span class="p">)]</span>                    
+<span class="k">for</span> <span class="n">html</span> <span class="ow">in</span> <span class="n">rhet_list</span><span class="p">:</span>                                                         
+     <span class="n">display</span><span class="p">(</span><span class="n">HTML</span><span class="p">(</span><span class="n">fnc</span><span class="o">.</span><span class="n">combine_strings_with_heading</span><span class="p">(</span><span class="nb">eval</span><span class="p">(</span><span class="n">html</span><span class="p">),</span><span class="mi">3</span><span class="p">)))</span>                                                                
 </pre></div>
 </div>
 </div>
@@ -7670,6 +7673,24 @@ modelling yield curve dynamics  -  is this the same as modelling yield curve cha
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output" data-mime-type="text/html" tabindex="0">
 <h2>rhetoric</h2>
+</div>
+</div>
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output" data-mime-type="text/html" tabindex="0">
+<h3><h3>out of sample yield curves  -  those not used in the analysis to derive yield curves</h3></h3>his is shown to potentially require many more PCs than we might first think.<br/>perhaps bayesian inference gets around this....
+</div>
+</div>
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output" data-mime-type="text/html" tabindex="0">
+<h3><h3>adjacent points on the yield curve do not move independently</h3></h3>why is this-when considering the forward yield curve specifically
+</div>
+</div>
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output" data-mime-type="text/html" tabindex="0">
+<h3><h3>since pca derived from covariance matrix we are talking about deviation from the mean</h3></h3>what does the mean represent in this context
 </div>
 </div>
 </div>
