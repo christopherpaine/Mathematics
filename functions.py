@@ -123,3 +123,5 @@ def combine_strings_with_heading(string_list, header_level):
     header_tag = f"h{header_level}"
     string_list[0] = f"<{header_tag}>{string_list[0]}</{header_tag}>"
     return string_list[0] + ''.join(f'<br>{s}' for s in string_list[1:])
+
+
