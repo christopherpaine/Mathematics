@@ -114,8 +114,7 @@ crt_simulating_curve_not_changes = [
 ```python
 
 
-HTML(
-"""
+HTML( """
 h1, h2 {
     font-weight: bold;
 }

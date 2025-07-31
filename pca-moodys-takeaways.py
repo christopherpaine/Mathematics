@@ -109,8 +109,7 @@ crt_simulating_curve_not_changes = [
 # %%
 
 
-HTML(
-"""
+HTML( """
 h1, h2 {
     font-weight: bold;
 }
