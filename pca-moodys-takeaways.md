@@ -115,7 +115,7 @@ crt_simulating_curve_not_changes = [
 HTML("""
      <style>
      h1, h2 {
-         font-weight: 1000;
+         font-weight: 2000;
          }
 
      h1 {
