@@ -125,8 +125,9 @@ HTML("""
          }
      </style>
 """)
+```
 
-
+```python
 
 
 display(HTML("<h1>Rough notes on moodys paper</h1>"))
