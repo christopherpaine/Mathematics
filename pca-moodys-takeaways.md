@@ -62,6 +62,7 @@ logi_list = [s for s in fnc.list_variables(globals()) if s.startswith("lgc")]
 for html in logi_list:                                                         
      display(HTML(eval(html)))                                                                
 
-
+display(HTML("<h2>rhetoric</h2>"))
 ```
+
 
