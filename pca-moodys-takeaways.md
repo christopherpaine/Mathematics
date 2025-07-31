@@ -114,14 +114,16 @@ crt_simulating_curve_not_changes = [
 ```python
 
 
-HTML( """
-     <style>h1, h2 {
+HTML("""
+     <style>
+     h1, h2 {
          font-weight: bold;
          }
 
      h1 {
          text-decoration: underline;
-         }</style>
+         }
+     </style>
 """)
 
 
@@ -142,6 +144,6 @@ f_display_html_with_heading("crt",3)
 
 
 
-
 ```
+
 

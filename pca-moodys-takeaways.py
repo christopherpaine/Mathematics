@@ -109,14 +109,16 @@ crt_simulating_curve_not_changes = [
 # %%
 
 
-HTML( """
-     <style>h1, h2 {
+HTML("""
+     <style>
+     h1, h2 {
          font-weight: bold;
          }
 
      h1 {
          text-decoration: underline;
-         }</style>
+         }
+     </style>
 """)
 
 
