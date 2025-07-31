@@ -107,8 +107,6 @@ crt_simulating_curve_not_changes = [
 
 
 # %%
-
-
 HTML("""
      <style>
      h1, h2 {

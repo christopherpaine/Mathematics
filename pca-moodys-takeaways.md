@@ -112,8 +112,6 @@ crt_simulating_curve_not_changes = [
 ```
 
 ```python
-
-
 HTML("""
      <style>
      h1, h2 {
