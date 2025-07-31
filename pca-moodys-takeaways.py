@@ -50,6 +50,14 @@ lgc_central_tendency = [
 "what does the mean represent in this context",
         ]        
 
+
+
+rht_pc_intuitive = [
+"ntuitively, PCs represent ways in which the forward rates making up a yield curve can deviate from their mean levels"
+
+]
+
+
 # %%
 
 display(HTML("<h1>Rough notes on moodys paper</h1>"))
