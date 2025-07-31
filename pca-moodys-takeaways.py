@@ -96,8 +96,8 @@ data_translgc = [
 "data transformations",
 "not necessary to centre data when eigenvalue decomposition is used",
 "scaling involves dividing by standard deviation"
-"scaling is particularly useful if the variables have quite different orders of magnitude, although this is not likely to be the case for yield curves. "
-fnc.f_wrap_in_span("how to plot different orders of magnitude at various stages of own analysis and see effect of logarithmic transformation")
+"scaling is particularly useful if the variables have quite different orders of magnitude, although this is not likely to be the case for yield curves. ",
+fnc.f_wrap_in_span("how to plot different orders of magnitude at various stages of own analysis and see effect of logarithmic transformation","darkred")
 ]
 
 
