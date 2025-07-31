@@ -21,8 +21,10 @@ import matplotlib.pyplot as plt
 import pandas as pd
 from io import StringIO
 import notation as ntn
-import functions as fnc
+#import functions as fnc
 
+def list_variables():
+    return [var for var in globals() if not var.startswith("__") and not callable(globals()[var])]
 
 
 # %%
