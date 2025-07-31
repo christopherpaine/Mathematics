@@ -92,7 +92,7 @@ lgc_population_and_sample = [
 "the paper seems to see validity in not using whole population to calibrate"
 ]
 
-datatranslgc = [
+data_translgc = [
 "data transformations",
 "not necessary to centre data when eigenvalue decomposition is used",
 "scaling involves dividing by standard deviation"
@@ -139,7 +139,7 @@ f_convert_string_vars_to_htmls("invprob",3,"inverse problem")
 f_convert_string_vars_to_htmls("datatrans",3,"data transformations")
 display(HTML("<h2>logic</h2>"))
 f_display_html_with_heading("lgc",3)
-f_display_html_with_heading("datatranslgc",3)
+f_display_html_with_heading("data_translgc",3)
 
 f_convert_string_vars_to_htmls("rht",2,"rhetoric")
 display(HTML("<h2>criticisms</h2>"))
