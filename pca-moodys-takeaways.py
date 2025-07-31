@@ -6,7 +6,7 @@
 #       extension: .py
 #       format_name: percent
 #       format_version: '1.3'
-#       jupytext_version: 1.16.4
+#       jupytext_version: 1.17.2
 #   kernelspec:
 #     display_name: Python 3 (ipykernel)
 #     language: python
@@ -64,7 +64,7 @@ grm_modelling_yield_curve_dynamics = "modelling yield curve dynamics  -  is this
 popnsmpl_out_of_sample = "out of sample yield curves  -  those not used in the analysis to derive yield curves"
 popnsmpl_population = "population is the total population from which the sample set is obtained. For the examples in this paper this could also be called the universe of possible yield curves"
 popnsmpl_sample_set = "data set on which the PCA is performed. For the examples presented in this paper this is just a set of absolute yield curves in terms of forward rates"
-
+popnsmpl_synthetic = fnc.f_wrap_in_span("i don't see purpose of synthetic population generation","darkred")
 
 # %%
 # LOGIC LISTS
