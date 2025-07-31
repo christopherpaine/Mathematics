@@ -54,6 +54,7 @@ lgc_central_tendency = [
 
 ```python
 
+display(HTML("<h1>Rough notes on moodys paper</h1>"))
 display(HTML("<h2>grammar</h2>"))
 filtered_list = [s for s in fnc.list_variables(globals()) if s.startswith("grm")]                    
 for html in filtered_list:                                                         
