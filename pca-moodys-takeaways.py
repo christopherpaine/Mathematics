@@ -51,7 +51,7 @@ lgc_adjacent_points_on_curve_do_not_move_independently = [
 
 display(HTML("<h2>grammar</h2>"))
 filtered_list = [s for s in fnc.list_variables(globals()) if s.startswith("grm")]                    
-print(filtered_list)                                                           
+display(HTML(filtered_list))                                                           
 
 display(HTML("<h2>logic</h2>"))
 
