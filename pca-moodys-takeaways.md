@@ -141,7 +141,6 @@ crt_simulating_curve_not_changes = [
 ```
 
 ```python
-
 display(HTML("<h1>Rough notes on moodys paper</h1>"))
 f_convert_string_vars_to_htmls("grm",2,"grammar")
 fnc.f_create_flex_columns( f_convert_string_vars_to_htmls("popnsmpl",3,"populations and samples"), f_convert_string_vars_to_htmls("invprob",3,"inverse problem"))
