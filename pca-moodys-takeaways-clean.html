@@ -7552,17 +7552,23 @@ modelling yield curve dynamics  -  is this the same as modelling yield curve cha
 </div>
 </div>
 <div class="jp-OutputArea-child">
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr" tabindex="0">
-<pre>
-<span class="ansi-red-fg">---------------------------------------------------------------------------</span>
-<span class="ansi-red-fg">AttributeError</span>                            Traceback (most recent call last)
-Cell <span class="ansi-green-fg">In[3], line 8</span>
-<span class="ansi-green-intense-fg ansi-bold">      6</span> logi_list <span style="color: rgb(98,98,98)">=</span> [s <span class="ansi-bold" style="color: rgb(0,135,0)">for</span> s <span class="ansi-bold" style="color: rgb(175,0,255)">in</span> fnc<span style="color: rgb(98,98,98)">.</span>list_variables(<span style="color: rgb(0,135,0)">globals</span>()) <span class="ansi-bold" style="color: rgb(0,135,0)">if</span> s<span style="color: rgb(98,98,98)">.</span>startswith(<span style="color: rgb(175,0,0)">"</span><span style="color: rgb(175,0,0)">lgc</span><span style="color: rgb(175,0,0)">"</span>)]                    
-<span class="ansi-green-intense-fg ansi-bold">      7</span> <span class="ansi-bold" style="color: rgb(0,135,0)">for</span> html <span class="ansi-bold" style="color: rgb(175,0,255)">in</span> logi_list:                                                         
-<span class="ansi-green-fg">----&gt; 8</span>      display(HTML(<span class="ansi-yellow-bg">fnc</span><span class="ansi-yellow-bg" style="color: rgb(98,98,98)">.</span><span class="ansi-yellow-bg">combine_strings_with_header</span>(<span style="color: rgb(0,135,0)">eval</span>(html),<span style="color: rgb(98,98,98)">3</span>)))                                                                
-<span class="ansi-green-intense-fg ansi-bold">      9</span> display(HTML(<span style="color: rgb(175,0,0)">"</span><span style="color: rgb(175,0,0)">&lt;h2&gt;rhetoric&lt;/h2&gt;</span><span style="color: rgb(175,0,0)">"</span>))
-
-<span class="ansi-red-fg">AttributeError</span>: module 'functions' has no attribute 'combine_strings_with_header'</pre>
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output" data-mime-type="text/html" tabindex="0">
+<h3>out of sample yield curves  -  those not used in the analysis to derive yield curves</h3><br/>his is shown to potentially require many more PCs than we might first think.<br/>perhaps bayesian inference gets around this....
+</div>
+</div>
+<div class="jp-OutputArea-child">
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output" data-mime-type="text/html" tabindex="0">
+<h3>adjacent points on the yield curve do not move independently</h3><br/>why is this-when considering the forward yield curve specifically
+</div>
+</div>
+<div class="jp-OutputArea-child">
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output" data-mime-type="text/html" tabindex="0">
+<h3>since pca derived from covariance matrix we are talking about deviation from the mean</h3><br/>what does the mean represent in this context
+</div>
+</div>
+<div class="jp-OutputArea-child">
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output" data-mime-type="text/html" tabindex="0">
+<h2>rhetoric</h2>
 </div>
 </div>
 </div>
