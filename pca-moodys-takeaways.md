@@ -24,6 +24,10 @@ import notation as ntn
 import functions as fnc
 
 
+def f_display_html_with_heading(prefix, heading_level):
+    lst = [s for s in fnc.list_variables(globals()) if s.startswith(prefix)]
+    for html in lst:
+        display(HTML(fnc.combine_strings_with_heading(eval(html), heading_level)))
 ```
 
 ```python
@@ -119,10 +123,7 @@ rhet_list = [s for s in fnc.list_variables(globals()) if s.startswith("rht")]
 for html in rhet_list:                                                         
      display(HTML(eval(html)))                                                                
 display(HTML("<h2>criticisms</h2>"))
-crt_list = [s for s in fnc.list_variables(globals()) if s.startswith("crt")]                    
-for html in crt_list:                                                         
-     display(HTML(fnc.combine_strings_with_heading(eval(html),3)))                                                                
-
+f_display_html_with_heading("crt",3)
 
 
 

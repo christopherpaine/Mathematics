@@ -1,7 +1,4 @@
-def combine_strings_with_heading(string_list, header_level):
-    if header_level < 2:
-        header_level = 2
-    header_tag = f"h{header_level}"
-    string_list[0] = f"<{header_tag}>{string_list[0]}</{header_tag}>"
-    return '<br>'.join(string_list)
+crt_list = [s for s in fnc.list_variables(globals()) if s.startswith("crt")]                    
+for html in crt_list:                                                         
+     display(HTML(fnc.combine_strings_with_heading(eval(html),3)))                                                                
 
