@@ -53,12 +53,10 @@ lgc_central_tendency = [
 
 
 
-rht_pc_intuitive = [
-"intuitively, PCs represent ways in which the forward rates making up a yield curve can deviate from their mean levels"
+rht_pc_intuitive = "intuitively, PCs represent ways in which the forward rates making up a yield curve can deviate from their mean levels"
 
-]
+
 ```
-
 
 ```python
 
@@ -74,7 +72,7 @@ for html in logi_list:
 display(HTML("<h2>rhetoric</h2>"))
 rhet_list = [s for s in fnc.list_variables(globals()) if s.startswith("rht")]                    
 for html in rhet_list:                                                         
-     display(HTML(fnc.combine_strings_with_heading(eval(html),3)))                                                                
+     display(HTML(eval(html)))                                                                
 
 
 
