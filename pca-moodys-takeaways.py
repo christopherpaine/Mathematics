@@ -70,7 +70,10 @@ crt_99_pct = [
 
 ]
 
-
+crt_simulating curve_not changes [
+"it looks like they are simulating the whole curve rather than modelling changes from one period to the next",
+"as evidence by statement 'The solid black line is the mean yield curve at the 𝑡 = 1 projection horizon.'"
+]
 
 
 
