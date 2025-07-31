@@ -103,3 +103,8 @@ def f_wrap_in_span(text, color):
     return f'<span style="color: {color};">{text}</span>'
 
 
+
+
+
+
+
