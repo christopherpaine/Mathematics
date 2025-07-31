@@ -7525,32 +7525,15 @@ a.anchor-link {
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr" tabindex="0">
 <pre>
 <span class="ansi-red-fg">---------------------------------------------------------------------------</span>
-<span class="ansi-red-fg">AttributeError</span>                            Traceback (most recent call last)
+<span class="ansi-red-fg">NameError</span>                                 Traceback (most recent call last)
 Cell <span class="ansi-green-fg">In[3], line 3</span>
 <span class="ansi-green-intense-fg ansi-bold">      1</span> display(HTML(<span style="color: rgb(175,0,0)">"</span><span style="color: rgb(175,0,0)">&lt;h2&gt;grammar&lt;/h2&gt;</span><span style="color: rgb(175,0,0)">"</span>))
 <span class="ansi-green-intense-fg ansi-bold">      2</span> filtered_list <span style="color: rgb(98,98,98)">=</span> [s <span class="ansi-bold" style="color: rgb(0,135,0)">for</span> s <span class="ansi-bold" style="color: rgb(175,0,255)">in</span> fnc<span style="color: rgb(98,98,98)">.</span>list_variables(<span style="color: rgb(0,135,0)">globals</span>()) <span class="ansi-bold" style="color: rgb(0,135,0)">if</span> s<span style="color: rgb(98,98,98)">.</span>startswith(<span style="color: rgb(175,0,0)">"</span><span style="color: rgb(175,0,0)">grm</span><span style="color: rgb(175,0,0)">"</span>)]                    
-<span class="ansi-green-fg">----&gt; 3</span> display(<span class="ansi-yellow-bg">HTML</span><span class="ansi-yellow-bg">(</span><span class="ansi-yellow-bg">filtered_list</span><span class="ansi-yellow-bg">)</span>)                                                           
-<span class="ansi-green-intense-fg ansi-bold">      4</span> <span class="ansi-bold" style="color: rgb(0,135,0)">for</span> html <span class="ansi-bold" style="color: rgb(175,0,255)">in</span> flitered_list:                                                         
-<span class="ansi-green-intense-fg ansi-bold">      5</span>      display(HTML(html))                                                                
+<span class="ansi-green-fg">----&gt; 3</span> <span class="ansi-bold" style="color: rgb(0,135,0)">for</span> html <span class="ansi-bold" style="color: rgb(175,0,255)">in</span> <span class="ansi-yellow-bg">flitered_list</span>:                                                         
+<span class="ansi-green-intense-fg ansi-bold">      4</span>      display(HTML(html))                                                                
+<span class="ansi-green-intense-fg ansi-bold">      5</span> display(HTML(<span style="color: rgb(175,0,0)">"</span><span style="color: rgb(175,0,0)">&lt;h2&gt;logic&lt;/h2&gt;</span><span style="color: rgb(175,0,0)">"</span>))
 
-File <span class="ansi-green-fg">/nix/store/1l9bq00gsfsgr8v348a599fjc1i22m2p-python3-3.12.8-env/lib/python3.12/site-packages/IPython/core/display.py:473</span>, in <span class="ansi-cyan-fg">HTML.__init__</span><span class="ansi-blue-fg">(self, data, url, filename, metadata)</span>
-<span class="ansi-green-intense-fg ansi-bold">    470</span>     suffix <span style="color: rgb(98,98,98)">=</span> data[<span style="color: rgb(98,98,98)">-</span><span style="color: rgb(98,98,98)">10</span>:]<span style="color: rgb(98,98,98)">.</span>lower()
-<span class="ansi-green-intense-fg ansi-bold">    471</span>     <span class="ansi-bold" style="color: rgb(0,135,0)">return</span> prefix<span style="color: rgb(98,98,98)">.</span>startswith(<span style="color: rgb(175,0,0)">"</span><span style="color: rgb(175,0,0)">&lt;iframe </span><span style="color: rgb(175,0,0)">"</span>) <span class="ansi-bold" style="color: rgb(175,0,255)">and</span> suffix<span style="color: rgb(98,98,98)">.</span>endswith(<span style="color: rgb(175,0,0)">"</span><span style="color: rgb(175,0,0)">&lt;/iframe&gt;</span><span style="color: rgb(175,0,0)">"</span>)
-<span class="ansi-green-fg">--&gt; 473</span> <span class="ansi-bold" style="color: rgb(0,135,0)">if</span> <span class="ansi-yellow-bg">warn</span><span class="ansi-yellow-bg">(</span><span class="ansi-yellow-bg">)</span>:
-<span class="ansi-green-intense-fg ansi-bold">    474</span>     warnings<span style="color: rgb(98,98,98)">.</span>warn(<span style="color: rgb(175,0,0)">"</span><span style="color: rgb(175,0,0)">Consider using IPython.display.IFrame instead</span><span style="color: rgb(175,0,0)">"</span>)
-<span class="ansi-green-intense-fg ansi-bold">    475</span> <span style="color: rgb(0,135,0)">super</span>(HTML, <span style="color: rgb(0,135,0)">self</span>)<span style="color: rgb(98,98,98)">.</span><span style="color: rgb(0,0,255)">__init__</span>(data<span style="color: rgb(98,98,98)">=</span>data, url<span style="color: rgb(98,98,98)">=</span>url, filename<span style="color: rgb(98,98,98)">=</span>filename, metadata<span style="color: rgb(98,98,98)">=</span>metadata)
-
-File <span class="ansi-green-fg">/nix/store/1l9bq00gsfsgr8v348a599fjc1i22m2p-python3-3.12.8-env/lib/python3.12/site-packages/IPython/core/display.py:469</span>, in <span class="ansi-cyan-fg">HTML.__init__.&lt;locals&gt;.warn</span><span class="ansi-blue-fg">()</span>
-<span class="ansi-green-intense-fg ansi-bold">    463</span>     <span class="ansi-bold" style="color: rgb(0,135,0)">return</span> <span class="ansi-bold" style="color: rgb(0,135,0)">False</span>
-<span class="ansi-green-intense-fg ansi-bold">    465</span> <span style="color: rgb(95,135,135)">#</span>
-<span class="ansi-green-intense-fg ansi-bold">    466</span> <span style="color: rgb(95,135,135)"># Avoid calling lower() on the entire data, because it could be a</span>
-<span class="ansi-green-intense-fg ansi-bold">    467</span> <span style="color: rgb(95,135,135)"># long string and we're only interested in its beginning and end.</span>
-<span class="ansi-green-intense-fg ansi-bold">    468</span> <span style="color: rgb(95,135,135)">#</span>
-<span class="ansi-green-fg">--&gt; 469</span> prefix <span style="color: rgb(98,98,98)">=</span> <span class="ansi-yellow-bg">data</span><span class="ansi-yellow-bg">[</span><span class="ansi-yellow-bg">:</span><span class="ansi-yellow-bg" style="color: rgb(98,98,98)">10</span><span class="ansi-yellow-bg">]</span><span class="ansi-yellow-bg" style="color: rgb(98,98,98)">.</span><span class="ansi-yellow-bg">lower</span>()
-<span class="ansi-green-intense-fg ansi-bold">    470</span> suffix <span style="color: rgb(98,98,98)">=</span> data[<span style="color: rgb(98,98,98)">-</span><span style="color: rgb(98,98,98)">10</span>:]<span style="color: rgb(98,98,98)">.</span>lower()
-<span class="ansi-green-intense-fg ansi-bold">    471</span> <span class="ansi-bold" style="color: rgb(0,135,0)">return</span> prefix<span style="color: rgb(98,98,98)">.</span>startswith(<span style="color: rgb(175,0,0)">"</span><span style="color: rgb(175,0,0)">&lt;iframe </span><span style="color: rgb(175,0,0)">"</span>) <span class="ansi-bold" style="color: rgb(175,0,255)">and</span> suffix<span style="color: rgb(98,98,98)">.</span>endswith(<span style="color: rgb(175,0,0)">"</span><span style="color: rgb(175,0,0)">&lt;/iframe&gt;</span><span style="color: rgb(175,0,0)">"</span>)
-
-<span class="ansi-red-fg">AttributeError</span>: 'list' object has no attribute 'lower'</pre>
+<span class="ansi-red-fg">NameError</span>: name 'flitered_list' is not defined</pre>
 </div>
 </div>
 </div>
