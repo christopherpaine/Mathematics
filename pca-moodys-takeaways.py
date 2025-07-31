@@ -94,7 +94,8 @@ lgc_population_and_sample = [
 
 datatranslgc = [
 "data transformations",
-"not necessary to centre data when eigenvalue decomposition is used"
+"not necessary to centre data when eigenvalue decomposition is used",
+"scaling involves dividing by standard deviation"
 ]
 
 
