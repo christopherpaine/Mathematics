@@ -114,9 +114,7 @@ logi_list = [s for s in fnc.list_variables(globals()) if s.startswith("lgc")]
 for html in logi_list:                                                         
      display(HTML(fnc.combine_strings_with_heading(eval(html),3)))                                                                
 display(HTML("<h2>rhetoric</h2>"))
-rhet_list = [s for s in fnc.list_variables(globals()) if s.startswith("rht")]                    
-for html in rhet_list:                                                         
-     display(HTML(eval(html)))                                                                
+f_display_html_with_heading("rht",3)
 display(HTML("<h2>criticisms</h2>"))
 f_display_html_with_heading("crt",3)
 
