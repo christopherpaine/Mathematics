@@ -110,9 +110,13 @@ crt_simulating_curve_not_changes = [
 
 
 HTML( """
-h1, h2 {
-    font-weight: bold;
-}
+     <style>h1, h2 {
+         font-weight: bold;
+         }
+
+     h1 {
+         text-decoration: underline;
+         }</style>
 """)
 
 
