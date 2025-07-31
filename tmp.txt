@@ -1,5 +1,3 @@
-
-def list_variables():
-    return [var for var in globals() if not var.startswith("__") and not callable(globals()[var])]
-
+def combine_strings(string_list):
+    return ''.join(string_list)
 

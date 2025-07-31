@@ -64,5 +64,3 @@ for html in logi_list:
      display(HTML(fnc.combine_strings(eval(html))))                                                                
 display(HTML("<h2>rhetoric</h2>"))
 ```
-
-

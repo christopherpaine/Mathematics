@@ -108,10 +108,10 @@ def f_wrap_in_span(text, color):
 
 def list_variables(caller_globals):                                            
      return [var for var in caller_globals if not var.startswith("__") and not callable(caller_globals[var])]                                                 
+
+
 def combine_strings(string_list):
-    return ''.join(string_list)
-
-
+    return '<br>'.join(string_list)
 
 
 
