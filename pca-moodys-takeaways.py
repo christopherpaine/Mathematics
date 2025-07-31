@@ -44,6 +44,7 @@ lgc_out_of_sample = [
 lgc_adjacent_points_on_curve_do_not_move_independently = [
 "adjacent points on the yield curve do not move independently",
 "why is this-when considering the forward yield curve specifically"
+]
 lgc_central_tendency = [
 "since pca derived from covariance matrix we are talking about deviation from the mean",
 "what does the mean represent in this context",
@@ -58,8 +59,7 @@ for html in filtered_list:
 display(HTML("<h2>logic</h2>"))
 logi_list = [s for s in fnc.list_variables(globals()) if s.startswith("lgc")]                    
 for html in logi_list:                                                         
-     display(HTML(eval(html)))                                                                
-
+     display(HTML(eval(fnc.combine_strings(html))))                                                                
 display(HTML("<h2>rhetoric</h2>"))
 
 

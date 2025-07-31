@@ -7530,7 +7530,7 @@ a.anchor-link {
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=49a1fd77">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=49a1fd77">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -7556,28 +7556,12 @@ a.anchor-link {
 <span class="n">lgc_adjacent_points_on_curve_do_not_move_independently</span> <span class="o">=</span> <span class="p">[</span>
 <span class="s2">"adjacent points on the yield curve do not move independently"</span><span class="p">,</span>
 <span class="s2">"why is this-when considering the forward yield curve specifically"</span>
+<span class="p">]</span>
 <span class="n">lgc_central_tendency</span> <span class="o">=</span> <span class="p">[</span>
 <span class="s2">"since pca derived from covariance matrix we are talking about deviation from the mean"</span><span class="p">,</span>
 <span class="s2">"what does the mean represent in this context"</span><span class="p">,</span>
         <span class="p">]</span>        
 </pre></div>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr" tabindex="0">
-<pre>
-<span class="ansi-cyan-fg">  Cell </span><span class="ansi-green-fg">In[2], line 16</span>
-<span class="ansi-red-fg">    lgc_adjacent_points_on_curve_do_not_move_independently = [</span>
-                                                             ^
-<span class="ansi-red-fg">SyntaxError</span><span class="ansi-red-fg">:</span> '[' was never closed
-</pre>
 </div>
 </div>
 </div>
@@ -7597,8 +7581,7 @@ a.anchor-link {
 <span class="n">display</span><span class="p">(</span><span class="n">HTML</span><span class="p">(</span><span class="s2">"&lt;h2&gt;logic&lt;/h2&gt;"</span><span class="p">))</span>
 <span class="n">logi_list</span> <span class="o">=</span> <span class="p">[</span><span class="n">s</span> <span class="k">for</span> <span class="n">s</span> <span class="ow">in</span> <span class="n">fnc</span><span class="o">.</span><span class="n">list_variables</span><span class="p">(</span><span class="nb">globals</span><span class="p">())</span> <span class="k">if</span> <span class="n">s</span><span class="o">.</span><span class="n">startswith</span><span class="p">(</span><span class="s2">"lgc"</span><span class="p">)]</span>                    
 <span class="k">for</span> <span class="n">html</span> <span class="ow">in</span> <span class="n">logi_list</span><span class="p">:</span>                                                         
-     <span class="n">display</span><span class="p">(</span><span class="n">HTML</span><span class="p">(</span><span class="nb">eval</span><span class="p">(</span><span class="n">html</span><span class="p">)))</span>                                                                
-
+     <span class="n">display</span><span class="p">(</span><span class="n">HTML</span><span class="p">(</span><span class="nb">eval</span><span class="p">(</span><span class="n">fnc</span><span class="o">.</span><span class="n">combine_strings</span><span class="p">(</span><span class="n">html</span><span class="p">))))</span>                                                                
 <span class="n">display</span><span class="p">(</span><span class="n">HTML</span><span class="p">(</span><span class="s2">"&lt;h2&gt;rhetoric&lt;/h2&gt;"</span><span class="p">))</span>
 </pre></div>
 </div>
@@ -7618,13 +7601,52 @@ a.anchor-link {
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output" data-mime-type="text/html" tabindex="0">
-<h2>logic</h2>
+out of sample yield curves  -  those not used in the analysis to derive yield curves
 </div>
 </div>
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output" data-mime-type="text/html" tabindex="0">
-<h2>rhetoric</h2>
+centering and scaling
+</div>
+</div>
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output" data-mime-type="text/html" tabindex="0">
+role of transformations
+</div>
+</div>
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output" data-mime-type="text/html" tabindex="0">
+ inverse problem of determining pc magnitudes given a yield curve
+</div>
+</div>
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output" data-mime-type="text/html" tabindex="0">
+modelling yield curve dynamics  -  is this the same as modelling yield curve changes given a base curve
+</div>
+</div>
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output" data-mime-type="text/html" tabindex="0">
+<h2>logic</h2>
+</div>
+</div>
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr" tabindex="0">
+<pre>
+<span class="ansi-red-fg">---------------------------------------------------------------------------</span>
+<span class="ansi-red-fg">TypeError</span>                                 Traceback (most recent call last)
+Cell <span class="ansi-green-fg">In[3], line 8</span>
+<span class="ansi-green-intense-fg ansi-bold">      6</span> logi_list <span style="color: rgb(98,98,98)">=</span> [s <span class="ansi-bold" style="color: rgb(0,135,0)">for</span> s <span class="ansi-bold" style="color: rgb(175,0,255)">in</span> fnc<span style="color: rgb(98,98,98)">.</span>list_variables(<span style="color: rgb(0,135,0)">globals</span>()) <span class="ansi-bold" style="color: rgb(0,135,0)">if</span> s<span style="color: rgb(98,98,98)">.</span>startswith(<span style="color: rgb(175,0,0)">"</span><span style="color: rgb(175,0,0)">lgc</span><span style="color: rgb(175,0,0)">"</span>)]                    
+<span class="ansi-green-intense-fg ansi-bold">      7</span> <span class="ansi-bold" style="color: rgb(0,135,0)">for</span> html <span class="ansi-bold" style="color: rgb(175,0,255)">in</span> logi_list:                                                         
+<span class="ansi-green-fg">----&gt; 8</span>      display(HTML(<span class="ansi-yellow-bg" style="color: rgb(0,135,0)">eval</span><span class="ansi-yellow-bg">(</span><span class="ansi-yellow-bg">fnc</span><span class="ansi-yellow-bg" style="color: rgb(98,98,98)">.</span><span class="ansi-yellow-bg">combine_strings</span><span class="ansi-yellow-bg">(</span><span class="ansi-yellow-bg">html</span><span class="ansi-yellow-bg">)</span><span class="ansi-yellow-bg">)</span>))                                                                
+<span class="ansi-green-intense-fg ansi-bold">      9</span> display(HTML(<span style="color: rgb(175,0,0)">"</span><span style="color: rgb(175,0,0)">&lt;h2&gt;rhetoric&lt;/h2&gt;</span><span style="color: rgb(175,0,0)">"</span>))
+
+<span class="ansi-red-fg">TypeError</span>: eval() arg 1 must be a string, bytes or code object</pre>
 </div>
 </div>
 </div>

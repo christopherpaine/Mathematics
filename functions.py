@@ -110,5 +110,9 @@ def list_variables(caller_globals):
      return [var for var in caller_globals if not var.startswith("__") and not callable(caller_globals[var])]                                                 
  
 
+def combine_strings(list_name):
+    if list_name in globals() and isinstance(globals()[list_name], list):
+        return ''.join(globals()[list_name])
+    return None
 
 
