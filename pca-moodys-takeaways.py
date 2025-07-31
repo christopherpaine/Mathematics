@@ -25,6 +25,7 @@ import functions as fnc
 
 
 
+
 # %%
 HTML("""<style>
      h1, h2 {
@@ -139,6 +140,6 @@ display(HTML("hi"))
 
 
 
-
 # %% [markdown]
+#
 #
