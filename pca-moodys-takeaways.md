@@ -56,6 +56,14 @@ lgc_central_tendency = [
 "what does the mean represent in this context",
         ]        
 
+lgc_population_and_sample = [
+"more is made of difference between population and sample than i would",
+"i would go for largest available dataset that is relevant and to me that is the population",
+"the paper seems to see validity in not using whole population to calibrate"
+]
+
+
+
 
 ```
 
