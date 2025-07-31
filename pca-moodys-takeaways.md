@@ -136,6 +136,7 @@ crt_simulating_curve_not_changes = [
 display(HTML("<h1>Rough notes on moodys paper</h1>"))
 f_convert_string_vars_to_htmls("grm",2,"grammar")
 f_convert_string_vars_to_htmls("popnsmpl",3,"populations and samples")
+f_convert_string_vars_to_htmls("invprob",3,"inverse problem")
 display(HTML("<h2>logic</h2>"))
 f_display_html_with_heading("lgc",3)
 f_convert_string_vars_to_htmls("rht",2,"rhetoric")
