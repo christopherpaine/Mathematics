@@ -7510,7 +7510,23 @@ a.anchor-link {
 <!-- End of mermaid configuration --></head>
 <body class="jp-Notebook" data-jp-theme-light="true" data-jp-theme-name="JupyterLab Light">
 <main><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs jp-mod-noInput" id="cell-id=c53bdfeb">
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs jp-mod-noInput" id="cell-id=49a1fd77">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noInput" id="cell-id=49a1fd77">
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr" tabindex="0">
+<pre>
+<span class="ansi-cyan-fg">  Cell </span><span class="ansi-green-fg">In[2], line 16</span>
+<span class="ansi-red-fg">    lgc_adjacent_points_on_curve_do_not_move_independently = [</span>
+                                                             ^
+<span class="ansi-red-fg">SyntaxError</span><span class="ansi-red-fg">:</span> '[' was never closed
+</pre>
+</div>
+</div>
+</div>
+</div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noInput" id="cell-id=2d887010">
 <div class="jp-Cell-outputWrapper">
 <div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
@@ -7523,62 +7539,7 @@ a.anchor-link {
 </div>
 <div class="jp-OutputArea-child">
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output" data-mime-type="text/html" tabindex="0">
-out of sample yield curves  -  those not used in the analysis to derive yield curves
-</div>
-</div>
-<div class="jp-OutputArea-child">
-<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output" data-mime-type="text/html" tabindex="0">
-centering and scaling
-</div>
-</div>
-<div class="jp-OutputArea-child">
-<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output" data-mime-type="text/html" tabindex="0">
-role of transformations
-</div>
-</div>
-<div class="jp-OutputArea-child">
-<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output" data-mime-type="text/html" tabindex="0">
- inverse problem of determining pc magnitudes given a yield curve
-</div>
-</div>
-<div class="jp-OutputArea-child">
-<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output" data-mime-type="text/html" tabindex="0">
-modelling yield curve dynamics  -  is this the same as modelling yield curve changes given a base curve
-</div>
-</div>
-<div class="jp-OutputArea-child">
-<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output" data-mime-type="text/html" tabindex="0">
 <h2>logic</h2>
-</div>
-</div>
-<div class="jp-OutputArea-child">
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr" tabindex="0">
-<pre>
-<span class="ansi-red-fg">---------------------------------------------------------------------------</span>
-<span class="ansi-red-fg">AttributeError</span>                            Traceback (most recent call last)
-Cell <span class="ansi-green-fg">In[3], line 8</span>
-<span class="ansi-green-intense-fg ansi-bold">      6</span> logi_list <span style="color: rgb(98,98,98)">=</span> [s <span class="ansi-bold" style="color: rgb(0,135,0)">for</span> s <span class="ansi-bold" style="color: rgb(175,0,255)">in</span> fnc<span style="color: rgb(98,98,98)">.</span>list_variables(<span style="color: rgb(0,135,0)">globals</span>()) <span class="ansi-bold" style="color: rgb(0,135,0)">if</span> s<span style="color: rgb(98,98,98)">.</span>startswith(<span style="color: rgb(175,0,0)">"</span><span style="color: rgb(175,0,0)">lgc</span><span style="color: rgb(175,0,0)">"</span>)]                    
-<span class="ansi-green-intense-fg ansi-bold">      7</span> <span class="ansi-bold" style="color: rgb(0,135,0)">for</span> html <span class="ansi-bold" style="color: rgb(175,0,255)">in</span> logi_list:                                                         
-<span class="ansi-green-fg">----&gt; 8</span>      display(<span class="ansi-yellow-bg">HTML</span><span class="ansi-yellow-bg">(</span><span class="ansi-yellow-bg" style="color: rgb(0,135,0)">eval</span><span class="ansi-yellow-bg">(</span><span class="ansi-yellow-bg">html</span><span class="ansi-yellow-bg">)</span><span class="ansi-yellow-bg">)</span>)                                                                
-
-File <span class="ansi-green-fg">/nix/store/1l9bq00gsfsgr8v348a599fjc1i22m2p-python3-3.12.8-env/lib/python3.12/site-packages/IPython/core/display.py:473</span>, in <span class="ansi-cyan-fg">HTML.__init__</span><span class="ansi-blue-fg">(self, data, url, filename, metadata)</span>
-<span class="ansi-green-intense-fg ansi-bold">    470</span>     suffix <span style="color: rgb(98,98,98)">=</span> data[<span style="color: rgb(98,98,98)">-</span><span style="color: rgb(98,98,98)">10</span>:]<span style="color: rgb(98,98,98)">.</span>lower()
-<span class="ansi-green-intense-fg ansi-bold">    471</span>     <span class="ansi-bold" style="color: rgb(0,135,0)">return</span> prefix<span style="color: rgb(98,98,98)">.</span>startswith(<span style="color: rgb(175,0,0)">"</span><span style="color: rgb(175,0,0)">&lt;iframe </span><span style="color: rgb(175,0,0)">"</span>) <span class="ansi-bold" style="color: rgb(175,0,255)">and</span> suffix<span style="color: rgb(98,98,98)">.</span>endswith(<span style="color: rgb(175,0,0)">"</span><span style="color: rgb(175,0,0)">&lt;/iframe&gt;</span><span style="color: rgb(175,0,0)">"</span>)
-<span class="ansi-green-fg">--&gt; 473</span> <span class="ansi-bold" style="color: rgb(0,135,0)">if</span> <span class="ansi-yellow-bg">warn</span><span class="ansi-yellow-bg">(</span><span class="ansi-yellow-bg">)</span>:
-<span class="ansi-green-intense-fg ansi-bold">    474</span>     warnings<span style="color: rgb(98,98,98)">.</span>warn(<span style="color: rgb(175,0,0)">"</span><span style="color: rgb(175,0,0)">Consider using IPython.display.IFrame instead</span><span style="color: rgb(175,0,0)">"</span>)
-<span class="ansi-green-intense-fg ansi-bold">    475</span> <span style="color: rgb(0,135,0)">super</span>(HTML, <span style="color: rgb(0,135,0)">self</span>)<span style="color: rgb(98,98,98)">.</span><span style="color: rgb(0,0,255)">__init__</span>(data<span style="color: rgb(98,98,98)">=</span>data, url<span style="color: rgb(98,98,98)">=</span>url, filename<span style="color: rgb(98,98,98)">=</span>filename, metadata<span style="color: rgb(98,98,98)">=</span>metadata)
-
-File <span class="ansi-green-fg">/nix/store/1l9bq00gsfsgr8v348a599fjc1i22m2p-python3-3.12.8-env/lib/python3.12/site-packages/IPython/core/display.py:469</span>, in <span class="ansi-cyan-fg">HTML.__init__.&lt;locals&gt;.warn</span><span class="ansi-blue-fg">()</span>
-<span class="ansi-green-intense-fg ansi-bold">    463</span>     <span class="ansi-bold" style="color: rgb(0,135,0)">return</span> <span class="ansi-bold" style="color: rgb(0,135,0)">False</span>
-<span class="ansi-green-intense-fg ansi-bold">    465</span> <span style="color: rgb(95,135,135)">#</span>
-<span class="ansi-green-intense-fg ansi-bold">    466</span> <span style="color: rgb(95,135,135)"># Avoid calling lower() on the entire data, because it could be a</span>
-<span class="ansi-green-intense-fg ansi-bold">    467</span> <span style="color: rgb(95,135,135)"># long string and we're only interested in its beginning and end.</span>
-<span class="ansi-green-intense-fg ansi-bold">    468</span> <span style="color: rgb(95,135,135)">#</span>
-<span class="ansi-green-fg">--&gt; 469</span> prefix <span style="color: rgb(98,98,98)">=</span> <span class="ansi-yellow-bg">data</span><span class="ansi-yellow-bg">[</span><span class="ansi-yellow-bg">:</span><span class="ansi-yellow-bg" style="color: rgb(98,98,98)">10</span><span class="ansi-yellow-bg">]</span><span class="ansi-yellow-bg" style="color: rgb(98,98,98)">.</span><span class="ansi-yellow-bg">lower</span>()
-<span class="ansi-green-intense-fg ansi-bold">    470</span> suffix <span style="color: rgb(98,98,98)">=</span> data[<span style="color: rgb(98,98,98)">-</span><span style="color: rgb(98,98,98)">10</span>:]<span style="color: rgb(98,98,98)">.</span>lower()
-<span class="ansi-green-intense-fg ansi-bold">    471</span> <span class="ansi-bold" style="color: rgb(0,135,0)">return</span> prefix<span style="color: rgb(98,98,98)">.</span>startswith(<span style="color: rgb(175,0,0)">"</span><span style="color: rgb(175,0,0)">&lt;iframe </span><span style="color: rgb(175,0,0)">"</span>) <span class="ansi-bold" style="color: rgb(175,0,255)">and</span> suffix<span style="color: rgb(98,98,98)">.</span>endswith(<span style="color: rgb(175,0,0)">"</span><span style="color: rgb(175,0,0)">&lt;/iframe&gt;</span><span style="color: rgb(175,0,0)">"</span>)
-
-<span class="ansi-red-fg">AttributeError</span>: 'list' object has no attribute 'lower'</pre>
 </div>
 </div>
 </div>
