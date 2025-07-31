@@ -68,9 +68,9 @@ popnsmpl_out_of_sample = "out of sample yield curves  -  those not used in the a
 popnsmpl_population = "population is the total population from which the sample set is obtained. For the examples in this paper this could also be called the universe of possible yield curves"
 popnsmpl_sample_set = "data set on which the PCA is performed. For the examples presented in this paper this is just a set of absolute yield curves in terms of forward rates"
 popnsmpl_synthetic = fnc.f_wrap_in_span("i don't see purpose of synthetic population generation","darkred")
-
-
+datatrans_svt = "mean centering essential when singular value decomposition used" 
 ```
+
 
 ```python
 # LOGIC LISTS
@@ -96,7 +96,10 @@ lgc_population_and_sample = [
 "the paper seems to see validity in not using whole population to calibrate"
 ]
 
-
+datatranslgc = [
+"data transformations",
+"not necessary to centre data when eigenvalue decomposition is used"
+]
 
 
 ```
@@ -142,6 +145,8 @@ f_convert_string_vars_to_htmls("invprob",3,"inverse problem")
 f_convert_string_vars_to_htmls("datatrans",3,"inverse problem")
 display(HTML("<h2>logic</h2>"))
 f_display_html_with_heading("lgc",3)
+f_display_html_with_heading("datatranslgc",3)
+
 f_convert_string_vars_to_htmls("rht",2,"rhetoric")
 display(HTML("<h2>criticisms</h2>"))
 f_display_html_with_heading("crt",3)

@@ -7616,6 +7616,7 @@ a.anchor-link {
 <span class="n">popnsmpl_population</span> <span class="o">=</span> <span class="s2">"population is the total population from which the sample set is obtained. For the examples in this paper this could also be called the universe of possible yield curves"</span>
 <span class="n">popnsmpl_sample_set</span> <span class="o">=</span> <span class="s2">"data set on which the PCA is performed. For the examples presented in this paper this is just a set of absolute yield curves in terms of forward rates"</span>
 <span class="n">popnsmpl_synthetic</span> <span class="o">=</span> <span class="n">fnc</span><span class="o">.</span><span class="n">f_wrap_in_span</span><span class="p">(</span><span class="s2">"i don't see purpose of synthetic population generation"</span><span class="p">,</span><span class="s2">"darkred"</span><span class="p">)</span>
+<span class="n">datatrans_svt</span> <span class="o">=</span> <span class="s2">"mean centering essential when singular value decomposition used"</span> 
 </pre></div>
 </div>
 </div>
@@ -7650,6 +7651,11 @@ a.anchor-link {
 <span class="s2">"more is made of difference between population and sample than i would"</span><span class="p">,</span>
 <span class="s2">"i would go for largest available dataset that is relevant and to me that is the population"</span><span class="p">,</span>
 <span class="s2">"the paper seems to see validity in not using whole population to calibrate"</span>
+<span class="p">]</span>
+
+<span class="n">datatranslgc</span> <span class="o">=</span> <span class="p">[</span>
+<span class="s2">"data transformations"</span><span class="p">,</span>
+<span class="s2">"not necessary to centre data when eigenvalue decomposition is used"</span>
 <span class="p">]</span>
 </pre></div>
 </div>
@@ -7714,6 +7720,8 @@ a.anchor-link {
 <span class="n">f_convert_string_vars_to_htmls</span><span class="p">(</span><span class="s2">"datatrans"</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="s2">"inverse problem"</span><span class="p">)</span>
 <span class="n">display</span><span class="p">(</span><span class="n">HTML</span><span class="p">(</span><span class="s2">"&lt;h2&gt;logic&lt;/h2&gt;"</span><span class="p">))</span>
 <span class="n">f_display_html_with_heading</span><span class="p">(</span><span class="s2">"lgc"</span><span class="p">,</span><span class="mi">3</span><span class="p">)</span>
+<span class="n">f_display_html_with_heading</span><span class="p">(</span><span class="s2">"datatranslgc"</span><span class="p">,</span><span class="mi">3</span><span class="p">)</span>
+
 <span class="n">f_convert_string_vars_to_htmls</span><span class="p">(</span><span class="s2">"rht"</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="s2">"rhetoric"</span><span class="p">)</span>
 <span class="n">display</span><span class="p">(</span><span class="n">HTML</span><span class="p">(</span><span class="s2">"&lt;h2&gt;criticisms&lt;/h2&gt;"</span><span class="p">))</span>
 <span class="n">f_display_html_with_heading</span><span class="p">(</span><span class="s2">"crt"</span><span class="p">,</span><span class="mi">3</span><span class="p">)</span>
@@ -7809,73 +7817,45 @@ data set on which the PCA is performed. For the examples presented in this paper
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output" data-mime-type="text/html" tabindex="0">
-<h2>logic</h2>
+mean centering essential when singular value decomposition used
 </div>
 </div>
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output" data-mime-type="text/html" tabindex="0">
-<h3>out of sample yield curves  -  those not used in the analysis to derive yield curves</h3>his is shown to potentially require many more PCs than we might first think.<br/>perhaps bayesian inference gets around this....
-</div>
-</div>
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output" data-mime-type="text/html" tabindex="0">
-<h3>adjacent points on the yield curve do not move independently</h3>why is this-when considering the forward yield curve specifically
-</div>
-</div>
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output" data-mime-type="text/html" tabindex="0">
-<h3>since pca derived from covariance matrix we are talking about deviation from the mean</h3>what does the mean represent in this context
-</div>
-</div>
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output" data-mime-type="text/html" tabindex="0">
-<h3>more is made of difference between population and sample than i would</h3>i would go for largest available dataset that is relevant and to me that is the population<br/>the paper seems to see validity in not using whole population to calibrate
-</div>
-</div>
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output" data-mime-type="text/html" tabindex="0">
-<h2>rhetoric</h2>
-</div>
-</div>
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output" data-mime-type="text/html" tabindex="0">
-intuitively, PCs represent ways in which the forward rates making up a yield curve can deviate from their mean levels
-</div>
-</div>
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output" data-mime-type="text/html" tabindex="0">
-A model including all of the PCs turns can perfectly reproduce all of the yield curves on which the PCA analysis was performed.
-</div>
-</div>
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output" data-mime-type="text/html" tabindex="0">
-<h2>criticisms</h2>
-</div>
-</div>
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output" data-mime-type="text/html" tabindex="0">
-<h3>it might be appropriate to use two PCs in a reduced model as these should cover around 99% of the yield curve variability</h3>this 99% seems arbitrary since my first run gave high 80% using a 50year dataset<br/>perhaps a shorter dataset is this reliable
-</div>
-</div>
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output" data-mime-type="text/html" tabindex="0">
-<h3>it looks like they are simulating the whole curve rather than modelling changes from one period to the next</h3>as evidence by statement 'The solid black line is the mean yield curve at the 𝑡 = 1 projection horizon.'the chart with solid black line and the dotted black as movement suggests they are treating mean curve as the current yield curve which cannot see has pratical usage
-</div>
-</div>
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output" data-mime-type="text/html" tabindex="0">
-hi
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr" tabindex="0">
+<pre>
+<span class="ansi-red-fg">---------------------------------------------------------------------------</span>
+<span class="ansi-red-fg">AttributeError</span>                            Traceback (most recent call last)
+<span class="ansi-cyan-fg">Cell</span><span class="ansi-cyan-fg"> </span><span class="ansi-green-fg">In[8]</span><span class="ansi-green-fg">, line 5</span>
+<span class="ansi-green-fg">      3</span> f_convert_string_vars_to_htmls(<span class="ansi-yellow-fg">"</span><span class="ansi-yellow-fg">popnsmpl</span><span class="ansi-yellow-fg">"</span>,<span class="ansi-green-fg">3</span>,<span class="ansi-yellow-fg">"</span><span class="ansi-yellow-fg">populations and samples</span><span class="ansi-yellow-fg">"</span>)
+<span class="ansi-green-fg">      4</span> f_convert_string_vars_to_htmls(<span class="ansi-yellow-fg">"</span><span class="ansi-yellow-fg">invprob</span><span class="ansi-yellow-fg">"</span>,<span class="ansi-green-fg">3</span>,<span class="ansi-yellow-fg">"</span><span class="ansi-yellow-fg">inverse problem</span><span class="ansi-yellow-fg">"</span>)
+<span class="ansi-green-fg">----&gt; </span><span class="ansi-green-fg">5</span> <span class="ansi-yellow-bg">f_convert_string_vars_to_htmls</span><span class="ansi-yellow-bg">(</span><span class="ansi-yellow-fg ansi-yellow-bg">"</span><span class="ansi-yellow-fg ansi-yellow-bg">datatrans</span><span class="ansi-yellow-fg ansi-yellow-bg">"</span><span class="ansi-yellow-bg">,</span><span class="ansi-green-fg ansi-yellow-bg">3</span><span class="ansi-yellow-bg">,</span><span class="ansi-yellow-fg ansi-yellow-bg">"</span><span class="ansi-yellow-fg ansi-yellow-bg">inverse problem</span><span class="ansi-yellow-fg ansi-yellow-bg">"</span><span class="ansi-yellow-bg">)</span>
+<span class="ansi-green-fg">      6</span> display(HTML(<span class="ansi-yellow-fg">"</span><span class="ansi-yellow-fg">&lt;h2&gt;logic&lt;/h2&gt;</span><span class="ansi-yellow-fg">"</span>))
+<span class="ansi-green-fg">      7</span> f_display_html_with_heading(<span class="ansi-yellow-fg">"</span><span class="ansi-yellow-fg">lgc</span><span class="ansi-yellow-fg">"</span>,<span class="ansi-green-fg">3</span>)
+
+<span class="ansi-cyan-fg">Cell</span><span class="ansi-cyan-fg"> </span><span class="ansi-green-fg">In[3]</span><span class="ansi-green-fg">, line 10</span>, in <span class="ansi-cyan-fg">f_convert_string_vars_to_htmls</span><span class="ansi-blue-fg">(prefix, heading_level, content)</span>
+<span class="ansi-green-fg">      8</span> filtered_list = [s <span class="ansi-bold" style="color: rgb(0,135,0)">for</span> s <span class="ansi-bold" style="color: rgb(175,0,255)">in</span> fnc.list_variables(<span style="color: rgb(0,135,0)">globals</span>()) <span class="ansi-bold" style="color: rgb(0,135,0)">if</span> s.startswith(prefix)]
+<span class="ansi-green-fg">      9</span> <span class="ansi-bold" style="color: rgb(0,135,0)">for</span> html <span class="ansi-bold" style="color: rgb(175,0,255)">in</span> filtered_list:
+<span class="ansi-green-fg">---&gt; </span><span class="ansi-green-fg">10</span>     display(<span class="ansi-yellow-bg">HTML</span><span class="ansi-yellow-bg">(</span><span class="ansi-yellow-bg" style="color: rgb(0,135,0)">eval</span><span class="ansi-yellow-bg">(</span><span class="ansi-yellow-bg">html</span><span class="ansi-yellow-bg">)</span><span class="ansi-yellow-bg">)</span>)
+
+<span class="ansi-cyan-fg">File </span><span class="ansi-green-fg">/nix/store/hvrcj9bbfjb549fj3kgh2mdl71hkq282-python3-3.13.4-env/lib/python3.13/site-packages/IPython/core/display.py:446</span>, in <span class="ansi-cyan-fg">HTML.__init__</span><span class="ansi-blue-fg">(self, data, url, filename, metadata)</span>
+<span class="ansi-green-fg">    443</span>     suffix = data[-<span class="ansi-green-fg">10</span>:].lower()
+<span class="ansi-green-fg">    444</span>     <span class="ansi-bold" style="color: rgb(0,135,0)">return</span> prefix.startswith(<span class="ansi-yellow-fg">"</span><span class="ansi-yellow-fg">&lt;iframe </span><span class="ansi-yellow-fg">"</span>) <span class="ansi-bold" style="color: rgb(175,0,255)">and</span> suffix.endswith(<span class="ansi-yellow-fg">"</span><span class="ansi-yellow-fg">&lt;/iframe&gt;</span><span class="ansi-yellow-fg">"</span>)
+<span class="ansi-green-fg">--&gt; </span><span class="ansi-green-fg">446</span> <span class="ansi-bold" style="color: rgb(0,135,0)">if</span> <span class="ansi-yellow-bg">warn</span><span class="ansi-yellow-bg">(</span><span class="ansi-yellow-bg">)</span>:
+<span class="ansi-green-fg">    447</span>     warnings.warn(<span class="ansi-yellow-fg">"</span><span class="ansi-yellow-fg">Consider using IPython.display.IFrame instead</span><span class="ansi-yellow-fg">"</span>)
+<span class="ansi-green-fg">    448</span> <span style="color: rgb(0,135,0)">super</span>(HTML, <span style="color: rgb(0,135,0)">self</span>).<span class="ansi-blue-fg">__init__</span>(data=data, url=url, filename=filename, metadata=metadata)
+
+<span class="ansi-cyan-fg">File </span><span class="ansi-green-fg">/nix/store/hvrcj9bbfjb549fj3kgh2mdl71hkq282-python3-3.13.4-env/lib/python3.13/site-packages/IPython/core/display.py:442</span>, in <span class="ansi-cyan-fg">HTML.__init__.&lt;locals&gt;.warn</span><span class="ansi-blue-fg">()</span>
+<span class="ansi-green-fg">    436</span>     <span class="ansi-bold" style="color: rgb(0,135,0)">return</span> <span class="ansi-bold" style="color: rgb(0,135,0)">False</span>
+<span class="ansi-green-fg">    438</span> <span style="color: rgb(95,135,135)">#</span>
+<span class="ansi-green-fg">    439</span> <span style="color: rgb(95,135,135)"># Avoid calling lower() on the entire data, because it could be a</span>
+<span class="ansi-green-fg">    440</span> <span style="color: rgb(95,135,135)"># long string and we're only interested in its beginning and end.</span>
+<span class="ansi-green-fg">    441</span> <span style="color: rgb(95,135,135)">#</span>
+<span class="ansi-green-fg">--&gt; </span><span class="ansi-green-fg">442</span> prefix = <span class="ansi-yellow-bg">data</span><span class="ansi-yellow-bg">[</span><span class="ansi-yellow-bg">:</span><span class="ansi-green-fg ansi-yellow-bg">10</span><span class="ansi-yellow-bg">]</span><span class="ansi-yellow-bg">.</span><span class="ansi-yellow-bg">lower</span>()
+<span class="ansi-green-fg">    443</span> suffix = data[-<span class="ansi-green-fg">10</span>:].lower()
+<span class="ansi-green-fg">    444</span> <span class="ansi-bold" style="color: rgb(0,135,0)">return</span> prefix.startswith(<span class="ansi-yellow-fg">"</span><span class="ansi-yellow-fg">&lt;iframe </span><span class="ansi-yellow-fg">"</span>) <span class="ansi-bold" style="color: rgb(175,0,255)">and</span> suffix.endswith(<span class="ansi-yellow-fg">"</span><span class="ansi-yellow-fg">&lt;/iframe&gt;</span><span class="ansi-yellow-fg">"</span>)
+
+<span class="ansi-red-fg">AttributeError</span>: 'list' object has no attribute 'lower'</pre>
 </div>
 </div>
 </div>
