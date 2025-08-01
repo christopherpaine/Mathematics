@@ -71,8 +71,9 @@ datatrans_svt = "mean centering essential when singular value decomposition used
 # %%
 # LOGIC LISTS
 lgc_out_of_sample = [
-"out of sample yield curves  -  those not used in the analysis to derive yield curves",
-"his is shown to potentially require many more PCs than we might first think.",
+"out of sample yield curves ", 
+"those not used in the analysis to derive yield curves",
+"this is shown to potentially require many more PCs than we might first think.",
 "perhaps bayesian inference gets around this...."
 
 ]
@@ -134,9 +135,11 @@ crt_simulating_curve_not_changes = [
 
 
 # %%
+
 display(HTML("<h1>Rough notes on moodys paper</h1>"))
 f_convert_string_vars_to_htmls("grm",2,"grammar")
-fnc.f_create_flex_columns( f_convert_string_vars_to_htmls("popnsmpl",3,"populations and samples"), f_convert_string_vars_to_htmls("invprob",3,"inverse problem"))
+f_convert_string_vars_to_htmls("popnsmpl",3,"populations and samples")
+f_convert_string_vars_to_htmls("invprob",3,"inverse problem")
 f_convert_string_vars_to_htmls("datatrans",3,"data transformations")
 display(HTML("<h2>logic</h2>"))
 f_display_html_with_heading("lgc",3)
