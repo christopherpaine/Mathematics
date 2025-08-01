@@ -1,0 +1,83 @@
+
+[NbConvertApp] Converting notebook ./principal-component-analysis/pca.ipynb to html
+[NbConvertApp] Writing 272621 bytes to principal-component-analysis/principal-component-analysis/pca.html
+Traceback (most recent call last):
+  File "/nix/store/z0bgn5r8wbvx2lkddkbq5g8d5n9rnxvv-python3.12-nbconvert-7.16.4/bin/.jupyter-nbconvert-wrapped", line 9, in <module>
+    sys.exit(main())
+             ^^^^^^
+  File "/nix/store/8ngzrf4qy33qdd1fw367srnwm6bq1dr3-python3-3.12.8-env/lib/python3.12/site-packages/jupyter_core/application.py", line 283, in launch_instance
+    super().launch_instance(argv=argv, **kwargs)
+  File "/nix/store/8ngzrf4qy33qdd1fw367srnwm6bq1dr3-python3-3.12.8-env/lib/python3.12/site-packages/traitlets/config/application.py", line 1075, in launch_instance
+    app.start()
+  File "/nix/store/8ngzrf4qy33qdd1fw367srnwm6bq1dr3-python3-3.12.8-env/lib/python3.12/site-packages/nbconvert/nbconvertapp.py", line 420, in start
+    self.convert_notebooks()
+  File "/nix/store/8ngzrf4qy33qdd1fw367srnwm6bq1dr3-python3-3.12.8-env/lib/python3.12/site-packages/nbconvert/nbconvertapp.py", line 597, in convert_notebooks
+    self.convert_single_notebook(notebook_filename)
+  File "/nix/store/8ngzrf4qy33qdd1fw367srnwm6bq1dr3-python3-3.12.8-env/lib/python3.12/site-packages/nbconvert/nbconvertapp.py", line 566, in convert_single_notebook
+    write_results = self.write_single_notebook(output, resources)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/nix/store/8ngzrf4qy33qdd1fw367srnwm6bq1dr3-python3-3.12.8-env/lib/python3.12/site-packages/nbconvert/nbconvertapp.py", line 526, in write_single_notebook
+    return self.writer.write(output, resources, notebook_name=notebook_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/nix/store/8ngzrf4qy33qdd1fw367srnwm6bq1dr3-python3-3.12.8-env/lib/python3.12/site-packages/nbconvert/writers/files.py", line 152, in write
+    with open(dest_path, "w", encoding="utf-8") as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'principal-component-analysis/principal-component-analysis/pca.html'
+^CTraceback (most recent call last):
+  File "/nix/store/z0bgn5r8wbvx2lkddkbq5g8d5n9rnxvv-python3.12-nbconvert-7.16.4/bin/.jupyter-nbconvert-wrapped", line 6, in <module>
+    from nbconvert.nbconvertapp import main
+  File "/nix/store/8ngzrf4qy33qdd1fw367srnwm6bq1dr3-python3-3.12.8-env/lib/python3.12/site-packages/nbconvert/nbconvertapp.py", line 193, in <module>
+    class NbConvertApp(JupyterApp):
+  File "/nix/store/8ngzrf4qy33qdd1fw367srnwm6bq1dr3-python3-3.12.8-env/lib/python3.12/site-packages/nbconvert/nbconvertapp.py", line 252, in NbConvertApp
+    Options include {get_export_names()}.
+                     ^^^^^^^^^^^^^^^^^^
+  File "/nix/store/8ngzrf4qy33qdd1fw367srnwm6bq1dr3-python3-3.12.8-env/lib/python3.12/site-packages/nbconvert/exporters/base.py", line 145, in get_export_names
+    e = get_exporter(exporter_name)(config=config)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/nix/store/8ngzrf4qy33qdd1fw367srnwm6bq1dr3-python3-3.12.8-env/lib/python3.12/site-packages/nbconvert/exporters/base.py", line 104, in get_exporter
+    exporters = entry_points(group="nbconvert.exporters")
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/nix/store/dksjvr69ckglyw1k2ss1qgshhcix73p8-python3-3.12.8/lib/python3.12/importlib/metadata/__init__.py", line 913, in entry_points
+    return EntryPoints(eps).select(**params)
+           ^^^^^^^^^^^^^^^^
+  File "/nix/store/dksjvr69ckglyw1k2ss1qgshhcix73p8-python3-3.12.8/lib/python3.12/importlib/metadata/__init__.py", line 911, in <genexpr>
+    dist.entry_points for dist in _unique(distributions())
+    ^^^^^^^^^^^^^^^^^
+  File "/nix/store/dksjvr69ckglyw1k2ss1qgshhcix73p8-python3-3.12.8/lib/python3.12/importlib/metadata/__init__.py", line 471, in entry_points
+    return EntryPoints._from_text_for(self.read_text('entry_points.txt'), self)
+                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/nix/store/dksjvr69ckglyw1k2ss1qgshhcix73p8-python3-3.12.8/lib/python3.12/importlib/metadata/__init__.py", line 819, in read_text
+    return self._path.joinpath(filename).read_text(encoding='utf-8')
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/nix/store/dksjvr69ckglyw1k2ss1qgshhcix73p8-python3-3.12.8/lib/python3.12/pathlib.py", line 1028, in read_text
+    return f.read()
+           ^^^^^^^^
+  File "<frozen codecs>", line 319, in decode
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "/home/chris-jakoolit/Mathematics/./watch2.py", line 55, in <module>
+    watch_directory()
+  File "/home/chris-jakoolit/Mathematics/./watch2.py", line 29, in watch_directory
+    run_bash_command("jupyter nbconvert --to html --no-input --no-prompt " +remove_file_extension(modified[0])+".ipynb" + " --output "+ remove_file_extension(modified[0]) + "-clean.html")
+  File "/home/chris-jakoolit/Mathematics/./watch2.py", line 44, in run_bash_command
+    result = subprocess.run(command, shell=True, capture_output=False, text=True)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/nix/store/dksjvr69ckglyw1k2ss1qgshhcix73p8-python3-3.12.8/lib/python3.12/subprocess.py", line 550, in run
+    stdout, stderr = process.communicate(input, timeout=timeout)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/nix/store/dksjvr69ckglyw1k2ss1qgshhcix73p8-python3-3.12.8/lib/python3.12/subprocess.py", line 1201, in communicate
+    self.wait()
+  File "/nix/store/dksjvr69ckglyw1k2ss1qgshhcix73p8-python3-3.12.8/lib/python3.12/subprocess.py", line 1264, in wait
+    return self._wait(timeout=timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/nix/store/dksjvr69ckglyw1k2ss1qgshhcix73p8-python3-3.12.8/lib/python3.12/subprocess.py", line 2053, in _wait
+    (pid, sts) = self._try_wait(0)
+                 ^^^^^^^^^^^^^^^^^
+  File "/nix/store/dksjvr69ckglyw1k2ss1qgshhcix73p8-python3-3.12.8/lib/python3.12/subprocess.py", line 2011, in _try_wait
+    (pid, sts) = os.waitpid(self.pid, wait_flags)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyboardInterrupt
+
+
+
+

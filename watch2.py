@@ -22,9 +22,11 @@ def watch_directory(path='.'):
             if is_python_file(modified[0]) and modified[0] != 'notation.py' and modified[0] != 'functions.py'and modified[0] != 'takeaways.py':
                 print ("this was a python file")
                 run_bash_command("jupytext --sync "+str(modified[0]))  
-                run_bash_command("jupyter nbconvert --to notebook --inplace --execute --allow-errors "+remove_file_extension(modified[0])+".ipynb")
-                run_bash_command("jupyter nbconvert --to html " + remove_file_extension(modified[0])+".ipynb" + " --output "+ remove_file_extension(modified[0])+ ".html")
-                run_bash_command("jupyter nbconvert --to html --no-input --no-prompt " +remove_file_extension(modified[0])+".ipynb" + " --output "+ remove_file_extension(modified[0]) + "-clean.html")
+                print("jupyter nbconvert --to notebook --inplace --execute --allow-errors "+remove_file_extension(modified[0])+".ipynb")
+                run_bash_command("jupyter nbconvert --to notebook --inplace --execute --allow-errors "+remove_file_extension(get_filename(modified[0]))+".ipynb")
+                print("jupyter nbconvert --to html " + remove_file_extension(modified[0])+".ipynb" + " --output "+ remove_file_extension(get_filename(modified[0]))+ ".html")
+                run_bash_command("jupyter nbconvert --to html " + remove_file_extension(modified[0])+".ipynb" + " --output "+ remove_file_extension(get_filename(modified[0]))+ ".html")
+                run_bash_command("jupyter nbconvert --to html --no-input --no-prompt " +remove_file_extension(modified[0])+".ipynb" + " --output "+ remove_file_extension(get_filename(modified[0])) + "-clean.html")
                 print("done  -  in 15 seconds will push to github and take snapshots of timestamps")
                 time.sleep(15)
                 run_bash_command("git add .")
@@ -48,6 +50,8 @@ def is_python_file(filename):
     return filename.endswith('.py')
 
 
+def get_filename(file_path):
+    return os.path.basename(file_path)
 
 
 watch_directory()
