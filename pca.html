@@ -7509,7 +7509,7 @@ a.anchor-link {
 </style>
 <!-- End of mermaid configuration --></head>
 <body class="jp-Notebook" data-jp-theme-light="true" data-jp-theme-name="JupyterLab Light">
-<main><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=e36eb6f5">
+<main><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=e36eb6f5">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -7527,35 +7527,6 @@ a.anchor-link {
 <span class="kn">import</span> <span class="nn">functions</span> <span class="k">as</span> <span class="nn">fnc</span> 
 <span class="kn">import</span> <span class="nn">markdown</span>
 </pre></div>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr" tabindex="0">
-<pre>
-<span class="ansi-red-fg">---------------------------------------------------------------------------</span>
-<span class="ansi-red-fg">ModuleNotFoundError</span>                       Traceback (most recent call last)
-Cell <span class="ansi-green-fg">In[1], line 8</span>
-<span class="ansi-green-intense-fg ansi-bold">      6</span> <span class="ansi-bold" style="color: rgb(0,135,0)">from</span> <span class="ansi-bold" style="color: rgb(0,0,255)">io</span> <span class="ansi-bold" style="color: rgb(0,135,0)">import</span> StringIO
-<span class="ansi-green-intense-fg ansi-bold">      7</span> <span class="ansi-bold" style="color: rgb(0,135,0)">import</span> <span class="ansi-bold" style="color: rgb(0,0,255)">notation</span> <span class="ansi-bold" style="color: rgb(0,135,0)">as</span> <span class="ansi-bold" style="color: rgb(0,0,255)">ntn</span>
-<span class="ansi-green-fg">----&gt; 8</span> <span class="ansi-bold" style="color: rgb(0,135,0)">import</span> <span class="ansi-bold" style="color: rgb(0,0,255)">functions</span> <span class="ansi-bold" style="color: rgb(0,135,0)">as</span> <span class="ansi-bold" style="color: rgb(0,0,255)">fnc</span> 
-<span class="ansi-green-intense-fg ansi-bold">      9</span> <span class="ansi-bold" style="color: rgb(0,135,0)">import</span> <span class="ansi-bold" style="color: rgb(0,0,255)">markdown</span>
-
-File <span class="ansi-green-fg">~/Mathematics/functions.py:7</span>
-<span class="ansi-green-intense-fg ansi-bold">      5</span> <span class="ansi-bold" style="color: rgb(0,135,0)">from</span> <span class="ansi-bold" style="color: rgb(0,0,255)">io</span> <span class="ansi-bold" style="color: rgb(0,135,0)">import</span> StringIO
-<span class="ansi-green-intense-fg ansi-bold">      6</span> <span class="ansi-bold" style="color: rgb(0,135,0)">import</span> <span class="ansi-bold" style="color: rgb(0,0,255)">notation</span> <span class="ansi-bold" style="color: rgb(0,135,0)">as</span> <span class="ansi-bold" style="color: rgb(0,0,255)">ntn</span>
-<span class="ansi-green-fg">----&gt; 7</span> <span class="ansi-bold" style="color: rgb(0,135,0)">import</span> <span class="ansi-bold" style="color: rgb(0,0,255)">markdown</span> <span class="ansi-bold" style="color: rgb(0,135,0)">as</span> <span class="ansi-bold" style="color: rgb(0,0,255)">mdn</span>
-<span class="ansi-green-intense-fg ansi-bold">     12</span> <span class="ansi-bold" style="color: rgb(0,135,0)">def</span> <span style="color: rgb(0,0,255)">f_md_to_html</span>(mdfile):
-<span class="ansi-green-intense-fg ansi-bold">     13</span>     <span style="color: rgb(95,135,135)"># Read the markdown file</span>
-<span class="ansi-green-intense-fg ansi-bold">     14</span>     <span class="ansi-bold" style="color: rgb(0,135,0)">with</span> <span style="color: rgb(0,135,0)">open</span>(mdfile, <span style="color: rgb(175,0,0)">'</span><span style="color: rgb(175,0,0)">r</span><span style="color: rgb(175,0,0)">'</span>) <span class="ansi-bold" style="color: rgb(0,135,0)">as</span> file:
-
-<span class="ansi-red-fg">ModuleNotFoundError</span>: No module named 'markdown'</pre>
 </div>
 </div>
 </div>
@@ -7580,14 +7551,36 @@ File <span class="ansi-green-fg">~/Mathematics/functions.py:7</span>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr" tabindex="0">
-<pre>
-<span class="ansi-red-fg">---------------------------------------------------------------------------</span>
-<span class="ansi-red-fg">NameError</span>                                 Traceback (most recent call last)
-Cell <span class="ansi-green-fg">In[2], line 1</span>
-<span class="ansi-green-fg">----&gt; 1</span> display(HTML(<span class="ansi-yellow-bg">fnc</span><span style="color: rgb(98,98,98)">.</span>f_md_to_html(<span style="color: rgb(175,0,0)">"</span><span style="color: rgb(175,0,0)">giro2025-notes.md</span><span style="color: rgb(175,0,0)">"</span>)))
-
-<span class="ansi-red-fg">NameError</span>: name 'fnc' is not defined</pre>
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output" data-mime-type="text/html" tabindex="0">
+<h1>Giro Conference 2025</h1>
+<h2>Workshop A1 – Climate change: The bigger picture</h2>
+<p>Speakers: Alex Marcuson, Josie Durley &amp; Konrad Farrugia (Climate Change Reserving Working Party)</p>
+<h2>Workshop A2 – The state of the market 2025</h2>
+<p>Speakers: Edward Plowman, Andrew Goldby &amp; Mohammad Khan (IFoA Pricing Research Group)</p>
+<h2>Workshop A3 – The state of the market 2025 (repeat session)</h2>
+<p>Same content as A2 – Speakers: Edward Plowman, Andrew Goldby &amp; Mohammad Khan</p>
+<h2>Workshop A4 – Setting the personal injury discount (Ogden) rate</h2>
+<p>Speakers: Paul Butcher &amp; Fiona Dunsire (GAD)</p>
+<h2>Workshop A5 – Update from the Third Party Working Party</h2>
+<p>Speakers: Katie Carmona &amp; Rob Treen (Third Party Working Party)</p>
+<h2>Workshop A6 – Capital modelling and validation market review: Industry trends and best practices</h2>
+<p>Speakers: Cat Drummond &amp; Tom Durkin (LCP)</p>
+<h2>Workshop A7 – Risk drivers for general insurance capital modelling: Market practice, parameterisation, methods and validation</h2>
+<p>Speaker: James Toller (Risk Drivers Working Party)</p>
+<h2>Workshop B1 – Rethinking reserving: Deterministic methods for a changing liability landscape</h2>
+<p>Speakers: Muhammad Ali &amp; Harsh Jaitak (Hymans Robertson)</p>
+<h2>Workshop B2 – Smarter governance for smarter models: Reimagining pricing governance in a machine learning world</h2>
+<p>Speaker: Catrin Townsend (Price Writers)</p>
+<h2>Workshop B3 – PRA focus</h2>
+<p>Speaker: Daniel Curtis (Prudential Regulation Authority)</p>
+<h2>Workshop B4 – The final calculation: Navigating your path to the NED role</h2>
+<p>Speakers: Rupa Pithiya, Cathy Carroll &amp; Zoe Bolton (Bolton Associates)</p>
+<h2>Workshop B5 – Electric vehicles – do they crash more or less than petrol cars?</h2>
+<p>Speakers: Amit Parmar &amp; Conor Woods (Guy Carpenter)</p>
+<h2>Workshop B6 – What’s climate sensitivity, why should I care and what can we do if it’s more than we thought?</h2>
+<p>Speakers: James Orr &amp; Oliver Bettis (IFoA Climate Sensitivity Working Party)</p>
+<h2>Workshop B7 – Are cyber development patterns changing again? Implications for actuarial reserving</h2>
+<p>Speakers: Cyber Reserving Working Party (specific names not listed)</p>
 </div>
 </div>
 </div>
