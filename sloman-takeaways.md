@@ -34,6 +34,7 @@ tka.f_css()
 ```python
 # GRAMMAR STATEMENTS 
 grm_national_income = "national income is value of nations output per year"
+grm_stock_and_flow= "national income is a flow concept.  money supply is a stock concept"
 grm_3_functions_money = "3 functions of money: store of wealth; medium of exchange;means of evaluation; means of establishing future value"
 ```
 
