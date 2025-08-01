@@ -7,6 +7,7 @@ let
 livereload
 matplotlib
     tabulate
+    markdown
     numpy
     notebook
     pandas
