@@ -1,4 +1,4 @@
-def f_css:
+def f_css():
     HTML("""<style>
          h1, h2 {
              font-weight: 1000 !important;
