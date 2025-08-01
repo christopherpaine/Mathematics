@@ -7546,35 +7546,12 @@ a.anchor-link {
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=c0217ed2">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [3]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-<div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">f_display_html_with_heading</span><span class="p">(</span><span class="n">prefix</span><span class="p">,</span> <span class="n">heading_level</span><span class="p">):</span>
-    <span class="n">lst</span> <span class="o">=</span> <span class="p">[</span><span class="n">s</span> <span class="k">for</span> <span class="n">s</span> <span class="ow">in</span> <span class="n">fnc</span><span class="o">.</span><span class="n">list_variables</span><span class="p">(</span><span class="nb">globals</span><span class="p">())</span> <span class="k">if</span> <span class="n">s</span><span class="o">.</span><span class="n">startswith</span><span class="p">(</span><span class="n">prefix</span><span class="p">)]</span>
-    <span class="k">for</span> <span class="n">html</span> <span class="ow">in</span> <span class="n">lst</span><span class="p">:</span>
-        <span class="n">display</span><span class="p">(</span><span class="n">HTML</span><span class="p">(</span><span class="n">fnc</span><span class="o">.</span><span class="n">combine_strings_with_heading</span><span class="p">(</span><span class="nb">eval</span><span class="p">(</span><span class="n">html</span><span class="p">),</span> <span class="n">heading_level</span><span class="p">)))</span>
-
-<span class="k">def</span><span class="w"> </span><span class="nf">f_convert_string_vars_to_htmls</span><span class="p">(</span><span class="n">prefix</span><span class="p">,</span> <span class="n">heading_level</span><span class="p">,</span> <span class="n">content</span><span class="p">):</span>
-    <span class="n">display</span><span class="p">(</span><span class="n">HTML</span><span class="p">(</span><span class="sa">f</span><span class="s2">"&lt;h</span><span class="si">{</span><span class="n">heading_level</span><span class="si">}</span><span class="s2">&gt;</span><span class="si">{</span><span class="n">content</span><span class="si">}</span><span class="s2">&lt;/h</span><span class="si">{</span><span class="n">heading_level</span><span class="si">}</span><span class="s2">&gt;"</span><span class="p">))</span>
-    <span class="n">filtered_list</span> <span class="o">=</span> <span class="p">[</span><span class="n">s</span> <span class="k">for</span> <span class="n">s</span> <span class="ow">in</span> <span class="n">fnc</span><span class="o">.</span><span class="n">list_variables</span><span class="p">(</span><span class="nb">globals</span><span class="p">())</span> <span class="k">if</span> <span class="n">s</span><span class="o">.</span><span class="n">startswith</span><span class="p">(</span><span class="n">prefix</span><span class="p">)]</span>
-    <span class="k">for</span> <span class="n">html</span> <span class="ow">in</span> <span class="n">filtered_list</span><span class="p">:</span>
-        <span class="n">display</span><span class="p">(</span><span class="n">HTML</span><span class="p">(</span><span class="nb">eval</span><span class="p">(</span><span class="n">html</span><span class="p">)))</span>
-</pre></div>
-</div>
-</div>
-</div>
-</div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=a7f640aa">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [4]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [3]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># GRAMMAR STATEMENTS </span>
@@ -7597,7 +7574,7 @@ a.anchor-link {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [5]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [4]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># LOGIC LISTS</span>
@@ -7643,7 +7620,7 @@ a.anchor-link {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [6]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [5]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># RHETORICAL STATEMENTS </span>
@@ -7659,7 +7636,7 @@ a.anchor-link {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [7]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [6]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># CRITICISMS</span>
@@ -7686,21 +7663,21 @@ a.anchor-link {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [8]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [7]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">display</span><span class="p">(</span><span class="n">HTML</span><span class="p">(</span><span class="s2">"&lt;h1&gt;Rough notes on moodys paper&lt;/h1&gt;"</span><span class="p">))</span>
-<span class="n">f_convert_string_vars_to_htmls</span><span class="p">(</span><span class="s2">"grm"</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="s2">"grammar"</span><span class="p">)</span>
-<span class="n">f_convert_string_vars_to_htmls</span><span class="p">(</span><span class="s2">"popnsmpl"</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="s2">"populations and samples"</span><span class="p">)</span>
-<span class="n">f_convert_string_vars_to_htmls</span><span class="p">(</span><span class="s2">"invprob"</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="s2">"inverse problem"</span><span class="p">)</span>
-<span class="n">f_convert_string_vars_to_htmls</span><span class="p">(</span><span class="s2">"datatrans"</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="s2">"data transformations"</span><span class="p">)</span>
+<span class="n">tka</span><span class="o">.</span><span class="n">f_convert_string_vars_to_htmls</span><span class="p">(</span><span class="s2">"grm"</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="s2">"grammar"</span><span class="p">)</span>
+<span class="n">tka</span><span class="o">.</span><span class="n">f_convert_string_vars_to_htmls</span><span class="p">(</span><span class="s2">"popnsmpl"</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="s2">"populations and samples"</span><span class="p">)</span>
+<span class="n">tka</span><span class="o">.</span><span class="n">f_convert_string_vars_to_htmls</span><span class="p">(</span><span class="s2">"invprob"</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="s2">"inverse problem"</span><span class="p">)</span>
+<span class="n">tka</span><span class="o">.</span><span class="n">f_convert_string_vars_to_htmls</span><span class="p">(</span><span class="s2">"datatrans"</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="s2">"data transformations"</span><span class="p">)</span>
 <span class="n">display</span><span class="p">(</span><span class="n">HTML</span><span class="p">(</span><span class="s2">"&lt;h2&gt;logic&lt;/h2&gt;"</span><span class="p">))</span>
-<span class="n">f_display_html_with_heading</span><span class="p">(</span><span class="s2">"lgc"</span><span class="p">,</span><span class="mi">3</span><span class="p">)</span>
-<span class="n">f_display_html_with_heading</span><span class="p">(</span><span class="s2">"data_translgc"</span><span class="p">,</span><span class="mi">3</span><span class="p">)</span>
+<span class="n">tka</span><span class="o">.</span><span class="n">f_display_html_with_heading</span><span class="p">(</span><span class="s2">"lgc"</span><span class="p">,</span><span class="mi">3</span><span class="p">)</span>
+<span class="n">tka</span><span class="o">.</span><span class="n">f_display_html_with_heading</span><span class="p">(</span><span class="s2">"data_translgc"</span><span class="p">,</span><span class="mi">3</span><span class="p">)</span>
 
-<span class="n">f_convert_string_vars_to_htmls</span><span class="p">(</span><span class="s2">"rht"</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="s2">"rhetoric"</span><span class="p">)</span>
+<span class="n">tka</span><span class="o">.</span><span class="n">f_convert_string_vars_to_htmls</span><span class="p">(</span><span class="s2">"rht"</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="s2">"rhetoric"</span><span class="p">)</span>
 <span class="n">display</span><span class="p">(</span><span class="n">HTML</span><span class="p">(</span><span class="s2">"&lt;h2&gt;criticisms&lt;/h2&gt;"</span><span class="p">))</span>
-<span class="n">f_display_html_with_heading</span><span class="p">(</span><span class="s2">"crt"</span><span class="p">,</span><span class="mi">3</span><span class="p">)</span>
+<span class="n">tka</span><span class="o">.</span><span class="n">f_display_html_with_heading</span><span class="p">(</span><span class="s2">"crt"</span><span class="p">,</span><span class="mi">3</span><span class="p">)</span>
 
 <span class="n">display</span><span class="p">(</span><span class="n">HTML</span><span class="p">(</span><span class="s2">"hi"</span><span class="p">))</span>
 </pre></div>
@@ -7727,49 +7704,7 @@ a.anchor-link {
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output" data-mime-type="text/html" tabindex="0">
-centering and scaling
-</div>
-</div>
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output" data-mime-type="text/html" tabindex="0">
-role of transformations
-</div>
-</div>
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output" data-mime-type="text/html" tabindex="0">
-modelling yield curve dynamics  -  is this the same as modelling yield curve changes given a base curve
-</div>
-</div>
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output" data-mime-type="text/html" tabindex="0">
 <h3>populations and samples</h3>
-</div>
-</div>
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output" data-mime-type="text/html" tabindex="0">
-out of sample yield curves  -  those not used in the analysis to derive yield curves
-</div>
-</div>
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output" data-mime-type="text/html" tabindex="0">
-population is the total population from which the sample set is obtained. For the examples in this paper this could also be called the universe of possible yield curves
-</div>
-</div>
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output" data-mime-type="text/html" tabindex="0">
-data set on which the PCA is performed. For the examples presented in this paper this is just a set of absolute yield curves in terms of forward rates
-</div>
-</div>
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output" data-mime-type="text/html" tabindex="0">
-<span style="color: darkred;">i don't see purpose of synthetic population generation</span>
 </div>
 </div>
 <div class="jp-OutputArea-child">
@@ -7781,19 +7716,7 @@ data set on which the PCA is performed. For the examples presented in this paper
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output" data-mime-type="text/html" tabindex="0">
- inverse problem of determining pc magnitudes given a yield curve
-</div>
-</div>
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output" data-mime-type="text/html" tabindex="0">
 <h3>data transformations</h3>
-</div>
-</div>
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output" data-mime-type="text/html" tabindex="0">
-mean centering essential when singular value decomposition used
 </div>
 </div>
 <div class="jp-OutputArea-child">
@@ -7805,67 +7728,13 @@ mean centering essential when singular value decomposition used
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output" data-mime-type="text/html" tabindex="0">
-<h3>out of sample yield curves </h3>those not used in the analysis to derive yield curves<br/>this is shown to potentially require many more PCs than we might first think.<br/>perhaps bayesian inference gets around this....
-</div>
-</div>
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output" data-mime-type="text/html" tabindex="0">
-<h3>adjacent points on the yield curve</h3>do not move independently<br/>why is this-when considering the forward yield curve specifically
-</div>
-</div>
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output" data-mime-type="text/html" tabindex="0">
-<h3>since pca derived from covariance matrix we are talking about deviation from the mean</h3>what does the mean represent in this context
-</div>
-</div>
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output" data-mime-type="text/html" tabindex="0">
-<h3>more is made of difference between population and sample than i would</h3>i would go for largest available dataset that is relevant and to me that is the population<br/>the paper seems to see validity in not using whole population to calibrate
-</div>
-</div>
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output" data-mime-type="text/html" tabindex="0">
-<h3>data transformations</h3>not necessary to centre data when eigenvalue decomposition is used<br/>scaling involves dividing by standard deviationscaling is particularly useful if the variables have quite different orders of magnitude, although this is not likely to be the case for yield curves. <br/><span style="color: darkred;">how to plot different orders of magnitude at various stages of own analysis and see effect of logarithmic transformation</span><br/> if both centring and scaling are performed then the covariance matrix is the same as the correlation matrix. 
-</div>
-</div>
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output" data-mime-type="text/html" tabindex="0">
 <h2>rhetoric</h2>
 </div>
 </div>
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output" data-mime-type="text/html" tabindex="0">
-intuitively, PCs represent ways in which the forward rates making up a yield curve can deviate from their mean levels
-</div>
-</div>
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output" data-mime-type="text/html" tabindex="0">
-A model including all of the PCs turns can perfectly reproduce all of the yield curves on which the PCA analysis was performed.
-</div>
-</div>
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output" data-mime-type="text/html" tabindex="0">
 <h2>criticisms</h2>
-</div>
-</div>
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output" data-mime-type="text/html" tabindex="0">
-<h3>it might be appropriate to use two PCs in a reduced model as these should cover around 99% of the yield curve variability</h3>this 99% seems arbitrary since my first run gave high 80% using a 50year dataset<br/>perhaps a shorter dataset is this reliable
-</div>
-</div>
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output" data-mime-type="text/html" tabindex="0">
-<h3>it looks like they are simulating the whole curve rather than modelling changes from one period to the next</h3>as evidence by statement 'The solid black line is the mean yield curve at the 𝑡 = 1 projection horizon.'the chart with solid black line and the dotted black as movement suggests they are treating mean curve as the current yield curve which cannot see has pratical usage
 </div>
 </div>
 <div class="jp-OutputArea-child">
