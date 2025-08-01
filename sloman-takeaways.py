@@ -40,8 +40,8 @@ grm_risk_transformation = "risk transformation enabled by pooling of risk"
 grm_functional_separation = "functional separation of retail and wholesale banking, such as by enforcing a ringfence between the different divisions of a financial institution."
 grm_regulation_on_functional_separation = "The ring-fencing of UK banking groups with more than £25 billion of core retail deposits became effective from January 2019."
 grm_ring_fenced_banks = "Banks which are functionally separated from the rest of their groups are known as ring-fenced banks or RFBs."
-
-
+grm_mfi = "banks and building societies are both examples of what are called monetary financial institutions (MFIs)"
+grm_mfi_vs_gdp = "The aggregate size of the balance sheet in the first quarter of 2021 was roughly 4 times the UK’s annual gdp (c. £2.5 trillion)"
 
 
 
