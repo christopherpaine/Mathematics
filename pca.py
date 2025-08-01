@@ -31,11 +31,3 @@ import markdown
 
 # %%
 display(HTML(fnc.f_md_to_html("giro2025-notes.md")))
-
-
-
-
-# %% [markdown]
-#
-#
-#
