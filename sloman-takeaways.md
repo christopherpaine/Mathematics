@@ -38,8 +38,17 @@ grm_stock_and_flow= "national income is a flow concept.  money supply is a stock
 grm_3_functions_money = "3 functions of money: store of wealth; medium of exchange;means of evaluation; means of establishing future value"
 grm_financial_intermediaries = "Financial intermediaries The general name for financial institutions (banks, building societies, etc.) which act as a means of channelling funds from depositors to borrowers."
 grm_matruity_transformation = "This process whereby financial intermediaries lend for longer periods of time than they borrow is known as maturity transformation ."
+```
 
 
+```python
+# LOGIC LISTS
+lgc_risk_maturity_transformation = [
+"maturity transformation creates risk for financial intermediaries", 
+"mismatch of assets and liabilities on their balance sheet",
+"risk needs managing",
+
+]
 ```
 
 ```python
@@ -53,5 +62,7 @@ rht_changes_in_money = "It is generally recognised that changes in the amount of
 
 display(HTML("<h1>Rough notes on Sloman Economics Banking Money and Interest Rates section</h1>"))
 tka.f_convert_string_vars_to_htmls(globals(),"grm",2,"grammar")
+display(HTML("<h2>logic</h2>"))
+tka.f_display_html_with_heading(globals(),"lgc",3)
 tka.f_convert_string_vars_to_htmls(globals(),"rht",2,"rhetoric")
 ```

@@ -38,6 +38,14 @@ grm_financial_intermediaries = "Financial intermediaries The general name for fi
 grm_matruity_transformation = "This process whereby financial intermediaries lend for longer periods of time than they borrow is known as maturity transformation ."
 
 
+# %%
+# LOGIC LISTS
+lgc_risk_maturity_transformation = [
+"maturity transformation creates risk for financial intermediaries", 
+"mismatch of assets and liabilities on their balance sheet",
+"risk needs managing",
+
+]
 
 # %%
 # RHETORICAL STATEMENTS 
@@ -50,4 +58,6 @@ rht_changes_in_money = "It is generally recognised that changes in the amount of
 
 display(HTML("<h1>Rough notes on Sloman Economics Banking Money and Interest Rates section</h1>"))
 tka.f_convert_string_vars_to_htmls(globals(),"grm",2,"grammar")
+display(HTML("<h2>logic</h2>"))
+tka.f_display_html_with_heading(globals(),"lgc",3)
 tka.f_convert_string_vars_to_htmls(globals(),"rht",2,"rhetoric")
