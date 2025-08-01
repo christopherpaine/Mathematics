@@ -22,6 +22,12 @@ import pandas as pd
 from io import StringIO
 import notation as ntn
 import functions as fnc
+import takeaways as tka
+
+
+# %%
+tka.f_css()
+
 
 
 
