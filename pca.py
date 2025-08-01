@@ -21,12 +21,12 @@ import matplotlib.pyplot as plt
 import pandas as pd
 from io import StringIO
 import notation as ntn
-
+import functions as fnc 
 
 
 
 # %%
-
+display(HTML(fnc.f_md_to_html("giro2025-notes.md")))
 
 
 

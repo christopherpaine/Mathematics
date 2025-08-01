@@ -1,3 +1,23 @@
+from IPython.display import display, Markdown, HTML, SVG
+import numpy as np
+import matplotlib.pyplot as plt
+import pandas as pd
+from io import StringIO
+import notation as ntn
+import markdown
+
+
+
+
+def f_md_to_html(mdfile):
+    # Read the markdown file
+    with open(mdfile, 'r') as file:
+        markdown_text = file.read()
+    # Convert markdown to HTML
+    html = markdown.markdown(markdown_text)
+    return html
+
+
 
 # HTML functions ################################################################################## #
 
