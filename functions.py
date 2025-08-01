@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 import pandas as pd
 from io import StringIO
 import notation as ntn
-import markdown
+import markdown as mdn
 
 
 
@@ -14,7 +14,7 @@ def f_md_to_html(mdfile):
     with open(mdfile, 'r') as file:
         markdown_text = file.read()
     # Convert markdown to HTML
-    html = markdown.markdown(markdown_text)
+    html = mdn.markdown(markdown_text)
     return html
 
 
