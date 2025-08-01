@@ -18,7 +18,7 @@ def watch_directory(path='.'):
         if modified:
             print("Modified: ", ", ".join(modified))
 
-            if is_python_file(modified[0]) and modified[0] != 'notation.py' and modified[0] != 'functions.py':
+            if is_python_file(modified[0]) and modified[0] != 'notation.py' and modified[0] != 'functions.py'and modified[0] != 'takeaways.py':
                 print ("this was a python file")
                 run_bash_command("jupytext --sync "+str(modified[0]))  
                 run_bash_command("jupyter nbconvert --to notebook --inplace --execute --allow-errors "+remove_file_extension(modified[0])+".ipynb")
