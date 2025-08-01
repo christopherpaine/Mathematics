@@ -22,25 +22,12 @@ import pandas as pd
 from io import StringIO
 import notation as ntn
 import functions as fnc
-
-
-
+import takeaways as tka
 ```
 
+
 ```python
-HTML("""<style>
-     h1, h2 {
-         font-weight: 1000 !important;
-         color: black;
-         }
-
-     h1 {
-         text-decoration: underline;
-         }
-     </style>
-""")
-
-
+tka.f_css()
 ```
 
 ```python
