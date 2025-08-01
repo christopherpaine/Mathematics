@@ -37,7 +37,7 @@ grm_3_functions_money = "3 functions of money: store of wealth; medium of exchan
 grm_financial_intermediaries = "Financial intermediaries The general name for financial institutions (banks, building societies, etc.) which act as a means of channelling funds from depositors to borrowers."
 grm_matruity_transformation = "This process whereby financial intermediaries lend for longer periods of time than they borrow is known as maturity transformation ."
 grm_risk_transformation = "risk transformation enabled by pooling of risk"
-
+grm_functional_separation = "functional separation of retail and wholesale banking, such as by enforcing a ringfence between the different divisions of a financial institution."
 # %%
 # LOGIC LISTS
 lgc_risk_maturity_transformation = [
