@@ -30,4 +30,10 @@ tka.f_css()
 
 
 
+# %%
+# RHETORICAL STATEMENTS 
+rht_changes_in_money = "It is generally recognised that changes in the amount of money can have a powerful effect on all the major macroeconomic indicators, such as inflation, unemployment, economic growth, interest rates, exchange rates and the balance of payments. "
 
+
+display(HTML("<h1>Rough notes on Sloman Economics Banking Money and Interest Rates section</h1>"))
+tka.f_convert_string_vars_to_htmls(globals(),"rht",2,"rhetoric")
