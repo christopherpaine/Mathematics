@@ -23,7 +23,7 @@ def watch_directory(path='.'):
                 print ("this was a python file")
                 run_bash_command("jupytext --sync "+str(modified[0]))  
                 print("jupyter nbconvert --to notebook --inplace --execute --allow-errors "+remove_file_extension(modified[0])+".ipynb")
-                run_bash_command("jupyter nbconvert --to notebook --inplace --execute --allow-errors "+remove_file_extension(get_filename(modified[0]))+".ipynb")
+                run_bash_command("jupyter nbconvert --to notebook --inplace --execute --allow-errors "+remove_file_extension(modified[0])+".ipynb")
                 print("jupyter nbconvert --to html " + remove_file_extension(modified[0])+".ipynb" + " --output "+ remove_file_extension(get_filename(modified[0]))+ ".html")
                 run_bash_command("jupyter nbconvert --to html " + remove_file_extension(modified[0])+".ipynb" + " --output "+ remove_file_extension(get_filename(modified[0]))+ ".html")
                 run_bash_command("jupyter nbconvert --to html --no-input --no-prompt " +remove_file_extension(modified[0])+".ipynb" + " --output "+ remove_file_extension(get_filename(modified[0])) + "-clean.html")
