@@ -124,17 +124,17 @@ crt_simulating_curve_not_changes = [
 ```python
 
 display(HTML("<h1>Rough notes on moodys paper</h1>"))
-tka.f_convert_string_vars_to_htmls("grm",2,"grammar")
-tka.f_convert_string_vars_to_htmls("popnsmpl",3,"populations and samples")
-tka.f_convert_string_vars_to_htmls("invprob",3,"inverse problem")
-tka.f_convert_string_vars_to_htmls("datatrans",3,"data transformations")
+tka.f_convert_string_vars_to_htmls(globals(),"grm",2,"grammar")
+tka.f_convert_string_vars_to_htmls(globals(),"popnsmpl",3,"populations and samples")
+tka.f_convert_string_vars_to_htmls(globals(),"invprob",3,"inverse problem")
+tka.f_convert_string_vars_to_htmls(globals(),"datatrans",3,"data transformations")
 display(HTML("<h2>logic</h2>"))
-tka.f_display_html_with_heading("lgc",3)
-tka.f_display_html_with_heading("data_translgc",3)
+tka.f_display_html_with_heading(globals(),"lgc",3)
+tka.f_display_html_with_heading(globals(),"data_translgc",3)
 
-tka.f_convert_string_vars_to_htmls("rht",2,"rhetoric")
+tka.f_convert_string_vars_to_htmls(globals(),"rht",2,"rhetoric")
 display(HTML("<h2>criticisms</h2>"))
-tka.f_display_html_with_heading("crt",3)
+tka.f_display_html_with_heading(globals(),"crt",3)
 
 display(HTML("hi"))
 

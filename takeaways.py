@@ -20,14 +20,14 @@ def f_css():
          </style>
     """)
 
-def f_display_html_with_heading(prefix, heading_level):
-    lst = [s for s in fnc.list_variables(globals()) if s.startswith(prefix)]
+def f_display_html_with_heading(glob,prefix, heading_level):
+    lst = [s for s in fnc.list_variables(glob) if s.startswith(prefix)]
     for html in lst:
         display(HTML(fnc.combine_strings_with_heading(eval(html), heading_level)))
 
-def f_convert_string_vars_to_htmls(prefix, heading_level, content):
+def f_convert_string_vars_to_htmls(glob,prefix, heading_level, content):
     display(HTML(f"<h{heading_level}>{content}</h{heading_level}>"))
-    filtered_list = [s for s in fnc.list_variables(globals()) if s.startswith(prefix)]
+    filtered_list = [s for s in fnc.list_variables(glob) if s.startswith(prefix)]
     for html in filtered_list:
         display(HTML(eval(html)))
 
