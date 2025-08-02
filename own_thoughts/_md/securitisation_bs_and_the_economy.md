@@ -13,3 +13,5 @@ the key to aggregate growth in bank balance sheets is that securitised assets we
 
 # the maths
 $ x^2 $
+
+{{not_inverse_matrix}}
