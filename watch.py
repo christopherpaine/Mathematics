@@ -2,11 +2,12 @@ import os
 import subprocess
 import time
 
-def watch_directory(path='.'):
-    before = {f: os.path.getmtime(f) for f in os.listdir(path)}
-    while True:
-        time.sleep(5)
-        after = {f: os.path.getmtime(f) for f in os.listdir(path)}
+def watch_directory(path='.'):                                                 
+    before = {os.path.join(dp, f): os.path.getmtime(os.path.join(dp, f))       
+              for dp, dn, filenames in os.walk(path) for f in filenames}       
+    while True:                                                                
+        time.sleep(5)                                                          
+        after = {os.path.join(dp, f): os.path.getmtime(os.path.join(dp, f)) for dp, dn, filenames in os.walk(path) for f in filenames}    
         added = [f for f in after if f not in before]
         removed = [f for f in before if f not in after]
         modified = [f for f in after if f in before and before[f] != after[f]]
@@ -21,9 +22,11 @@ def watch_directory(path='.'):
             if is_python_file(modified[0]) and modified[0] != 'notation.py' and modified[0] != 'functions.py'and modified[0] != 'takeaways.py':
                 print ("this was a python file")
                 run_bash_command("jupytext --sync "+str(modified[0]))  
+                print("jupyter nbconvert --to notebook --inplace --execute --allow-errors "+remove_file_extension(modified[0])+".ipynb")
                 run_bash_command("jupyter nbconvert --to notebook --inplace --execute --allow-errors "+remove_file_extension(modified[0])+".ipynb")
-                run_bash_command("jupyter nbconvert --to html " + remove_file_extension(modified[0])+".ipynb" + " --output "+ remove_file_extension(modified[0])+ ".html")
-                run_bash_command("jupyter nbconvert --to html --no-input --no-prompt " +remove_file_extension(modified[0])+".ipynb" + " --output "+ remove_file_extension(modified[0]) + "-clean.html")
+                print("jupyter nbconvert --to html " + remove_file_extension(modified[0])+".ipynb" + " --output "+ remove_file_extension(get_filename(modified[0]))+ ".html")
+                run_bash_command("jupyter nbconvert --to html " + remove_file_extension(modified[0])+".ipynb" + " --output "+ remove_file_extension(get_filename(modified[0]))+ ".html")
+                run_bash_command("jupyter nbconvert --to html --no-input --no-prompt " +remove_file_extension(modified[0])+".ipynb" + " --output "+ remove_file_extension(get_filename(modified[0])) + "-clean.html")
                 print("done  -  in 15 seconds will push to github and take snapshots of timestamps")
                 time.sleep(15)
                 run_bash_command("git add .")
@@ -47,6 +50,8 @@ def is_python_file(filename):
     return filename.endswith('.py')
 
 
+def get_filename(file_path):
+    return os.path.basename(file_path)
 
 
 watch_directory()
