@@ -29,14 +29,14 @@ wholesale funding saw marked increase before financial crisis of 2008
 
 ### deposit taking and lending
 #### grammar
-aggregate size of combined UK MFI balance sheet is 4x that of UK annual GDP
-__cash balances__ - held at BoE for day to day liquidity and also used in clearing.
-__clearing__ - settling day to day payments between banks
-__reserve balances__ - regulatory amount held at BoE and earns bank rate (repo rate)
-
-__cash ratio deposits__ - also regulatory, earn no interest, cannot be drawn on
-
-__market loans__ - interbank lending
+aggregate size of combined UK MFI balance sheet is 4x that of UK annual GDP  
+__cash balances__ - held at BoE for day to day liquidity and also used in clearing.  
+__clearing__ - settling day to day payments between banks  
+__reserve balances__ - regulatory amount held at BoE and earns bank rate (repo rate)  
+  
+__cash ratio deposits__ - also regulatory, earn no interest, cannot be drawn on  
+  
+__market loans__ - interbank lending  
 
 3 types of interbank lending:
 
