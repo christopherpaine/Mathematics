@@ -61,17 +61,7 @@ eqn_spt_rate_forward_rate = r"\((1 + R(t, T))^{T-t} = (1 + R(t, T - 1))^{T - t-1
 
 
 not_fractional = r"""
-\text{Let:} \\
-R = \text{Reserve ratio (fraction of deposits that must be held in reserve)} \\
-D = \text{Initial deposit} \\
-C = \text{Total credit created} \\
-
-\text{The formula for total credit created is:} \\
-C = \frac{D}{R} - D \\
-\text{or equivalently:} \\
-C = D \left( \frac{1}{R} - 1 \right) \\
-
-\text{This formula shows the additional credit created in the system due to fractional reserving.}
+\text{Let:} R = \text{Reserve ratio (fraction of deposits that must be held in reserve)} D = \text{Initial deposit} C = \text{Total credit created} \text{The formula for total credit created is:} C = \frac{D}{R} - D \text{or equivalently:} C = D \left( \frac{1}{R} - 1 \right) \text{This formula shows the additional credit created in the system due to fractional reserving.}
 """
 
 
