@@ -5,6 +5,7 @@
 __financial intermediaries__ link lenders and borrowers
 #### logic
 5 services of financial intermediaries:
+
 * expert advice
 * channel funds to optimal risk/return
 * maturity transformation
@@ -38,6 +39,7 @@ __cash ratio deposits__ - also regulatory, earn no interest, cannot be drawn on
 __market loans__ - interbank lending
 
 3 types of interbank lending:
+
 * money lent at call
 * money lent for upto to 1yr 
 * certificates of deposit
