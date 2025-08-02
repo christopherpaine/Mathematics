@@ -1,3 +1,6 @@
+import os
+import sys
+sys.path.append(os.path.abspath("/home/chris-jakoolit/Mathematics"))
 from IPython.display import display, Markdown, HTML, SVG
 import numpy as np
 import matplotlib.pyplot as plt
