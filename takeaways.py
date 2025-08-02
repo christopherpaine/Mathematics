@@ -15,7 +15,7 @@ def f_css():
              }
     
          h1 {
-             text-decoration: underline;
+             text-decoration: underline; !important;
              }
          </style>
     """)
