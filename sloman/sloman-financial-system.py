@@ -21,8 +21,8 @@ import os
 
 # %%
 sys.path.append(os.path.abspath("/home/chris-jakoolit/Mathematics/_templates"))
-# from common_imports import *
-import common_imports 
+from common_imports import *
+# import common_imports 
 
 
 
