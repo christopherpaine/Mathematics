@@ -8,7 +8,7 @@ import functions as fnc
 
 
 def f_css():
-    HTML("""<style>
+    display(HTML("""<style>
          h1, h2 {
              font-weight: 1000 !important;
              color: black;
@@ -18,7 +18,7 @@ def f_css():
              text-decoration: underline; !important;
              }
          </style>
-    """)
+    """))
 
 def f_display_html_with_heading(glob,prefix, heading_level):
     lst = [s for s in fnc.list_variables(glob) if s.startswith(prefix)]

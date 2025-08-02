@@ -1,0 +1,13 @@
+def f_css():
+    HTML("""<style>
+         h1, h2 {
+             font-weight: 1000 !important;
+             color: black;
+             }
+    
+         h1 {
+             text-decoration: underline; !important;
+             }
+         </style>
+    """)
+
