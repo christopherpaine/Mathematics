@@ -30,7 +30,7 @@ not_identity_matrix = r"""\(
 \end{bmatrix}
 \)"""
 
-not_inverse_matrix = r"$ AB = BA = I $"
+not_inverse_matrix = r"AB = BA = I"
 
 # %%
 not_V = r"\(V\)"
