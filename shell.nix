@@ -13,6 +13,7 @@ matplotlib
     pandas
 #   dtale
 #    qgrid
+    jinja2
     jupyter
     jupytext
 #    ipywidgets

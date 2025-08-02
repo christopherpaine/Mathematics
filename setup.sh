@@ -7,9 +7,9 @@
      echo "just renamed window"
      #set up the panes
      tmux split-window -h
-     tmux resize-pane -x "$(($(tmux display -p '#{pane_width}') / 3))"
+     tmux resize-pane -x 60 
      tmux split-window -v 
-     tmux resize-pane -x "$(($(tmux display -p '#{pane_height}') / 2))"
+#    tmux resize-pane -x "$(($(tmux display -p '#{pane_height}') / 2))"
      tmux split-window -h
      
      tmux send-keys -t 2 "nix-shell" Enter

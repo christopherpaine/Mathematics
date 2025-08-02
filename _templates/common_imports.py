@@ -10,6 +10,4 @@ import notation as ntn
 import functions as fnc 
 import markdown
 import takeaways as tka
-
-
-
+from jinja2 import Template
