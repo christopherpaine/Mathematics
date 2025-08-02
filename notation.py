@@ -62,20 +62,13 @@ eqn_spt_rate_forward_rate = r"\((1 + R(t, T))^{T-t} = (1 + R(t, T - 1))^{T - t-1
 
 # %%
 # BANKING
-not_reserve_ratio = "R = \text{Reserve ratio (fraction of deposits that must be held in reserve)}" 
+not_reserve_ratio = r"R = \text{Reserve ratio (fraction of deposits that must be held in reserve)}" 
+not_initial_deposit = r"D = \text{Initial deposit}"
+not_total_credit_created = r"C = \text{Total credit created}"
+
+eqn_total_credit_created = r"C = \frac{D}{R} - D"
+eqn_total_credit_created2 = r"C = D \left( \frac{1}{R} - 1 \right)"
 
 
-not_fractional = r"""
-\text{Let:} \\
-D = \text{Initial deposit} \\
-C = \text{Total credit created} \\
-
-\text{The formula for total credit created is:} \\
-C = \frac{D}{R} - D \\
-\text{or equivalently:} \\
-C = D \left( \frac{1}{R} - 1 \right) \\
-
-\text{This formula shows the additional credit created in the system due to fractional reserving.}
-"""
 
 
