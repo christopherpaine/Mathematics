@@ -14,7 +14,7 @@
 # ---
 
 # %%
-from common_imports import *
+from ../common_imports import *
 
 
 
