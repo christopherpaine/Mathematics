@@ -14,9 +14,11 @@
 # ---
 
 # %%
-from ./_templates/common-imports.py import *
+import sys
+import os
 
 
 
-
-
+# %%
+sys.path.append(os.path.abspath("/home/chris-jakoolit/Mathematics/_templates"))
+f
