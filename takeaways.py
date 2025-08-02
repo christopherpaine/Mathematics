@@ -17,6 +17,9 @@ def f_css():
          h1 {
              text-decoration: underline; !important;
              }
+        p {
+            text-indent: 20px;
+        }
          </style>
     """))
 
