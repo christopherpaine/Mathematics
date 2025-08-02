@@ -15,7 +15,9 @@ def f_md_to_html(mdfile):
     with open(mdfile, 'r') as file:
         markdown_text = file.read()
     # Convert markdown to HTML
-    html = mdn.markdown(markdown_text)
+    template = Template(markdown_text) 
+    rendered = template.render(context)
+    html = mdn.markdown(rendered)
     return html
 
 
