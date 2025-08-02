@@ -15,12 +15,12 @@ __financial intermediaries__ link lenders and borrowers
 
 ### the banking system
 #### grammar
-retail banks
-wholesale banking
-functional separation of retail and wholesale
-    more than 25 billion
-__monetary financial institutions__ - all deposit taking institutions including central bank
-__wholesale funding__ - lending and borrowing between MFIs - money market instruments
+retail banks  
+wholesale banking  
+functional separation of retail and wholesale  
+    more than 25 billion  
+__monetary financial institutions__ - all deposit taking institutions including central bank  
+__wholesale funding__ - lending and borrowing between MFIs - money market instruments  
 
 #### logic
 less of a clear distinction between building societies and retail banks these days
