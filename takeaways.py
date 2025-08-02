@@ -21,7 +21,7 @@ def f_css():
              text-decoration: underline; !important;
              }
         p {
-            text-indent: 20px;
+            text-indent: 0px;
         }
          </style>
     """))
