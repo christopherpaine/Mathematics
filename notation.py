@@ -60,9 +60,13 @@ eqn_spt_rate_forward_rate = r"\((1 + R(t, T))^{T-t} = (1 + R(t, T - 1))^{T - t-1
 
 
 
+# %%
+# BANKING
+not_reserve_ratio = "R = \text{Reserve ratio (fraction of deposits that must be held in reserve)}" 
+
+
 not_fractional = r"""
 \text{Let:} \\
-R = \text{Reserve ratio (fraction of deposits that must be held in reserve)} \\
 D = \text{Initial deposit} \\
 C = \text{Total credit created} \\
 
