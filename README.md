@@ -1,4 +1,4 @@
-See the rendered notes at [https://christopherpaine.github.io/Mathematics/](link) 
+See the rendered notes at (https://christopherpaine.github.io/Mathematics/)[link] 
 # Purpose
 Rather than make notes of bits of paper I'm going to commit to putting them into an html format.
 
