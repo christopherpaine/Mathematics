@@ -7521,12 +7521,19 @@ a.anchor-link {
 <span class="ansi-red-fg">---------------------------------------------------------------------------</span>
 <span class="ansi-red-fg">ModuleNotFoundError</span>                       Traceback (most recent call last)
 Cell <span class="ansi-green-fg">In[2], line 3</span>
-<span class="ansi-green-intense-fg ansi-bold">      1</span> sys<span style="color: rgb(98,98,98)">.</span>path<span style="color: rgb(98,98,98)">.</span>append(os<span style="color: rgb(98,98,98)">.</span>path<span style="color: rgb(98,98,98)">.</span>abspath(<span style="color: rgb(175,0,0)">"</span><span style="color: rgb(175,0,0)">/home/chris-jakoolit/Mathematics/_templates/common_imports.py</span><span style="color: rgb(175,0,0)">"</span>))
+<span class="ansi-green-intense-fg ansi-bold">      1</span> sys<span style="color: rgb(98,98,98)">.</span>path<span style="color: rgb(98,98,98)">.</span>append(os<span style="color: rgb(98,98,98)">.</span>path<span style="color: rgb(98,98,98)">.</span>abspath(<span style="color: rgb(175,0,0)">"</span><span style="color: rgb(175,0,0)">/home/chris-jakoolit/Mathematics/_templates</span><span style="color: rgb(175,0,0)">"</span>))
 <span class="ansi-green-intense-fg ansi-bold">      2</span> <span style="color: rgb(95,135,135)"># from common_imports import *</span>
 <span class="ansi-green-fg">----&gt; 3</span> <span class="ansi-bold" style="color: rgb(0,135,0)">import</span> <span class="ansi-bold" style="color: rgb(0,0,255)">common_imports</span> 
 <span class="ansi-green-intense-fg ansi-bold">      8</span> display(HTML(<span style="color: rgb(175,0,0)">"</span><span style="color: rgb(175,0,0)">./_md/the-financial-system.md</span><span style="color: rgb(175,0,0)">"</span>))
 
-<span class="ansi-red-fg">ModuleNotFoundError</span>: No module named 'common_imports'</pre>
+File <span class="ansi-green-fg">~/Mathematics/_templates/common_imports.py:6</span>
+<span class="ansi-green-intense-fg ansi-bold">      4</span> <span class="ansi-bold" style="color: rgb(0,135,0)">import</span> <span class="ansi-bold" style="color: rgb(0,0,255)">pandas</span> <span class="ansi-bold" style="color: rgb(0,135,0)">as</span> <span class="ansi-bold" style="color: rgb(0,0,255)">pd</span>
+<span class="ansi-green-intense-fg ansi-bold">      5</span> <span class="ansi-bold" style="color: rgb(0,135,0)">from</span> <span class="ansi-bold" style="color: rgb(0,0,255)">io</span> <span class="ansi-bold" style="color: rgb(0,135,0)">import</span> StringIO
+<span class="ansi-green-fg">----&gt; 6</span> <span class="ansi-bold" style="color: rgb(0,135,0)">import</span> <span class="ansi-bold" style="color: rgb(0,0,255)">notation</span> <span class="ansi-bold" style="color: rgb(0,135,0)">as</span> <span class="ansi-bold" style="color: rgb(0,0,255)">ntn</span>
+<span class="ansi-green-intense-fg ansi-bold">      7</span> <span class="ansi-bold" style="color: rgb(0,135,0)">import</span> <span class="ansi-bold" style="color: rgb(0,0,255)">functions</span> <span class="ansi-bold" style="color: rgb(0,135,0)">as</span> <span class="ansi-bold" style="color: rgb(0,0,255)">fnc</span> 
+<span class="ansi-green-intense-fg ansi-bold">      8</span> <span class="ansi-bold" style="color: rgb(0,135,0)">import</span> <span class="ansi-bold" style="color: rgb(0,0,255)">markdown</span>
+
+<span class="ansi-red-fg">ModuleNotFoundError</span>: No module named 'notation'</pre>
 </div>
 </div>
 </div>
