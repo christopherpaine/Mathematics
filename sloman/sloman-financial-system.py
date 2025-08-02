@@ -20,5 +20,4 @@ from ../common_imports import *
 
 
 
-
 display(HTML("./_md/the-financial-system.md"))
