@@ -12,4 +12,8 @@ if only banks purchased securitiesed assets then bank balance sheets would not h
 the key to aggregate growth in bank balance sheets is that securitised assets were offloaded to non-bank institutions  
 
 # the maths
-\\[{{not_fractional}}\\]
+{{not_reserve_ratio }}
+{{not_initial_deposit }}
+{{not_total_credit_created}}
+{{eqn_total_credit_created}}
+{{eqn_total_credit_created2 }}
