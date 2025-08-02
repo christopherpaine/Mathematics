@@ -70,3 +70,7 @@ tka.f_convert_string_vars_to_htmls(globals(),"grm",2,"grammar")
 display(HTML("<h2>logic</h2>"))
 tka.f_display_html_with_heading(globals(),"lgc",3)
 tka.f_convert_string_vars_to_htmls(globals(),"rht",2,"rhetoric")
+
+
+
+
