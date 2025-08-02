@@ -14,7 +14,7 @@
 # ---
 
 # %%
-from _templates//common-imports.py import *
+from _templates/common-imports import *
 
 
 
