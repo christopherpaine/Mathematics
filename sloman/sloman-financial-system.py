@@ -27,4 +27,4 @@ from common_imports import *
 
 
 
-display(HTML("./_md/the-financial-system.md"))
+display(HTML(fnc.f_md_to_html("./_md/the-financial-system.md")))
