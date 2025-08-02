@@ -14,6 +14,9 @@ def f_css():
              color: black;
              }
     
+         h4 {
+             color: lightgrey;
+             }
          h1 {
              text-decoration: underline; !important;
              }
