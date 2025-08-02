@@ -5,11 +5,12 @@ import pandas as pd
 from io import StringIO
 import notation as ntn
 import markdown as mdn
-
+from jinja2 import Template
 
 
 
 def f_md_to_html(mdfile):
+    context = vars(ntn)
     # Read the markdown file
     with open(mdfile, 'r') as file:
         markdown_text = file.read()
