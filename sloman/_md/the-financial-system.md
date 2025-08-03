@@ -47,6 +47,42 @@ __market loans__ - interbank lending
 __bills of exchange__ - either commercial bills (to companies) or treasury bills (to the government).
 
 
+#### the rise of wholesale funding
+#### grammar
+__loss absorbing capital__ - ordinary shares are loss absorbing, debt is not
+
+__coordination failure__  When a group of firms (e.g. banks) acting independently could have achieved a more desirable outcome if they had co-ordinated their decision making.
+
+__fallacy of composition__  
+
+
+
+#### logic
+increase in balance sheet accompanied by change in composition on asset side  
+
+* longer term credit issued to households and firms (less liquid)
+* riskier assets - higher LTV ratios
+
+banks increased gearing in lead up to 2008 which meant less loss absorbing capital  
+
+* consequently less liquity throughout banking system
+
+
+__credit bubble was created__  
+
+when a couple of banks failed:  northern rock, lehman brothers  
+apparent banks could not rely on each other for liquidity  
+central bank has to step in a solve liquidity problem of huge proportions  
+
+
+
+#### rhetoric
+
+
+
+
+
+
 #### logic
 bills of exchange do not pay interest so are sold below face value.
 
@@ -60,12 +96,6 @@ bills of exchange do not pay interest so are sold below face value.
 
 #### rhetoric
 
-
-#### grammar
-
-#### logic
-
-#### rhetoric
 
 
 #### grammar
