@@ -46,6 +46,16 @@ __market loans__ - interbank lending
 
 __bills of exchange__ - either commercial bills (to companies) or treasury bills (to the government).
 
+__UK bank levy__   -  two rates:  to discourage excessive short term borrowing when wholesale funding
+not imposed on first 20 billion  
+certain liabilities excluded  
+
+* gilts
+* retail deposits protected by FSCS  
+* tier 1 capital
+
+
+
 
 #### the rise of wholesale funding
 #### grammar
