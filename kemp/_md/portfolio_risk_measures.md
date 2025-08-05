@@ -19,7 +19,7 @@ ex-ante risk measure - forward looking
 
 absolute return objective employed by hedge funds - An Absolute Return fund is a type of investment vehicle that attempts to generate steady, positive returns in all market environments by using a variety of investment strategies such as derivatives, arbitrage, short selling, leverage, and more.
 
-tracking error - 
+tracking error -  $\({{not_number_periods}}\)$
 
 
 
