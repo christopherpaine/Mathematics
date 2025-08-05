@@ -71,4 +71,13 @@ eqn_total_credit_created2 = r"C = D \left( \frac{1}{R} - 1 \right)"
 
 
 
+# %%
+# RISK MANAGEMENT 
+
+
+
+
+
+
+
 
