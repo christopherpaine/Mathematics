@@ -16,6 +16,13 @@ regularity conditions
 
 
 #### Logic
+sensitivites conceptually equivalent to the greeks  
+instrument specific risk measures are most advanced for fixed interest instruments  
+
+* DV01  
+* duration
+* convexity 
+
 
 #### Rhetoric
 
