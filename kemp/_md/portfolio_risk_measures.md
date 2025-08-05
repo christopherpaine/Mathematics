@@ -28,7 +28,10 @@ absolute return objective employed by hedge funds - An Absolute Return fund is a
 | Long-only portfolio             | Market index (e.g., FTSE 100, S&P 500)     | Underperforming the market index           |
 | Liability-driven investment     | Index proxy **or** required cash flows     | Failing to meet liabilities or cash flow goals |
 
+split portfolio risk into 2:
 
+* the choice of benchmark against risk is measured
+* the measure that quantifies "how far away" the portfolio is from the benchmark
 
 
 #### Rhetoric
