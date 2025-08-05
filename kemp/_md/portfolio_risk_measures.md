@@ -19,6 +19,9 @@ ex-ante risk measure - forward looking
 
 absolute return objective employed by hedge funds - An Absolute Return fund is a type of investment vehicle that attempts to generate steady, positive returns in all market environments by using a variety of investment strategies such as derivatives, arbitrage, short selling, leverage, and more.
 
+tracking error - 
+
+
 
 #### Logic
 
@@ -35,5 +38,11 @@ split portfolio risk into 2:
 
 
 #### Rhetoric
+
+### Questions
+the description of drawdown expost risk measure is not clear to me.  some mathematics would help clear up the ambiguity in my mind.
+
+
+
 
 

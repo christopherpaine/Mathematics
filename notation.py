@@ -73,6 +73,9 @@ eqn_total_credit_created2 = r"C = D \left( \frac{1}{R} - 1 \right)"
 
 # %%
 # RISK MANAGEMENT 
+not_portfolio_return = r"R_{p,i} & = \text{Portfolio return in period } i" 
+not_benchmark_return = r"R_{b,i} & = \text{Benchmark return in period } i" 
+not_number_periods = r"N & = \text{Number of periods}"
 
 
 
